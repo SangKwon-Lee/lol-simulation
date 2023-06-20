@@ -1,0 +1,117 @@
+// *컬러
+$text-color: #F9E5BF;
+
+// Border
+$border-color: var(--border-color);
+$border-color10: var(--border-color10);
+$border-color20: var(--border-color20);
+
+// Text
+$text-gray00: var(--text-gray00);
+$text-gray10: var(--text-gray10);
+$text-gray20: var(--text-gray20);
+$text-gray30: var(--text-gray30);
+$text-gray40: var(--text-gray40);
+$text-gray50: var(--text-gray50);
+$text-gray60: var(--text-gray60);
+$text-gray70: var(--text-gray70);
+$text-gray80: var(--text-gray80);
+$text-gray90: var(--text-gray90);
+
+// Background
+$bg-color: var(--bg-color);
+$bg-color10: var(--bg-color10);
+$bg-color20: var(--bg-color20);
+$bg-shadow: var(--bg-shadow);
+$footer-color: var(--footer-color);
+
+// * 텍스트 사이즈
+@mixin s12-w400 {
+  font-size: 1.2rem; 
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin s12-w500 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+@mixin s12-w700 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin s14-w400 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin s14-w500 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+@mixin s14-w700 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin s16-w400 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@mixin s16-w500 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+@mixin s16-w700 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@mixin s20-w400 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+@mixin s20-w500 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@mixin s20-w700 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+@mixin s32-w400 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+@mixin s32-w500 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+@mixin s32-w700 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 160%;
+}
