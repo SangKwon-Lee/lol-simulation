@@ -13,12 +13,12 @@ type Props = {
 export default function MainHead({ title = 'LOL Simulation', children, metaObj }: Props) {
   const router = useRouter();
   const p = router.asPath.slice(1);
-  // const canonicalURL = `https://pxd-fed-blog${p}`.split('?')[0];
+  const canonicalURL = `https://lol-simulation.vercel.app/${p}`.split('?')[0];
   return (
     <Head>
       <>
-        {/* <link rel="icon" href="/pxd_favi.png" /> */}
-        {/* <link rel="canonical" href={canonicalURL} /> */}
+        <link rel="icon" href="/images/hextech_chest.png" />
+        <link rel="canonical" href={canonicalURL} />
         <title>{title}</title>
         {children}
         {metaObj && metaParser(metaObj)}
