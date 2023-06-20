@@ -17,15 +17,16 @@ export default function Images({ height, src, width, className, onClick, style, 
       src={`${src}`}
       loader={loader}
       alt={src}
-      quality={100}
+      quality={20}
       width={width}
       fill={!width && !height ? true : false}
       height={height}
       onClick={onClick}
       style={{ ...style }}
       className={className}
-      loading="eager"
       priority
+      placeholder="blur"
+      blurDataURL="/"
       unoptimized
     />
   );

@@ -9,8 +9,10 @@ const nextConfig = {
   },
   assetPrefix: '',
   images: {
-    domains: ['http://ddragon.leagueoflegends.com'],
-    path: 'http://ddragon.leagueoflegends.com'
+    domains: ['https://ddragon.leagueoflegends.com'],
+    path: 'https://ddragon.leagueoflegends.com',
+    formats: ['image/webp'],
+    minimumCacheTTL: 31536000
   },
   webpack(config) {
     config.module.rules.push({
