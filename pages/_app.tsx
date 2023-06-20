@@ -8,7 +8,7 @@ import { Roboto } from 'next/font/google';
 import { ReactElement, ReactNode } from 'react';
 import MainLayout from '@components/layout/mainLayout';
 import MainHead from '@components/layout/mainHead';
-
+import { Analytics } from '@vercel/analytics/react';
 // * 폰트 설정
 const roboto = Roboto({
   weight: '400',
@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     <>
       <MainHead metaObj={MetaTag}></MainHead>
       <div className={roboto.className}>{getLayout(<Component {...pageProps} />)}</div>
+      <Analytics />
     </>
   );
 }

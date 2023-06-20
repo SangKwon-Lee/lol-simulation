@@ -25,7 +25,7 @@ export default function Home() {
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data: champ } = await axios.get(
-        `http://ddragon.leagueoflegends.com/cdn/13.12.1/data/ko_KR/champion/${randomChamp}.json`
+        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/ko_KR/champion/${randomChamp}.json`
       );
       // * 챔프 스킨 목록
       const skinArr = champ.data[randomChamp].skins;
@@ -73,7 +73,7 @@ export default function Home() {
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
               <div className={styles[`category-box`]} key={box.url}>
-                <Images src={box.url} width={70} height={70} onClick={() => handleSelectBox(box)} />
+                <Images src={box.url} width={70} height={64} onClick={() => handleSelectBox(box)} />
               </div>
             ))}
           </div>
