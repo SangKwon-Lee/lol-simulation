@@ -73,7 +73,7 @@ export default function Home() {
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
               <div className={styles[`category-box`]} key={box.url}>
-                <Images src={box.url} width={70} height={64} onClick={() => handleSelectBox(box)} />
+                <Images src={box.url} width={70} height={68} onClick={() => handleSelectBox(box)} />
               </div>
             ))}
           </div>
