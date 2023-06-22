@@ -31,6 +31,11 @@ export default function Home() {
       url: `/images/hextech_chest.png`,
       name: '마법공학 상자',
       count: 1
+    },
+    {
+      url: `/images/prestige_box.png`,
+      name: '명품 상자',
+      count: 1
     }
   ]);
   // * 확률 오픈
@@ -48,19 +53,19 @@ export default function Home() {
     },
     {
       name: '와드 스킨',
-      percent: '11.5%'
-    },
-    {
-      name: '감정 표현',
       percent: '10%'
     },
     {
+      name: '감정 표현',
+      percent: '9%'
+    },
+    {
       name: '소환사 아이콘',
-      percent: '3.5%'
+      percent: '3%'
     },
     {
       name: '신화 정수(추가)',
-      percent: '2.68%'
+      percent: '3%'
     }
   ]);
   // * 지금까지 연 상자 갯수
@@ -81,21 +86,74 @@ export default function Home() {
       return handleGetRandowEmotion();
     } else if (drawingResult === 'mythEssence') {
       return handleGetRandowMythEssence();
+    } else if (drawingResult === 'orangeEssence') {
+      return handleGetRandowOrangeEssence();
     } else {
       console.log('잘못된 경로입니다.');
     }
   };
   // * 열기 클릭할 때
   const handleDrawing = () => {
-    if (select.name === '마법공학 상자') {
-      const drawingResult = String(drawing(select.name));
-      handleDrawingLogic(drawingResult);
-    }
+    const drawingResult = String(drawing(select.name));
+    console.log(drawingResult);
+    handleDrawingLogic(drawingResult);
   };
 
   // * 상자 고르기
   const handleSelectBox = (box: any) => {
     setSelect(box);
+    if (box.name === '마법공학 상자') {
+      setProbability([
+        {
+          name: '스킨',
+          percent: '50%'
+        },
+        {
+          name: '챔피언',
+          percent: '25%'
+        },
+        {
+          name: '와드 스킨',
+          percent: '10%'
+        },
+        {
+          name: '감정 표현',
+          percent: '9%'
+        },
+        {
+          name: '소환사 아이콘',
+          percent: '3%'
+        },
+        {
+          name: '신화 정수',
+          percent: '3%'
+        }
+      ]);
+    }
+    if (box.name === '명품 상자') {
+      setProbability([
+        {
+          name: '스킨',
+          percent: '70%'
+        },
+        {
+          name: '주황 정수',
+          percent: '10%'
+        },
+        {
+          name: '와드 스킨',
+          percent: '10%'
+        },
+        {
+          name: '감정 표현',
+          percent: '6.5%'
+        },
+        {
+          name: '신화 정수(추가)',
+          percent: '3.5%'
+        }
+      ]);
+    }
   };
 
   // * 리셋 버튼
@@ -141,7 +199,27 @@ export default function Home() {
         setSkins(newSkin);
       }
     } catch (e) {
-      console.log(e);
+      const duplication = _.findIndex(skins, { name: '부활한 피들스틱' });
+      if (duplication === -1) {
+        // * 중복이 아니면 추가
+        let newSkin = {
+          url: 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_8.jpg',
+          count: 1,
+          name: '부활한 피들스틱',
+          type: 'skin'
+        };
+        setNowSkin([newSkin]);
+        setSkins([...skins, newSkin]);
+      } else {
+        // * 중복이면 count + 1
+        let newSkin = [...skins];
+        newSkin[duplication] = {
+          ...newSkin[duplication],
+          count: newSkin[duplication].count + 1
+        };
+        setNowSkin([newSkin[duplication]]);
+        setSkins(newSkin);
+      }
     } finally {
       setLoading(false);
     }
@@ -259,7 +337,7 @@ export default function Home() {
       {
         count: 1,
         name: '소환사 아이콘',
-        url: `/images/profileIcon.png`,
+        url: `/images/profileIcon.webp`,
         type: 'other'
       },
       {
@@ -298,7 +376,7 @@ export default function Home() {
       others.push({
         count: 1,
         name: '소환사 아이콘',
-        url: `/images/profileIcon.png`,
+        url: `/images/profileIcon.webp`,
         type: 'other'
       });
       setOtherList(others);
@@ -363,6 +441,31 @@ export default function Home() {
       others[duplication] = {
         ...others[duplication],
         count: others[duplication].count + 10
+      };
+      setNowSkin([others[duplication]]);
+      setOtherList(others);
+    }
+    setLoading(false);
+  };
+  const handleGetRandowOrangeEssence = async () => {
+    // * 중복 검사
+    const duplication = _.findIndex(otehrList, { name: '주황 정수' });
+    if (duplication === -1) {
+      // * 중복이 아니면 추가
+      let nowSkin = {
+        count: 525,
+        name: '주황 정수',
+        url: `/images/orange_essence.png`,
+        type: 'other'
+      };
+      setNowSkin([nowSkin]);
+      setOtherList([...otehrList, nowSkin]);
+    } else {
+      // * 중복이면 count + 1
+      let others = [...otehrList];
+      others[duplication] = {
+        ...others[duplication],
+        count: others[duplication].count + 525
       };
       setNowSkin([others[duplication]]);
       setOtherList(others);
@@ -496,6 +599,9 @@ export default function Home() {
                     {pro.name} : {pro.percent}
                   </div>
                 ))}
+            </div>
+            <div className={styles[`modal-percent`]}>
+              확률은 LOL 사이트를 참고하였으며, 약간의 차이가 있을 수 있습니다.
             </div>
             <div onClick={() => setIsModal(false)} className={styles[`modal-close`]}>
               X

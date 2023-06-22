@@ -197,6 +197,12 @@ gap:16px;
   @include s16-w400;
 }
 
+.modal-percent{
+  margin-top: 8px;
+
+  @include s14-w400;
+}
+
 .modal-close{
   position: absolute;
   right:16px;
