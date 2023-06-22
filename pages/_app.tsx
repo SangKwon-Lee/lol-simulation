@@ -30,7 +30,7 @@ const MetaTag = {
   'og:title': 'LOL Simulation',
   'og:description': 'LOL Simulation ',
   keywords:
-    'LOL Simulation, lol, simultation, 상자깡, 상자, 마법공학 상자, 마법공학, 명품상자, 주머니, 토큰'
+    'LOL Simulation, lol, simultation, 상자깡, 상자, 마법공학 상자, 마법공학, 명품상자, 주머니, 토큰, 롤 상자깡, 라구, 롤, 리그오브레전드, 열쇠, 롤 스킨, 주황정수'
 };
 
 export default function App({ Component, pageProps }: AppPropsWithLayout) {
