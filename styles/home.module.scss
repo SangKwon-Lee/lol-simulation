@@ -81,6 +81,12 @@
   @include s16-w500;
 }
 
+.open-count{
+  margin-top: 16px;
+
+  @include s14-w700
+}
+
 // * 스킨 결과
 
 .result-list{

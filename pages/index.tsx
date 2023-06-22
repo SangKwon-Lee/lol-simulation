@@ -63,10 +63,12 @@ export default function Home() {
       percent: '2.68%'
     }
   ]);
-
+  // * 지금까지 연 상자 갯수
+  const [openBoxCount, setOpenBoxCount] = useState(0);
   // * 뽑기에 따른 로직
   const handleDrawingLogic = async (drawingResult: string) => {
     setLoading(true);
+    setOpenBoxCount(() => openBoxCount + 1);
     if (drawingResult === 'skin') {
       return handleGetRandowSkin();
     } else if (drawingResult === 'champ') {
@@ -101,6 +103,7 @@ export default function Home() {
     setSkins([]);
     setOtherList([]);
     setNowSkin([]);
+    setOpenBoxCount(0);
   };
 
   const handleGetRandowSkin = async () => {
@@ -423,6 +426,7 @@ export default function Home() {
                   확률 보기
                 </button>
               </div>
+              <div className={styles[`open-count`]}>사용한 상자 수 : {openBoxCount}</div>
             </div>
           </aside>
         )}
