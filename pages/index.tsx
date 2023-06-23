@@ -1,11 +1,12 @@
-import styles from '@styles/home.module.scss';
-import Images from '@utils/images';
-import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
+import _ from 'lodash';
 import axios from 'axios';
-import { useEffect, useRef, useState } from 'react';
-import champions from '../src/json/champion.json';
-import _, { now } from 'lodash';
+import Images from '@utils/images';
 import { drawing } from '@utils/drawing';
+import styles from '@styles/home.module.scss';
+import champions from '../src/json/champion.json';
+import { useEffect, useRef, useState } from 'react';
+import { PrestigeProb, hextechProb } from '@utils/probability';
+import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 
 interface SkinType {
   url: string;
@@ -41,53 +42,31 @@ export default function Home() {
   // * 확률 오픈
   const [isModal, setIsModal] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
+
   // *마법공학 상자 확률
-  const [probability, setProbability] = useState([
-    {
-      name: '스킨',
-      percent: '50%'
-    },
-    {
-      name: '챔피언',
-      percent: '25%'
-    },
-    {
-      name: '와드 스킨',
-      percent: '10%'
-    },
-    {
-      name: '감정 표현',
-      percent: '9%'
-    },
-    {
-      name: '소환사 아이콘',
-      percent: '3%'
-    },
-    {
-      name: '신화 정수(추가)',
-      percent: '3%'
-    }
-  ]);
+  const [probability, setProbability] = useState(hextechProb);
+
   // * 지금까지 연 상자 갯수
   const [openBoxCount, setOpenBoxCount] = useState(0);
+
   // * 뽑기에 따른 로직
   const handleDrawingLogic = async (drawingResult: string) => {
     setLoading(true);
     setOpenBoxCount(() => openBoxCount + 1);
     if (drawingResult === 'skin') {
-      return handleGetRandowSkin();
+      return handleGetRandomSkin();
     } else if (drawingResult === 'champ') {
-      return handleGetRandowChamp();
+      return handleGetRandomChamp();
     } else if (drawingResult === 'profileIcon') {
-      return handleGetRandowProfile();
+      return handleGetRandomProfile();
     } else if (drawingResult === 'ward') {
-      return handleGetRandowWard();
+      return handleGetRandomWard();
     } else if (drawingResult === 'emotion') {
-      return handleGetRandowEmotion();
+      return handleGetRandomEmotion();
     } else if (drawingResult === 'mythEssence') {
-      return handleGetRandowMythEssence();
+      return handleGetRandomMythEssence();
     } else if (drawingResult === 'orangeEssence') {
-      return handleGetRandowOrangeEssence();
+      return handleGetRandomOrangeEssence();
     } else {
       console.log('잘못된 경로입니다.');
     }
@@ -103,56 +82,10 @@ export default function Home() {
   const handleSelectBox = (box: any) => {
     setSelect(box);
     if (box.name === '마법공학 상자') {
-      setProbability([
-        {
-          name: '스킨',
-          percent: '50%'
-        },
-        {
-          name: '챔피언',
-          percent: '25%'
-        },
-        {
-          name: '와드 스킨',
-          percent: '10%'
-        },
-        {
-          name: '감정 표현',
-          percent: '9%'
-        },
-        {
-          name: '소환사 아이콘',
-          percent: '3%'
-        },
-        {
-          name: '신화 정수',
-          percent: '3%'
-        }
-      ]);
+      setProbability(hextechProb);
     }
     if (box.name === '명품 상자') {
-      setProbability([
-        {
-          name: '스킨',
-          percent: '70%'
-        },
-        {
-          name: '주황 정수',
-          percent: '10%'
-        },
-        {
-          name: '와드 스킨',
-          percent: '10%'
-        },
-        {
-          name: '감정 표현',
-          percent: '6.5%'
-        },
-        {
-          name: '신화 정수(추가)',
-          percent: '3.5%'
-        }
-      ]);
+      setProbability(PrestigeProb);
     }
   };
 
@@ -164,7 +97,8 @@ export default function Home() {
     setOpenBoxCount(0);
   };
 
-  const handleGetRandowSkin = async () => {
+  // * 랜덤 스킨 뽑기
+  const handleGetRandomSkin = async () => {
     try {
       // * 랜덤으로 챔프 하나 꺼내기
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
@@ -224,7 +158,8 @@ export default function Home() {
       setLoading(false);
     }
   };
-  const handleGetRandowChamp = async () => {
+  // * 랜덤 챔프 뽑기
+  const handleGetRandomChamp = async () => {
     try {
       // * 랜덤으로 챔프 하나 꺼내기
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
@@ -260,7 +195,8 @@ export default function Home() {
       setLoading(false);
     }
   };
-  const handleGetRandowWard = async () => {
+  // * 와드 스킨 뽑기
+  const handleGetRandomWard = async () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: '와드 스킨' });
     const findEssence = _.findIndex(otehrList, { name: '주황 정수' });
@@ -329,7 +265,8 @@ export default function Home() {
 
     setLoading(false);
   };
-  const handleGetRandowProfile = async () => {
+  // * 소환사 아이콘 뽑기
+  const handleGetRandomProfile = async () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: '소환사 아이콘' });
     const findEssence = _.findIndex(otehrList, { name: '주황 정수' });
@@ -397,7 +334,8 @@ export default function Home() {
 
     setLoading(false);
   };
-  const handleGetRandowEmotion = async () => {
+  // * 감정표현 뽑기
+  const handleGetRandomEmotion = async () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: '감정 표현' });
     if (duplication === -1) {
@@ -422,7 +360,8 @@ export default function Home() {
     }
     setLoading(false);
   };
-  const handleGetRandowMythEssence = async () => {
+  // * 신화정수 10개 뽑기
+  const handleGetRandomMythEssence = async () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: '신화 정수' });
     if (duplication === -1) {
@@ -447,7 +386,8 @@ export default function Home() {
     }
     setLoading(false);
   };
-  const handleGetRandowOrangeEssence = async () => {
+  // * 주황정수 525개 뽑기
+  const handleGetRandomOrangeEssence = async () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: '주황 정수' });
     if (duplication === -1) {

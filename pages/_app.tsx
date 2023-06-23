@@ -6,9 +6,9 @@ import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import { Roboto } from 'next/font/google';
 import { ReactElement, ReactNode } from 'react';
-import MainLayout from '@components/layout/mainLayout';
 import MainHead from '@components/layout/mainHead';
 import { Analytics } from '@vercel/analytics/react';
+import MainLayout from '@components/layout/mainLayout';
 // * 폰트 설정
 const roboto = Roboto({
   weight: '400',
