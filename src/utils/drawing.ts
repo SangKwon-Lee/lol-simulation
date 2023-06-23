@@ -34,45 +34,37 @@ export const inkshadow = () => {
 
 // *롤 상자 확률
 export const hextech = () => {
-  const ranNum = Math.floor(Math.random() * 100 + 1);
-  // const gift = ['mythEssence', 'profileIcon', 'emotion', 'ward', 'champ', 'skin'];
-  const gift = ['skin', 'champ', 'emotion', 'champ', 'emotion', 'profileIcon', 'mythEssence'];
-  //확률 생성
-  // const pbt = [3, 3, 9, 10, 25, 50];
-  const pbt = [50, 75, 85, 94, 97, 100];
-  //리턴 경품 값
-  let res = '';
-  for (let i = 0; i < gift.length; i++) {
-    if (pbt[i] >= ranNum) {
-      res = gift[i];
-      return res;
-    } else if (pbt[pbt.length - 1] < ranNum) {
-      res = gift[gift.length - 1];
-      return res;
-    }
+  const spec = {
+    skin: 0.5,
+    champ: 0.25,
+    ward: 0.1,
+    emotion: 0.09,
+    profileIcon: 0.03,
+    mythEssence: 0.03
+  };
+  var i,
+    sum = 0,
+    r = Math.random();
+  for (i in spec) {
+    // @ts-ignore
+    sum += spec[i];
+    if (r <= sum) return i;
   }
-  return res;
 };
-
-// *롤 명품 상자 확률
 export const prestige = () => {
-  const ranNum = Math.floor(Math.random() * 100 + 1);
-  // const gift = ['mythEssence', 'emotion', 'orangeEssence', 'ward', 'skin'];
-  const gift = ['skin', 'ward', 'orangeEssence', 'emotion', 'mythEssence'];
-  //확률 생성\
-  console.log(ranNum);
-  // const pbt = [3.5, 6.5, 10, 10, 70];
-  const pbt = [70, 80, 90, 96.5, 100];
-  //리턴 경품 값
-  let res = '';
-  for (let i = 0; i < gift.length; i++) {
-    if (pbt[i] >= ranNum) {
-      res = gift[i];
-      return res;
-    } else if (pbt[pbt.length - 1] < ranNum) {
-      res = gift[gift.length - 1];
-      return res;
-    }
+  const spec = {
+    skin: 0.7,
+    ward: 0.1,
+    orangeEssence: 0.1,
+    emotion: 0.065,
+    mythEssence: 0.035
+  };
+  var i,
+    sum = 0,
+    r = Math.random();
+  for (i in spec) {
+    // @ts-ignore
+    sum += spec[i];
+    if (r <= sum) return i;
   }
-  return res;
 };
