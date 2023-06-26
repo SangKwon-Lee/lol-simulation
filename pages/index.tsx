@@ -30,12 +30,16 @@ export default function Home() {
     {
       url: `/images/hextech_chest.png`,
       name: '마법공학 상자',
-      count: 1
+      count: 1,
+      width: 70,
+      height: 68
     },
     {
       url: `/images/prestige_box.png`,
       name: '명품 상자',
-      count: 1
+      count: 1,
+      width: 70,
+      height: 70
     }
   ]);
   // * 확률 오픈
@@ -441,7 +445,12 @@ export default function Home() {
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
               <div className={styles[`category-box`]} key={box.url}>
-                <Images src={box.url} width={70} height={68} onClick={() => handleSelectBox(box)} />
+                <Images
+                  src={box.url}
+                  width={box.width}
+                  height={box.height}
+                  onClick={() => handleSelectBox(box)}
+                />
                 {box.count !== 1 && <div className={styles[`skin-count`]}>{box.count}</div>}
               </div>
             ))}
