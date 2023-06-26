@@ -1,3 +1,2 @@
-# start of file
-user-agent: *
-disallow: /downloads/
+User-agent: *
+Allow: /
