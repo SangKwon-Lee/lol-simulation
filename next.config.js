@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const { i18n } = require('./next-i18next.config');
+
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
@@ -26,7 +28,8 @@ const nextConfig = {
     //   '@assets': path.resolve(__dirname, 'static/assets')
     // };
     return config;
-  }
+  },
+  i18n
 };
 
 module.exports = nextConfig;

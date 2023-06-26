@@ -3,9 +3,9 @@ export const drawing = (type: string) => {
   console.log(type);
   if (type === '먹그림자라구') {
     return inkshadow();
-  } else if (type === '마법공학 상자') {
+  } else if (type === '마법공학 상자' || 'hextech chest') {
     return hextech();
-  } else if (type === '명품 상자') {
+  } else if (type === '명품 상자' || 'prestige chest') {
     return prestige();
   } else {
     hextech();

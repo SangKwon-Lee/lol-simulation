@@ -2,11 +2,14 @@ import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
 import { drawing } from '@utils/drawing';
+import { useTranslation } from 'next-i18next';
 import styles from '@styles/home.module.scss';
 import champions from '../src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
+import { useRouter } from 'next/router';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 interface SkinType {
   url: string;
   count: number;
@@ -15,6 +18,9 @@ interface SkinType {
 }
 const champList = Object.keys(champions.data);
 export default function Home() {
+  const { t } = useTranslation('common');
+  const { locale } = useRouter();
+  const dataLocale = locale === 'ko' ? 'ko_KR' : 'en_US';
   // * 로딩
   const [loading, setLoading] = useState(false);
   // * 뽑힌 스킨 목록
@@ -29,14 +35,14 @@ export default function Home() {
   const [selectBoxList, setSelectBoxList] = useState([
     {
       url: `/images/hextech_chest.png`,
-      name: '마법공학 상자',
+      name: t(`hextech`),
       count: 1,
       width: 70,
       height: 68
     },
     {
       url: `/images/prestige_box.png`,
-      name: '명품 상자',
+      name: t(`prestigeBox`),
       count: 1,
       width: 70,
       height: 70
@@ -84,10 +90,10 @@ export default function Home() {
   // * 상자 고르기
   const handleSelectBox = (box: any) => {
     setSelect(box);
-    if (box.name === '마법공학 상자') {
+    if (box.name === t(`hextech`)) {
       setProbability(hextechProb);
     }
-    if (box.name === '명품 상자') {
+    if (box.name === t(`prestigeBox`)) {
       setProbability(PrestigeProb);
     }
   };
@@ -107,7 +113,7 @@ export default function Home() {
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data: champ } = await axios.get(
-        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/ko_KR/champion/${randomChamp}.json`
+        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/${dataLocale}/champion/${randomChamp}.json`
       );
       // * 챔프 스킨 목록
       const skinArr = champ.data[randomChamp].skins;
@@ -136,13 +142,13 @@ export default function Home() {
         setSkins(newSkin);
       }
     } catch (e) {
-      const duplication = _.findIndex(skins, { name: '부활한 피들스틱' });
+      const duplication = _.findIndex(skins, { name: t(`risenFiddlesticks`) });
       if (duplication === -1) {
         // * 중복이 아니면 추가
         let newSkin = {
           url: 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_8.jpg',
           count: 1,
-          name: '부활한 피들스틱',
+          name: t(`risenFiddlesticks`),
           type: 'skin'
         };
         setNowSkin([newSkin]);
@@ -168,7 +174,7 @@ export default function Home() {
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data } = await axios.get(
-        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/ko_KR/champion/${randomChamp}.json`
+        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/${dataLocale}/champion/${randomChamp}.json`
       );
       // * 중복 챔프 검사
       const duplication = _.findIndex(otehrList, { name: data.data[randomChamp].name });
@@ -201,19 +207,19 @@ export default function Home() {
   // * 와드 스킨 뽑기
   const handleGetRandomWard = async () => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: '와드 스킨' });
-    const findEssence = _.findIndex(otehrList, { name: '주황 정수' });
+    const duplication = _.findIndex(otehrList, { name: t(`wardSkin`) });
+    const findEssence = _.findIndex(otehrList, { name: t(`orangeEssence`) });
     // * 중복이 아니면 추가
     let nowSkin = [
       {
         count: 1,
-        name: '와드 스킨',
+        name: t(`wardSkin`),
         url: `/images/ward.png`,
         type: 'other'
       },
       {
         count: 150,
-        name: '주황 정수',
+        name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       }
@@ -231,7 +237,7 @@ export default function Home() {
       };
       others.push({
         count: 150,
-        name: '주황 정수',
+        name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       });
@@ -246,7 +252,7 @@ export default function Home() {
       };
       others.push({
         count: 1,
-        name: '와드 스킨',
+        name: t(`wardSkin`),
         url: `/images/ward.png`,
         type: 'other'
       });
@@ -271,18 +277,18 @@ export default function Home() {
   // * 소환사 아이콘 뽑기
   const handleGetRandomProfile = async () => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: '소환사 아이콘' });
-    const findEssence = _.findIndex(otehrList, { name: '주황 정수' });
+    const duplication = _.findIndex(otehrList, { name: t(`profileIcon`) });
+    const findEssence = _.findIndex(otehrList, { name: t(`orangeEssence`) });
     let nowSkin = [
       {
         count: 1,
-        name: '소환사 아이콘',
+        name: t(`profileIcon`),
         url: `/images/profileIcon.webp`,
         type: 'other'
       },
       {
         count: 150,
-        name: '주황 정수',
+        name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       }
@@ -300,7 +306,7 @@ export default function Home() {
       };
       others.push({
         count: 150,
-        name: '주황 정수',
+        name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       });
@@ -315,7 +321,7 @@ export default function Home() {
       };
       others.push({
         count: 1,
-        name: '소환사 아이콘',
+        name: t(`profileIcon`),
         url: `/images/profileIcon.webp`,
         type: 'other'
       });
@@ -340,12 +346,12 @@ export default function Home() {
   // * 감정표현 뽑기
   const handleGetRandomEmotion = async () => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: '감정 표현' });
+    const duplication = _.findIndex(otehrList, { name: t(`emotion`) });
     if (duplication === -1) {
       // * 중복이 아니면 추가
       let nowSkin = {
         count: 1,
-        name: '감정 표현',
+        name: t(`emotion`),
         url: `/images/emotion.png`,
         type: 'other'
       };
@@ -366,12 +372,12 @@ export default function Home() {
   // * 신화정수 10개 뽑기
   const handleGetRandomMythEssence = async () => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: '신화 정수' });
+    const duplication = _.findIndex(otehrList, { name: t(`mythicEssence`) });
     if (duplication === -1) {
       // * 중복이 아니면 추가
       let nowSkin = {
         count: 10,
-        name: '신화 정수',
+        name: t(`mythicEssence`),
         url: `/images/mythic_essence.png`,
         type: 'other'
       };
@@ -392,12 +398,12 @@ export default function Home() {
   // * 주황정수 525개 뽑기
   const handleGetRandomOrangeEssence = async () => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: '주황 정수' });
+    const duplication = _.findIndex(otehrList, { name: t(`orangeEssence`) });
     if (duplication === -1) {
       // * 중복이 아니면 추가
       let nowSkin = {
         count: 525,
-        name: '주황 정수',
+        name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       };
@@ -441,7 +447,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <aside className={styles[`category-wrapper`]}>
-          <h2 className={styles[`category-title`]}>카테고리</h2>
+          <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
               <div className={styles[`category-box`]} key={box.url}>
@@ -460,7 +466,7 @@ export default function Home() {
         {/* 선택된 상자 */}
         {select.name && (
           <aside className={styles[`select-wrapper`]}>
-            <h2 className={styles[`category-title`]}>상자</h2>
+            <h2 className={styles[`category-title`]}>{t(`box`)}</h2>
             <div className={styles[`select-box-wrapper`]}>
               <div className={styles[`category-title`]}>{select.name}</div>
               <div className={styles[`select-box`]}>
@@ -468,16 +474,18 @@ export default function Home() {
               </div>
               <div className={styles[`open-button-wrapper`]}>
                 <button className={styles[`open-button`]} onClick={handleDrawing}>
-                  열기
+                  {t(`open`)}
                 </button>
                 <button className={styles[`open-button`]} onClick={handleReset}>
-                  리셋
+                  {t(`reset`)}
                 </button>
                 <button className={styles[`open-button`]} onClick={() => setIsModal(true)}>
-                  확률 보기
+                  {t(`percentage`)}
                 </button>
               </div>
-              <div className={styles[`open-count`]}>사용한 상자 수 : {openBoxCount}</div>
+              <div className={styles[`open-count`]}>
+                {t(`countBox`)} : {openBoxCount}
+              </div>
             </div>
           </aside>
         )}
@@ -485,7 +493,7 @@ export default function Home() {
         {/* 스킨 결과 */}
         {select.name && (
           <aside className={styles[`result-wrapper`]}>
-            <h2 className={styles[`category-title`]}>결과</h2>
+            <h2 className={styles[`category-title`]}>{t(`result`)}</h2>
             <div className={styles[`result-list`]}>
               {loading && <div style={{ width: '180px', height: '300px' }}></div>}
               {Array.isArray(nowSkin) &&
@@ -507,7 +515,7 @@ export default function Home() {
 
         {/* 기타 목록 */}
         <aside className={styles[`skin-list`]}>
-          <h2 className={styles[`category-title`]}>기타</h2>
+          <h2 className={styles[`category-title`]}>{t(`etc`)}</h2>
           <ul className={styles[`other-wrapper`]}>
             {otehrList.map((data) => (
               <li className={styles.skin} key={data.url}>
@@ -520,7 +528,7 @@ export default function Home() {
 
         {/* 스킨 목록 */}
         <aside className={styles[`skin-list`]}>
-          <h2 className={styles[`category-title`]}>스킨</h2>
+          <h2 className={styles[`category-title`]}>{t(`skin`)}</h2>
           <ul className={styles[`list-wrapper`]}>
             {skins.map((data) => (
               <li className={styles.skin} key={data.url}>
@@ -538,7 +546,7 @@ export default function Home() {
         </aside>
         {isModal && (
           <div ref={modalRef} className={styles.modal}>
-            <div className={styles[`modal-title`]}>확률</div>
+            <div className={styles[`modal-title`]}>{t(`percentage`)}</div>
             <div className={styles[`modal-wrapper`]}>
               {Array.isArray(probability) &&
                 probability.length > 0 &&
@@ -548,9 +556,7 @@ export default function Home() {
                   </div>
                 ))}
             </div>
-            <div className={styles[`modal-percent`]}>
-              확률은 LOL 사이트를 참고하였으며, 약간의 차이가 있을 수 있습니다.
-            </div>
+            <div className={styles[`modal-percent`]}>{t(`refer`)}</div>
             <div onClick={() => setIsModal(false)} className={styles[`modal-close`]}>
               X
             </div>
@@ -560,3 +566,11 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps = async ({ locale }: { locale: string }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common']))
+    }
+  };
+};
