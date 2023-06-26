@@ -7,7 +7,6 @@ import champions from '../src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
-
 interface SkinType {
   url: string;
   count: number;
