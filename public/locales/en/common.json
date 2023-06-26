@@ -5,16 +5,17 @@
   "reset":"reset",
   "percentage":"percentage",
   "countBox":"number of boxes used",
-  "result":"result",
+  "result":"Result",
   "etc":"Etc",
   "skin":"Skin",
   "refer":"refer to LOL site",
-  "hextech":"hextech chest",
-  "prestigeBox":"prestige chest",
+  "hextech":"Hextech Chest",
+  "prestigeBox":"Prestige Chest",
   "risenFiddlesticks":"Risen Fiddlesticks",
   "wardSkin":"ward skin",
   "orangeEssence":"Orange Essence",
   "profileIcon":"Profile Icon",
   "emotion":"Emotion",
-  "mythicEssence":"Mythic Essence"
+  "mythicEssence":"Mythic Essence",
+  "champ":"champion"
 }

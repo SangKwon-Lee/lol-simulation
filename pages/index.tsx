@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
+import { useRouter } from 'next/router';
 import { drawing } from '@utils/drawing';
 import { useTranslation } from 'next-i18next';
 import styles from '@styles/home.module.scss';
@@ -8,7 +9,6 @@ import champions from '../src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
-import { useRouter } from 'next/router';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 interface SkinType {
   url: string;
@@ -83,7 +83,6 @@ export default function Home() {
   // * 열기 클릭할 때
   const handleDrawing = () => {
     const drawingResult = String(drawing(select.name));
-    console.log(drawingResult);
     handleDrawingLogic(drawingResult);
   };
 
@@ -552,7 +551,7 @@ export default function Home() {
                 probability.length > 0 &&
                 probability.map((pro) => (
                   <div className={styles[`modal-text`]} key={pro.name}>
-                    {pro.name} : {pro.percent}
+                    {t(pro.name)} : {pro.percent}
                   </div>
                 ))}
             </div>

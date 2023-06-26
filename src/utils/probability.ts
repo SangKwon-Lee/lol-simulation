@@ -1,49 +1,49 @@
 export const hextechProb = [
   {
-    name: '스킨',
+    name: 'skin',
     percent: '50%'
   },
   {
-    name: '챔피언',
+    name: 'champ',
     percent: '25%'
   },
   {
-    name: '와드 스킨',
+    name: 'wardSkin',
     percent: '10%'
   },
   {
-    name: '감정 표현',
+    name: 'emotion',
     percent: '9%'
   },
   {
-    name: '소환사 아이콘',
+    name: 'profileIcon',
     percent: '3%'
   },
   {
-    name: '신화 정수(추가)',
+    name: 'mythicEssence',
     percent: '3%'
   }
 ];
 
 export const PrestigeProb = [
   {
-    name: '스킨',
+    name: 'skin',
     percent: '70%'
   },
   {
-    name: '주황 정수',
+    name: 'orangeEssence',
     percent: '10%'
   },
   {
-    name: '와드 스킨',
+    name: 'wardSkin',
     percent: '10%'
   },
   {
-    name: '감정 표현',
+    name: 'emotion',
     percent: '6.5%'
   },
   {
-    name: '신화 정수(추가)',
+    name: 'mythicEssence',
     percent: '3.5%'
   }
 ];
