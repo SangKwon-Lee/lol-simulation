@@ -18,7 +18,6 @@ interface SkinType {
 }
 const champList = Object.keys(champions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
-console.log(version);
 export default function Home() {
   const { locale } = useRouter();
   const { t } = useTranslation('common');
@@ -79,7 +78,6 @@ export default function Home() {
     } else if (drawingResult === 'orangeEssence') {
       return handleGetRandomOrangeEssence();
     } else {
-      console.log('잘못된 경로입니다.');
     }
   };
   // * 열기 클릭할 때

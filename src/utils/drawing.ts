@@ -1,6 +1,5 @@
 // *전체 뽑기 관리
 export const drawing = (type: string) => {
-  console.log(type);
   if (type === '먹그림자라구') {
     return inkshadow();
   } else if (type === '마법공학 상자' || 'hextech chest') {
