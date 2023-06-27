@@ -18,8 +18,8 @@ interface SkinType {
 }
 const champList = Object.keys(champions.data);
 export default function Home() {
-  const { t } = useTranslation('common');
   const { locale } = useRouter();
+  const { t } = useTranslation('common');
   const dataLocale = locale === 'ko' ? 'ko_KR' : 'en_US';
   // * 로딩
   const [loading, setLoading] = useState(false);
