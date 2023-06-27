@@ -17,6 +17,8 @@ interface SkinType {
   type: string;
 }
 const champList = Object.keys(champions.data);
+const version = process.env.NEXT_PUBLIC_VERSION;
+console.log(version);
 export default function Home() {
   const { locale } = useRouter();
   const { t } = useTranslation('common');
@@ -112,7 +114,7 @@ export default function Home() {
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data: champ } = await axios.get(
-        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/${dataLocale}/champion/${randomChamp}.json`
+        `https://ddragon.leagueoflegends.com/cdn/${version}/data/${dataLocale}/champion/${randomChamp}.json`
       );
       // * 챔프 스킨 목록
       const skinArr = champ.data[randomChamp].skins;
@@ -173,7 +175,7 @@ export default function Home() {
       const randomChamp = champList[Math.floor(Math.random() * champList.length)];
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data } = await axios.get(
-        `https://ddragon.leagueoflegends.com/cdn/13.12.1/data/${dataLocale}/champion/${randomChamp}.json`
+        `https://ddragon.leagueoflegends.com/cdn/${version}/data/${dataLocale}/champion/${randomChamp}.json`
       );
       // * 중복 챔프 검사
       const duplication = _.findIndex(otehrList, { name: data.data[randomChamp].name });
