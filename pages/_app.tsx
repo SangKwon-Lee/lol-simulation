@@ -45,7 +45,7 @@ const MetaTag = {
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => <MainLayout>{page}</MainLayout>);
 
-  // GA 설정 시작
+  // GA 설정
   const router = useRouter();
   useEffect(() => {
     const handleRouteChange = (url: any) => {
@@ -58,12 +58,10 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
       router.events.off('hashChangeComplete', handleRouteChange);
     };
   }, [router.events]);
-  // GA 설정 끝
 
   return (
     <>
       {/* GA 설정 시작 */}
-      {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
@@ -82,7 +80,6 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
       `
         }}
       />
-      {/* GA 설정 끝 */}
       {/* GTM */}
       <Script
         id="gtm"
@@ -102,5 +99,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   );
 };
 
-// export default App;
 export default appWithTranslation(App);

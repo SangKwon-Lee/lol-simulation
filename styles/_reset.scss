@@ -196,29 +196,3 @@ a {
   -webkit-mask-image: radial-gradient(white, black);
   mask-image: radial-gradient(white, black);
 }
-
-/* stylelint-disable-next-line selector-id-pattern */
-// #__next {
-//   background-color: $white;background-colorbackground-color
-// }
-
-
-
-// * 노션 css 커스텀
-.notion-page-scroller{
-  background-color: #{$bg-color} !important;
-}
-
-.dark-mode{
-  background: #151A20 !important;
-
-  --bg-color:#151A20 !important;
-}
-
-.notion-full-page{
-  padding-bottom:64px !important;
-}
-
-.notion-app{
-  width:100%
-}

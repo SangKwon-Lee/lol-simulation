@@ -449,13 +449,12 @@ export default function Home() {
           <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
-              <div className={styles[`category-box`]} key={box.url}>
-                <Images
-                  src={box.url}
-                  width={box.width}
-                  height={box.height}
-                  onClick={() => handleSelectBox(box)}
-                />
+              <div
+                className={styles[`category-box`]}
+                key={box.url}
+                onClick={() => handleSelectBox(box)}
+              >
+                <Images src={box.url} width={box.width} height={box.height} />
                 {box.count !== 1 && <div className={styles[`skin-count`]}>{box.count}</div>}
               </div>
             ))}
