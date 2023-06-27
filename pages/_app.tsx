@@ -2,17 +2,22 @@
 import '@styles/theme.scss';
 import '@styles/_reset.scss';
 import '@styles/_variables.scss';
+
+// * next
 import { NextPage } from 'next';
 import Script from 'next/script';
-import * as gtag from '@src/lib/gtag';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { Roboto } from 'next/font/google';
 import { appWithTranslation } from 'next-i18next';
-import MainHead from '@components/layout/mainHead';
 import { Analytics } from '@vercel/analytics/react';
-import MainLayout from '@components/layout/mainLayout';
 import { ReactElement, ReactNode, useEffect } from 'react';
+
+// * components
+import * as gtag from '@src/lib/gtag';
+import MainHead from '@components/layout/mainHead';
+import MainLayout from '@components/layout/mainLayout';
+
 // * 폰트 설정
 const roboto = Roboto({
   weight: '400',
@@ -71,13 +76,12 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${gtag.GA_TRACKING_ID}', {
-          page_path: window.location.pathname,
-        });
-      `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+            page_path: window.location.pathname,
+            });`
         }}
       />
       {/* GTM */}
@@ -86,12 +90,12 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-T4RPP26');`
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-T4RPP26');`
         }}
-      ></Script>
+      />
       <MainHead metaObj={MetaTag}></MainHead>
       <div className={roboto.className}>{getLayout(<Component {...pageProps} />)}</div>
       <Analytics />
