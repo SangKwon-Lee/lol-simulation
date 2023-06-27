@@ -445,7 +445,7 @@ export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <aside className={styles[`category-wrapper`]}>
+        <section className={styles[`category-wrapper`]}>
           <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
           <div className={styles[`category-box-wrapper`]}>
             {selectBoxList.map((box) => (
@@ -459,11 +459,11 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </aside>
+        </section>
 
         {/* 선택된 상자 */}
         {select.name && (
-          <aside className={styles[`select-wrapper`]}>
+          <section className={styles[`select-wrapper`]}>
             <h2 className={styles[`category-title`]}>{t(`box`)}</h2>
             <div className={styles[`select-box-wrapper`]}>
               <div className={styles[`category-title`]}>{select.name}</div>
@@ -485,12 +485,12 @@ export default function Home() {
                 {t(`countBox`)} : {openBoxCount}
               </div>
             </div>
-          </aside>
+          </section>
         )}
 
         {/* 스킨 결과 */}
         {select.name && (
-          <aside className={styles[`result-wrapper`]}>
+          <section className={styles[`result-wrapper`]}>
             <h2 className={styles[`category-title`]}>{t(`result`)}</h2>
             <div className={styles[`result-list`]}>
               {loading && <div style={{ width: '180px', height: '300px' }}></div>}
@@ -508,11 +508,11 @@ export default function Home() {
                   </div>
                 ))}
             </div>
-          </aside>
+          </section>
         )}
 
         {/* 기타 목록 */}
-        <aside className={styles[`skin-list`]}>
+        <section className={styles[`skin-list`]}>
           <h2 className={styles[`category-title`]}>{t(`etc`)}</h2>
           <ul className={styles[`other-wrapper`]}>
             {otehrList.map((data) => (
@@ -522,10 +522,10 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </aside>
+        </section>
 
         {/* 스킨 목록 */}
-        <aside className={styles[`skin-list`]}>
+        <section className={styles[`skin-list`]}>
           <h2 className={styles[`category-title`]}>{t(`skin`)}</h2>
           <ul className={styles[`list-wrapper`]}>
             {skins.map((data) => (
@@ -541,7 +541,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </aside>
+        </section>
         {isModal && (
           <div ref={modalRef} className={styles.modal}>
             <div className={styles[`modal-title`]}>{t(`percentage`)}</div>
