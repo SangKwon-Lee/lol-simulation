@@ -3,13 +3,16 @@ import '@styles/theme.scss';
 import '@styles/_reset.scss';
 import '@styles/_variables.scss';
 import { NextPage } from 'next';
+import * as gtag from '@src/lib/gtag';
 import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import { Roboto } from 'next/font/google';
-import { ReactElement, ReactNode } from 'react';
+import { appWithTranslation } from 'next-i18next';
 import MainHead from '@components/layout/mainHead';
 import { Analytics } from '@vercel/analytics/react';
 import MainLayout from '@components/layout/mainLayout';
-import { appWithTranslation } from 'next-i18next';
+import { ReactElement, ReactNode, useEffect } from 'react';
+import Script from 'next/script';
 // * 폰트 설정
 const roboto = Roboto({
   weight: '400',
@@ -42,8 +45,44 @@ const MetaTag = {
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => <MainLayout>{page}</MainLayout>);
 
+  // GA 설정 시작
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url: any) => {
+      gtag.pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on('hashChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('hashChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+  // GA 설정 끝
+
   return (
     <>
+      {/* GA 설정 시작 */}
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${gtag.GA_TRACKING_ID}', {
+          page_path: window.location.pathname,
+        });
+      `
+        }}
+      />
+      {/* GA 설정 끝 */}
       <MainHead metaObj={MetaTag}></MainHead>
       <div className={roboto.className}>{getLayout(<Component {...pageProps} />)}</div>
       <Analytics />
