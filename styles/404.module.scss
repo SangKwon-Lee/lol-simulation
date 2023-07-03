@@ -1,0 +1,30 @@
+@use "./variables.scss" as *;
+
+
+.main{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.text{
+  @include s20-w700;
+}
+
+.button-wrapper{
+  display: flex;
+  gap:16px;
+}
+
+.button{
+  padding: 4px 16px;
+  border: 1px solid #{$text-color};
+  border-radius: 4px;
+  margin-top: 32px;
+  color:#{$text-color};
+
+  @include s20-w700;
+}

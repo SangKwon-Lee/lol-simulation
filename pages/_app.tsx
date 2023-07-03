@@ -11,7 +11,7 @@ import { useRouter } from 'next/router';
 import { Roboto } from 'next/font/google';
 import { appWithTranslation } from 'next-i18next';
 import { Analytics } from '@vercel/analytics/react';
-import { ReactElement, ReactNode, useEffect } from 'react';
+import { ReactElement, ReactNode, useEffect, useState } from 'react';
 
 // * components
 import * as gtag from '@src/lib/gtag';
@@ -33,23 +33,15 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
 };
 
-// * 메타 태그 설정
-const MetaTag = {
-  description: 'LOL Simulation',
-  'og:title': 'LOL Simulation',
-  'og:description': 'LOL Simulation',
-  'og:url': 'https://lol-simulation.site',
-  'og:image:alt': '마법공학 상자',
-  'og:type': 'website',
-  'og:site_name': 'LOL Simulation',
-  'og:image': '/images/hextech_chest.png',
-  keywords:
-    'LOL Simulation, lol, simultation,롤 시뮬레이션, 롤 상자깡 시뮬레이션, 롤 상자깡,시뮬레이션, 게임 시뮬레이션, 시뮬레이터, 롤 시뮬레이터, 상자깡, 상자, 마법공학 상자, 마법공학, 명품상자, 주머니, 토큰, 롤 상자깡, 라구, 롤, 리그오브레전드, 열쇠, 롤 스킨, 주황정수, 라구깡, 신스킨, 롤 신스킨, 먹그림자라구, 먹그림자라구깡, 롤 패스, kda, 프레스티지, 프레스티지 신스킨, 롤 스킨 목록,prestige, prestige box, prestige chest, hextech, hextech chest, lol skin, lol skin list, new lol skin, lol ward skin, lol profile icon, lol, 리그오브레전드, leagueoflegends, 롤 패치, 롤 신챔, Naafiri, 나피리, 페이커, faker'
-};
+declare global {
+  interface Window {
+    Kakao: any;
+  }
+}
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => <MainLayout>{page}</MainLayout>);
-
+  const [hydrated, setHydrated] = useState(false);
   // GA 설정
   const router = useRouter();
   useEffect(() => {
@@ -63,6 +55,13 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
       router.events.off('hashChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+  if (!hydrated) {
+    return null;
+  }
 
   return (
     <>
@@ -96,7 +95,6 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
             })(window,document,'script','dataLayer','GTM-T4RPP26');`
         }}
       />
-      <MainHead metaObj={MetaTag}></MainHead>
       <div className={roboto.className}>{getLayout(<Component {...pageProps} />)}</div>
       <Analytics />
     </>

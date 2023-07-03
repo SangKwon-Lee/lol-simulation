@@ -5,7 +5,9 @@ import { useRouter } from 'next/router';
 import { drawing } from '@utils/drawing';
 import { useTranslation } from 'next-i18next';
 import styles from '@styles/home.module.scss';
-import champions from '../src/json/champion.json';
+import { HomeMetaTag } from '@utils/metaTag';
+import champions from '@src/json/champion.json';
+import MainHead from '@components/layout/mainHead';
 import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
@@ -442,8 +444,31 @@ export default function Home() {
     };
   });
 
+  // * 카카오톡 공유하기
+  useEffect(() => {
+    if (!window.Kakao.isInitialized()) {
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+    }
+  }, []);
+  const onClick = () => {
+    const { Kakao } = window;
+    Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '롤 시뮬레이션',
+        description: '롤 상자깡 시뮬레이션',
+        imageUrl: 'https://ddragon.leagueoflegends.com/cdn/13.13.1/img/profileicon/4661.png',
+        link: {
+          mobileWebUrl: 'https://lol-simulation.site',
+          webUrl: 'https://lol-simulation.site'
+        }
+      }
+    });
+  };
+
   return (
     <>
+      <MainHead metaObj={HomeMetaTag}></MainHead>
       <main className={styles.main}>
         <section className={styles[`category-wrapper`]}>
           <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
@@ -560,6 +585,9 @@ export default function Home() {
             </div>
           </div>
         )}
+        <button className={styles.share} onClick={onClick}>
+          카카오톡 공유하기
+        </button>
       </main>
     </>
   );

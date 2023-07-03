@@ -18,5 +18,14 @@
   "emotion":"Emotion",
   "mythicEssence":"Mythic Essence",
   "champ":"champion",
-  "welcome":"Welcome to Summoner's Rift"
+  "welcome":"Welcome to Summoner's Rift",
+  "name":"name",
+  "sex":"sex",
+  "male":"male",
+  "female":"female",
+  "age":"age",
+  "confirm":"confirm",
+  "notSave":"The information you entered will not be saved",
+  "again":"again",
+  "coupleResult": "The best champion to date with {{_name}} is {{_champ}}!"
 }

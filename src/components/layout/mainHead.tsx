@@ -10,16 +10,16 @@ type Props = {
   metaObj?: MetaObjType;
 };
 
-export default function MainHead({ title = 'LOL Simulation', children, metaObj }: Props) {
+export default function MainHead({ title, children, metaObj }: Props) {
   const router = useRouter();
   const p = router.asPath.slice(1);
-  const canonicalURL = `https://lol-simulation.vercel.app/${p}`.split('?')[0];
+  const canonicalURL = `https://lol-simulation.site/${p}`.split('?')[0];
   return (
     <Head>
       <>
-        <link rel="icon" href="/images/hextech_chest.png" />
+        <link rel="icon" href={metaObj?.['og:image']} />
         <link rel="canonical" href={canonicalURL} />
-        <title>{title}</title>
+        <title>{metaObj?.['og:title']}</title>
         {children}
         {metaObj && metaParser(metaObj)}
       </>

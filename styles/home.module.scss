@@ -212,3 +212,13 @@ gap:16px;
 
   cursor: pointer;
 }
+
+// 404
+.share{
+  padding:8px 16px;
+  border:1px solid #{$text-color};
+  margin-top: 16px;
+  color:#{$text-color};
+
+  @include s16-w500;
+}

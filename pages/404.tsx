@@ -1,21 +1,23 @@
+import { useRouter } from 'next/router';
+import styles from '@styles/404.module.scss';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 export default function NotFound() {
+  const router = useRouter();
   const { t } = useTranslation('common');
   return (
-    <main
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        paddingTop: '36px'
-      }}
-    >
-      <div style={{ fontSize: '32px' }}>{t(`welcome`)}</div>
-      <div style={{ fontSize: '32px' }}>404 Not Found</div>
+    <main className={styles[`main`]}>
+      <div className={styles[`text`]}>{t(`welcome`)}</div>
+      <div className={styles[`text`]}>404 Not Found</div>
+      <div className={styles[`button-wrapper`]}>
+        <button className={styles[`button`]} onClick={() => router.push(`/`)}>
+          상자깡
+        </button>
+        <button className={styles[`button`]} onClick={() => router.push(`/couple`)}>
+          롤 연애 상대 찾기
+        </button>
+      </div>
     </main>
   );
 }

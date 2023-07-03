@@ -18,5 +18,15 @@
   "emotion":"감정 표현",
   "mythicEssence":"신화 정수",
   "champ":"챔피언",
-  "welcome":"소환사의 협곡에 오신 것을 환영합니다"
+  "welcome":"소환사의 협곡에 오신 것을 환영합니다",
+  "name":"이름",
+  "sex":"성별",
+  "male":"남자",
+  "female":"여자",
+  "age":"나이",
+  "confirm":"확인",
+  "notSave":"입력하신 정보는 저장되지 않습니다.",
+  "again":"다시하기",
+  "coupleResult": "{{_name}}님과 연애하기 가장 좋은 챔피언은 {{_champ}}입니다!"
 }
+

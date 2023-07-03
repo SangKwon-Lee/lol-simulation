@@ -1,0 +1,122 @@
+@use "./variables.scss" as *;
+
+.main{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  background-color: #040A14;
+}
+
+.title{
+   @include s28-w700;
+}
+
+// * Input
+.input-section{
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:8px
+}
+
+.input-title{
+  @include s16-w700;
+}
+
+.input{
+  padding:6px !important;
+  border: 2px solid #{$text-color} !important;
+  border-radius: 4px !important;
+}
+
+.input-button{
+  padding:4px;
+  border: 2px solid #{$text-color};
+  border-radius: 4px;
+  color: #{$text-color};
+
+  @include s16-w400;
+}
+
+
+.input-button-active{
+  padding:4px;
+  border: 2px solid#{$text-color};
+  border-radius: 4px;
+  background-color: #{$text-color};
+  color: black;
+
+  @include s16-w400;
+}
+
+.input-confirm{
+  padding:4px;
+  border: 2px solid #{$text-color};
+  border-radius: 4px;
+  color: #{$text-color};
+
+  @include s20-w700;
+}
+
+
+.result-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+// * 결과
+.sub-title{
+  @include s20-w700;
+
+}
+
+.result-text{
+  margin-bottom: 16px;
+
+  @include s20-w700;
+}
+
+.champ-name{
+  margin-top: 16px;
+
+  @include s20-w700;
+}
+
+.lore{
+  margin-top: 32px;
+
+  @include s18-w400;
+
+}
+
+.reset-button{
+  padding:8px 16px;
+  border:1px solid #{$text-color};
+  margin-top: 16px;
+  color:#{$text-color};
+
+  @include s16-w500;
+}
+
+// * 카카오톡 공유하기
+
+.share{
+  padding:8px 16px;
+  border:1px solid #{$text-color};
+  margin-top: 16px;
+  color:#{$text-color};
+
+  @include s16-w500;
+}

@@ -1,0 +1,3091 @@
+{
+  "type": "champion",
+  "format": "standAloneComplex",
+  "version": "13.12.1",
+  "data": {
+    "Ahri": {
+      "version": "13.12.1",
+      "id": "Ahri",
+      "key": "103",
+      "name": "아리",
+      "title": "구미호",
+      "blurb": "영혼 세계의 마법과 선천적으로 연결된 아리는 먹잇감의 감정을 조종하고 정수를 집어삼킬 수 있는 여우 모습의 바스타야로, 영혼을 먹어 치울 때마다 그 안에 담긴 지혜와 기억의 편린을 받아들인다. 강력하면서도 불안정한 포식자였던 아리는 이제 조상들의 흔적을 찾아 세상을 여행하며 지금껏 훔친 기억을 버리고 스스로 자신만의 추억을 쌓으려 한다.",
+      "info": {
+        "attack": 3,
+        "defense": 4,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Ahri.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 590,
+        "hpperlevel": 96,
+        "mp": 418,
+        "mpperlevel": 25,
+        "movespeed": 330,
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.6,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.668
+      }
+    },
+    "Akali": {
+      "version": "13.12.1",
+      "id": "Akali",
+      "key": "84",
+      "name": "아칼리",
+      "title": "섬기는 이 없는 암살자",
+      "blurb": "킨코우 결사단과 그림자의 권이라는 지위를 버린 아칼리는 아이오니아인들에게 필요한 강력한 무기가 되어 홀로 싸우고 있다. 스승 쉔의 가르침을 잊지 않은 채 아이오니아의 적을 하나씩 암살하기로 맹세했다. 아칼리의 살행은 은밀할지 모르나 그녀의 메시지는 대륙 전체를 뒤흔든다. ''경외하라. 나는 섬기는 이 없는 암살자다.''",
+      "info": {
+        "attack": 5,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Akali.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 96,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "partype": "기력",
+      "stats": {
+        "hp": 570,
+        "hpperlevel": 119,
+        "mp": 200,
+        "mpperlevel": 0,
+        "movespeed": 345,
+        "armor": 23,
+        "armorperlevel": 4.7,
+        "spellblock": 37,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 3.2,
+        "attackspeed": 0.625
+      }
+    },
+    "Anivia": {
+      "version": "13.12.1",
+      "id": "Anivia",
+      "key": "34",
+      "name": "애니비아",
+      "title": "얼음불사조",
+      "blurb": "애니비아는 삶과 죽음, 부활을 끊임없이 반복하며 프렐요드를 지키는 날개 달린 반신이다. 매섭기 짝이 없는 얼음과 칼바람에서 태어났으며, 이런 자연의 힘을 자유자재로 이용하여 자신의 고향땅을 어지럽히려 드는 무모한 자들을 응징한다. 혹한의 북쪽에 터를 잡은 부족들에게 애니비아는 그들을 이끌고 보호하는 자애로운 존재로, 희망의 상징이자 크나큰 변화를 가져오는 징조로 숭배를 받는다. 애니비아는 전장에서 죽음을 두려워하지 않고 전력을 다해 싸운다. 자신을...",
+      "info": {
+        "attack": 1,
+        "defense": 4,
+        "magic": 10,
+        "difficulty": 10
+      },
+      "image": {
+        "full": "Anivia.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 550,
+        "hpperlevel": 92,
+        "mp": 495,
+        "mpperlevel": 45,
+        "movespeed": 325,
+        "armor": 21,
+        "armorperlevel": 4.9,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 600,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 51,
+        "attackdamageperlevel": 3.2,
+        "attackspeedperlevel": 1.68,
+        "attackspeed": 0.625
+      }
+    },
+    "Annie": {
+      "version": "13.12.1",
+      "id": "Annie",
+      "key": "1",
+      "name": "애니",
+      "title": "어둠의 아이",
+      "blurb": "순수함 속에 아이답지 않은 위험한 모습을 간직한 애니는 불을 다루는 강력한 마법사다. 녹서스 북부의 산속에서 그림자처럼 숨어 지내면서도 그녀의 마법은 두각을 드러냈다. 아기였을 때부터 예측할 수 없는 감정의 분출과 함께 타고난 화염 친화성을 보인 애니는 곧 이런 '재주'를 제어할 수 있게 되었다. 그 중 사랑하는 곰 인형 '티버'를 열렬한 수호자로 소환하는 것을 가장 좋아한다. 끝 모를 동심을 품은 애니는 언제나 어두운 숲을 거닐며 같이 놀 누군가를...",
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 10,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Annie.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 560,
+        "hpperlevel": 102,
+        "mp": 418,
+        "mpperlevel": 25,
+        "movespeed": 335,
+        "armor": 19,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 625,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 50,
+        "attackdamageperlevel": 2.65,
+        "attackspeedperlevel": 1.36,
+        "attackspeed": 0.579
+      }
+    },
+    "Ashe": {
+      "version": "13.12.1",
+      "id": "Ashe",
+      "key": "22",
+      "name": "애쉬",
+      "title": "서리 궁수",
+      "blurb": "아바로사 부족의 냉기의 화신이자 전쟁의 어머니인 애쉬는 북방에서 가장 규모가 큰 군단을 이끌고 있다. 절제력이 뛰어나고 총명한데다 이상주의적인 면을 갖추고 있지만 지도자라는 역할을 부담스러워하기도 한다. 고대 마법의 힘이 흐르는 혈통을 이어받았기에 얼음 정수의 활을 무기로 사용할 수 있다. 아바로사 부족민들은 애쉬가 전설 속 영웅 아바로사 여왕의 화신이라고 굳게 믿으며, 애쉬는 이들과 함께 먼 옛날 자신의 부족이 살았던 영토를 되찾아 다시 한 번...",
+      "info": {
+        "attack": 7,
+        "defense": 3,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Ashe.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 640,
+        "hpperlevel": 101,
+        "mp": 280,
+        "mpperlevel": 35,
+        "movespeed": 325,
+        "armor": 26,
+        "armorperlevel": 4.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 600,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 7,
+        "mpregenperlevel": 0.65,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.95,
+        "attackspeedperlevel": 3.33,
+        "attackspeed": 0.658
+      }
+    },
+    "Belveth": {
+      "version": "13.12.1",
+      "id": "Belveth",
+      "key": "200",
+      "name": "벨베스",
+      "title": "공허의 여제",
+      "blurb": "잡아먹힌 도시를 재료로 만들어진 사악한 여제 벨베스는 룬테라의 종말이자, 자신이 만든 끔찍한 현실의 시작이기도 하다. 그녀는 지상 세계의 바뀐 역사와 지식, 기억의 시대에 힘입어 새로운 경험과 감정에 대한 갈망을 채우고, 마주치는 모든 것을 집어삼킨다. 하지만 하나의 세계만으로 굶주림을 채우지 못한 벨베스는 공허의 옛 주인들에게 눈을 돌린다...",
+      "info": {
+        "attack": 4,
+        "defense": 2,
+        "magic": 7,
+        "difficulty": 10
+      },
+      "image": {
+        "full": "Belveth.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "partype": "",
+      "stats": {
+        "hp": 610,
+        "hpperlevel": 99,
+        "mp": 60,
+        "mpperlevel": 0,
+        "movespeed": 340,
+        "armor": 32,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 175,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 60,
+        "attackdamageperlevel": 1.5,
+        "attackspeedperlevel": 0,
+        "attackspeed": 0.85
+      }
+    },
+    "Caitlyn": {
+      "version": "13.12.1",
+      "id": "Caitlyn",
+      "key": "51",
+      "name": "케이틀린",
+      "title": "필트오버의 보안관",
+      "blurb": "필트오버 제일가는 평화 수호자로 명성이 자자한 케이틀린은 이 도시에서 가장 뛰어난 명사수이기도 하다. 그 잡기 어렵다는 필트오버의 범죄 조직들도 그녀의 손에 소탕되었다. 케이틀린은 주로 바이와 짝을 이루어, 바이의 불같은 성미를 자신의 냉철함으로 보완하며 멋진 콤비로 활약한다. 케이틀린의 마법공학 소총이 독보적으로 우수한 성능인 것은 사실이지만, 정작 케이틀린의 가장 강력한 무기는 따로 있다. 필트오버에서 활개칠 생각을 할 정도로 무모한 범죄자를...",
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 2,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Caitlyn.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 336,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 580,
+        "hpperlevel": 107,
+        "mp": 315,
+        "mpperlevel": 40,
+        "movespeed": 325,
+        "armor": 27,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 650,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 7.4,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.8,
+        "attackspeedperlevel": 4,
+        "attackspeed": 0.681
+      }
+    },
+    "Camille": {
+      "version": "13.12.1",
+      "id": "Camille",
+      "key": "164",
+      "name": "카밀",
+      "title": "강철의 그림자",
+      "blurb": "카밀은 법이라는 테두리 밖에서 활동할 수 있도록 아예 자신의 몸을 무기화해 버렸다. 우아한 엘리트 첩보원이자 페로스 가문이 배출한 최고 정보 요원인 그녀의 임무는 고도화된 필트오버와 그 하층부의 자운이 원활하게 돌아가도록 기여하는 것이다. 적응력이 뛰어나고, 정확성을 중시하므로 엉성한 기술은 반드시 정리해 버려야 할 수치로 여긴다. 마법공학 증강을 통해 최고가 되려는 노력, 그리고 자신이 품고 있는 칼만큼이나 예리한 지성을 지닌 카밀의 모습을 보면...",
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Camille.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 646,
+        "hpperlevel": 99,
+        "mp": 339,
+        "mpperlevel": 52,
+        "movespeed": 340,
+        "armor": 35,
+        "armorperlevel": 5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.8,
+        "mpregen": 8.15,
+        "mpregenperlevel": 0.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 2.5,
+        "attackspeed": 0.644
+      }
+    },
+    "Cassiopeia": {
+      "version": "13.12.1",
+      "id": "Cassiopeia",
+      "key": "69",
+      "name": "카시오페아",
+      "title": "독사의 포옹",
+      "blurb": "카시오페아는 자신의 사악한 의지대로 상대를 조종하는 치명적인 피조물이다. 녹서스의 명망 높은 뒤 쿠토 가에서 가장 아름다운 미모를 자랑하던 막내딸, 카시오페아는 고대의 힘을 찾아 슈리마 아래에 있는 지하묘실 깊은 곳으로 모험을 떠났다. 그곳에서 그녀는 소름끼치는 묘실의 수호령에게 물렸고, 몸에 독이 퍼져 독사와도 같은 포식자로 변했다. 카시오페아는 이제 밤의 장막에 숨어 교활하고 날렵하게 움직이며 사악한 시선으로 적들을 석화시킨다.",
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 10
+      },
+      "image": {
+        "full": "Cassiopeia.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 104,
+        "mp": 350,
+        "mpperlevel": 60,
+        "movespeed": 328,
+        "armor": 18,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 1.5,
+        "attackspeed": 0.647
+      }
+    },
+    "Diana": {
+      "version": "13.12.1",
+      "id": "Diana",
+      "key": "131",
+      "name": "다이애나",
+      "title": "차가운 달의 분노",
+      "blurb": "다이애나는 오늘날 거의 사멸된 고대 종교 '루나리'의 전사이자, 은빛 달의 화신 그 자체다. 그녀는 드높은 타곤 산 꼭대기에 떠오른 천체들의 기운을 온몸으로 받아들였고, 겨울 밤 설원처럼 은은하게 빛나는 갑옷과 초승달 검으로 무장했다. 그러나 인간을 초월한 그녀의 힘이 무엇을 위한 것인지는 아직까지 분명하지 않다. 다이애나는 이 세상에서 자신에게 부여된 사명이 무엇인지 알아내려 애쓰고 있다.",
+      "info": {
+        "attack": 7,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Diana.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 640,
+        "hpperlevel": 109,
+        "mp": 375,
+        "mpperlevel": 25,
+        "movespeed": 345,
+        "armor": 31,
+        "armorperlevel": 4.3,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.85,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.25,
+        "attackspeed": 0.625
+      }
+    },
+    "Elise": {
+      "version": "13.12.1",
+      "id": "Elise",
+      "key": "60",
+      "name": "엘리스",
+      "title": "거미 여왕",
+      "blurb": "엘리스는 녹서스 불멸의 요새 깊숙한 곳에 있는 저택에서 빛을 차단하고 은둔해 사는 치명적인 포식자다. 필멸자 시절 그녀는 명문가의 안주인이였지만 끔찍한 반신에 물린 후 매혹적이면서도 무자비한 거미와 같은 존재가 되어 먹잇감을 거미줄로 끌어들였다. 영원한 젊음을 유지하기 위해 엘리스는 거부하기 힘든 유혹을 펼치며 무고한 이들을 사냥한다.",
+      "info": {
+        "attack": 6,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 9
+      },
+      "image": {
+        "full": "Elise.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Fighter"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 650,
+        "hpperlevel": 109,
+        "mp": 324,
+        "mpperlevel": 50,
+        "movespeed": 330,
+        "armor": 30,
+        "armorperlevel": 5.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.6,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 1.75,
+        "attackspeed": 0.625
+      }
+    },
+    "Evelynn": {
+      "version": "13.12.1",
+      "id": "Evelynn",
+      "key": "28",
+      "name": "이블린",
+      "title": "고통스런 포옹",
+      "blurb": "룬테라의 어두운 경계선 안에서, 악마 이블린은 다음 먹잇감을 찾고 있다. 먼저 관능적인 인간 여성의 얼굴로 사냥감을 유혹한다. 희생자가 그 매력에 넘어오면, 이블린은 악마의 참모습을 드러낸다. 이블린은 희생자에게 말로 형언할 수 없는 고통을 안기고, 자신은 그 고통에 희열을 느낀다. 이블린이라는 악마에게는 이것이 한바탕 즐기는 유희일 뿐이지만, 룬테라 주민에게는 엇나간 욕망을 발산했다가는 그 대가로 끔찍한 종말을 맞게 되리라는 교훈을 되새겨주는...",
+      "info": {
+        "attack": 4,
+        "defense": 2,
+        "magic": 7,
+        "difficulty": 10
+      },
+      "image": {
+        "full": "Evelynn.png",
+        "sprite": "champion0.png",
+        "group": "champion",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 642,
+        "hpperlevel": 98,
+        "mp": 315,
+        "mpperlevel": 42,
+        "movespeed": 335,
+        "armor": 37,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.75,
+        "mpregen": 8.11,
+        "mpregenperlevel": 0.6,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.1,
+        "attackspeed": 0.667
+      }
+    },
+    "Fiora": {
+      "version": "13.12.1",
+      "id": "Fiora",
+      "key": "114",
+      "name": "피오라",
+      "title": "결투의 대가",
+      "blurb": "발로란을 통틀어 가장 무시무시한 데마시아 왕국의 결투가, 피오라. 푸른 강철 레이피어를 다루는 솜씨만큼이나 가차없는 태도와 재빠른 머리 회전으로 유명한 그녀는 아버지가 일으킨 스캔들로 집안의 명성이 땅에 떨어진 후 가문의 지배권을 넘겨받았다. 로렌트 가문의 명성은 더럽혀진 지 오래지만, 피오라는 가문의 명예를 되찾고 데마시아의 위대한 가문으로 일궈온 자리를 되찾기 위해 온 힘을 다하고 있다.",
+      "info": {
+        "attack": 10,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 3
+      },
+      "image": {
+        "full": "Fiora.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 620,
+        "hpperlevel": 99,
+        "mp": 300,
+        "mpperlevel": 60,
+        "movespeed": 345,
+        "armor": 33,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 3.2,
+        "attackspeed": 0.69
+      }
+    },
+    "Gwen": {
+      "version": "13.12.1",
+      "id": "Gwen",
+      "key": "887",
+      "name": "그웬",
+      "title": "신성한 재봉사",
+      "blurb": "마법의 힘으로 살아나 인간이 된 인형 그웬은 한때 자신을 만들었던 도구를 휘두른다. 발걸음을 내디딜 때마다 자신을 만든 창조자의 사랑을 느끼며 모든 것을 감사히 여긴다. 그웬이 부리는 신성한 안개는 그웬의 가위와 바늘, 실에 축복을 내린 고대의 보호 마법이다. 모든 게 새로운 것으로 가득하지만, 그웬은 망가진 세상에서 살아남은 선한 이들을 위해 기꺼이 싸우러 나선다.",
+      "info": {
+        "attack": 7,
+        "defense": 4,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Gwen.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 620,
+        "hpperlevel": 109,
+        "mp": 330,
+        "mpperlevel": 40,
+        "movespeed": 340,
+        "armor": 39,
+        "armorperlevel": 5.2,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.9,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.25,
+        "attackspeed": 0.69
+      }
+    },
+    "Illaoi": {
+      "version": "13.12.1",
+      "id": "Illaoi",
+      "key": "420",
+      "name": "일라오이",
+      "title": "크라켄의 여사제",
+      "blurb": "대 크라켄 신의 여사제, 나가카보로스 신을 섬기는 '진리의 사도' 일라오이는 건장한 체격만큼이나 굳건한 신앙심을 지녔다. 거대한 황금빛 성상을 솜인형처럼 가볍게 다루며 상대의 몸과 영혼을 분리하는 모습은 보는 이를 압도하고 적들의 얼을 빼놓기에 충분하다. 그래도 전장에서 일라오이에게 덤벼보겠다면, 바다뱀 군도의 신이 그녀와 함께 한다는 사실을 명심해야 한다.",
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Illaoi.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 656,
+        "hpperlevel": 109,
+        "mp": 300,
+        "mpperlevel": 50,
+        "movespeed": 350,
+        "armor": 35,
+        "armorperlevel": 5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 9.5,
+        "hpregenperlevel": 0.8,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 68,
+        "attackdamageperlevel": 5,
+        "attackspeedperlevel": 2.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Irelia": {
+      "version": "13.12.1",
+      "id": "Irelia",
+      "key": "39",
+      "name": "이렐리아",
+      "title": "칼날 무희",
+      "blurb": "녹서스에게 침략당한 후 아이오니아에서는 수많은 영웅이 등장했지만, 나보리 출신의 젊은 이렐리아만큼 독특한 영웅은 없다. 이렐리아는 고향 나보리에 전해 내려오는 고대의 춤을 익혔고, 아이오니아가 침략당하자 그 능력을 전쟁터에서의 기술로 삼았다. 치명적인 위력의 칼날들을 공중에 띄우고 자유자재로 조종하며 싸우는 그녀의 모습은 우아하고 신중하며 군더더기라고는 없었다. 훌륭한 투사임을 입증한 이렐리아는 원하는 바는 아니었으나 아이오니아 저항 세력을 선두에서...",
+      "info": {
+        "attack": 7,
+        "defense": 4,
+        "magic": 5,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Irelia.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 144,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 590,
+        "hpperlevel": 124,
+        "mp": 350,
+        "mpperlevel": 50,
+        "movespeed": 335,
+        "armor": 36,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 2.05,
+        "attackrange": 200,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.85,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 65,
+        "attackdamageperlevel": 4,
+        "attackspeedperlevel": 2.5,
+        "attackspeed": 0.656
+      }
+    },
+    "Janna": {
+      "version": "13.12.1",
+      "id": "Janna",
+      "key": "40",
+      "name": "잔나",
+      "title": "폭풍의 분노",
+      "blurb": "룬테라의 돌풍이라는 강력한 무기를 지닌, 그러나 모든 것이 베일에 싸인 잔나. 그녀는 이제 폐허가 되어버린 자운을 지키는 바람의 정령이다. 그런 그녀를 두고 떠도는 이야기는 많다. 그중에서 가장 그럴듯한 설은 바로 수호신으로서의 잔나. 악천후 속에서 폭풍우를 뚫고 나아가며 부디 순항할 수 있기를 기원하는 룬테라 선원들의 간구 속에서 등장했다고 여기는 것이다. 사람들은 잔나가 남다른 애정으로 자운의 선원들을 보호한다고 믿었다. 잔나와 자운, 이 둘의...",
+      "info": {
+        "attack": 3,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Janna.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 570,
+        "hpperlevel": 84,
+        "mp": 350,
+        "mpperlevel": 64,
+        "movespeed": 325,
+        "armor": 28,
+        "armorperlevel": 5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 500,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 52,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 3,
+        "attackspeed": 0.625
+      }
+    },
+    "Jinx": {
+      "version": "13.12.1",
+      "id": "Jinx",
+      "key": "222",
+      "name": "징크스",
+      "title": "난폭한 말괄량이",
+      "blurb": "자운 출신의 충동적이고 격정적인 범죄자 징크스. 난장판을 벌이는 재미로 살며, 결과 따위는 안중에 없다. 살상 무기를 다수 보유한 그녀가 떠난 자리는 화려하고 요란한 폭발로 공포의 아수라장이 된다. 징크스는 지루함을 끔찍이 싫어하고 가는 곳 어디에나 특유의 대혼란을 화끈하게 일으킨다.",
+      "info": {
+        "attack": 9,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Jinx.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 100,
+        "mp": 260,
+        "mpperlevel": 50,
+        "movespeed": 325,
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.5,
+        "mpregen": 6.7,
+        "mpregenperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.15,
+        "attackspeedperlevel": 1,
+        "attackspeed": 0.625
+      }
+    },
+    "Kaisa": {
+      "version": "13.12.1",
+      "id": "Kaisa",
+      "key": "145",
+      "name": "카이사",
+      "title": "공허의 딸",
+      "blurb": "카이사는 어린아이에 불과했을 때 공허에 끌려들어 갔지만 불굴의 의지와 집요한 노력 끝에 간신히 살아남을 수 있었다. 이때의 경험으로 카이사는 치명적인 위력의 사냥꾼이 되었다. 어떤 이들에게는 차라리 죽어서 보지 않는 게 나을 정도로 끔찍한 미래를 암시하는 징조로 여겨지기도 한다. 카이사는 이제 그녀의 두 번째 피부가 된 공허충의 껍질을 덮어쓰고 불유쾌한 공생 관계를 유지해야 하는 것은 물론, 머지않은 미래에 결단을 내려야만 한다. 자신을 괴물이라고...",
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Kaisa.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 670,
+        "hpperlevel": 102,
+        "mp": 345,
+        "mpperlevel": 40,
+        "movespeed": 335,
+        "armor": 28,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.6,
+        "attackspeedperlevel": 1.8,
+        "attackspeed": 0.644
+      }
+    },
+    "Kalista": {
+      "version": "13.12.1",
+      "id": "Kalista",
+      "key": "429",
+      "name": "칼리스타",
+      "title": "복수의 화신",
+      "blurb": "칼리스타, 영원불멸하는 복수의 화신이자 분노에 찬 응징의 혼. 그림자 군도에서 소환되는 칼리스타는 배신자와 반역자들에겐 악몽이 그 자체로 갑옷을 두르고 현실화한 듯한 존재이다. 배신당한 이들이 피맺힌 외침으로 복수를 갈망할 때, 영혼도 기꺼이 내놓겠다는 자들에겐 칼리스타의 응답이 들린다. 그 분노의 표적이 된 자는 결코 무사할 수 없다. 칼리스타는 무자비한 추격자이며, 복수의 계약을 끝낼 수 있는 것은 영혼을 꿰뚫는 창날의 차가운 불꽃뿐이기 때문이다.",
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Kalista.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 600,
+        "hpperlevel": 114,
+        "mp": 300,
+        "mpperlevel": 45,
+        "movespeed": 330,
+        "armor": 24,
+        "armorperlevel": 5.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 4,
+        "hpregenperlevel": 0.75,
+        "mpregen": 6.3,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3.25,
+        "attackspeedperlevel": 4.5,
+        "attackspeed": 0.694
+      }
+    },
+    "Karma": {
+      "version": "13.12.1",
+      "id": "Karma",
+      "key": "43",
+      "name": "카르마",
+      "title": "깨우친 자",
+      "blurb": "아이오니아의 영적인 전통을 카르마보다 잘 나타내는 필멸자가 있을까. 카르마는 지난 시간 동안 축적된 기억을 새로운 생명으로 온존하며 수없이 부활한 고대 영혼의 살아있는 현신으로, 극소수만이 깨우칠 수 있는 힘을 손에 넣었다. 최근 위기가 닥쳤을 때 최선을 다해 자신을 따르는 이들을 이끈 카르마는 자신과 자신이 그토록 아끼는 조국 모두가 상당한 대가를 치러야만 평화와 조화가 찾아오리라는 것을 알고 있다.",
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Karma.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 604,
+        "hpperlevel": 109,
+        "mp": 374,
+        "mpperlevel": 50,
+        "movespeed": 335,
+        "armor": 28,
+        "armorperlevel": 5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 13,
+        "mpregenperlevel": 0.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 51,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 2.3,
+        "attackspeed": 0.625
+      }
+    },
+    "Katarina": {
+      "version": "13.12.1",
+      "id": "Katarina",
+      "key": "55",
+      "name": "카타리나",
+      "title": "사악한 칼날",
+      "blurb": "카타리나는 단호한 판단력과 치명적인 전투 능력을 지닌 녹서스의 특급 암살자이다. 전설적인 명성을 자랑하는 뒤 쿠토 장군의 장녀로 태어난 카타리나는 방심한 적을 신속하게 암살하는 데에 뛰어난 재능을 보였다. 그녀는 자신의 불타는 야망 때문에 아군을 위험에 빠뜨리면서까지 방비를 강화한 적을 노리기도 했다. 하지만 임무가 아니더라도 카타리나는 주저없이 톱날 단검의 돌풍을 일으켜 마땅히 쓰러뜨려야 할 적을 처치할 것이다.",
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Katarina.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "partype": "없음",
+      "stats": {
+        "hp": 672,
+        "hpperlevel": 108,
+        "mp": 0,
+        "mpperlevel": 0,
+        "movespeed": 335,
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.2,
+        "attackspeedperlevel": 2.74,
+        "attackspeed": 0.658
+      }
+    },
+    "Kayle": {
+      "version": "13.12.1",
+      "id": "Kayle",
+      "key": "10",
+      "name": "케일",
+      "title": "정의로운 자",
+      "blurb": "룬 전쟁이 한창일 때 태어난 케일은 정의의 성위인 어머니의 뜻을 이어받아 신성한 불꽃의 날개를 펴고 정의를 실현하기 위해 싸웠다. 그리고 쌍둥이 동생 모르가나와 함께 데마시아의 수호자로 수년간 추앙받았다. 그러나 인간들의 반복된 실수에 환멸을 느낀 케일은 결국 데마시아를 영원히 떠나고 말았다. 불타는 검을 휘두르며 악을 심판하는 케일의 이야기는 데마시아의 전설이 되었고, 여전히 많은 이들은 케일의 재림을 간절히 바라고 있다.",
+      "info": {
+        "attack": 6,
+        "defense": 6,
+        "magic": 7,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Kayle.png",
+        "sprite": "champion1.png",
+        "group": "champion",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 670,
+        "hpperlevel": 92,
+        "mp": 330,
+        "mpperlevel": 50,
+        "movespeed": 335,
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "spellblock": 22,
+        "spellblockperlevel": 1.3,
+        "attackrange": 175,
+        "hpregen": 5,
+        "hpregenperlevel": 0.5,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 50,
+        "attackdamageperlevel": 2.5,
+        "attackspeedperlevel": 1.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Kindred": {
+      "version": "13.12.1",
+      "id": "Kindred",
+      "key": "203",
+      "name": "킨드레드",
+      "title": "영겁의 사냥꾼",
+      "blurb": "킨드레드는 따로지만 언제나 함께인 죽음의 양면을 지닌 존재다. 운명을 받아들인 자에게는 양의 화살로 빠른 죽음을 선사하고, 운명을 거부하고 도망치는 자에게는 늑대가 달려드는 잔혹한 최후를 안겨준다. 룬테라에서는 지역마다 킨드레드의 본성에 다른 의미를 부여했지만, 필멸의 존재라면 결국 진정한 죽음을 선택해야만 한다는 점은 같았다.",
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 2,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Kindred.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 610,
+        "hpperlevel": 104,
+        "mp": 300,
+        "mpperlevel": 35,
+        "movespeed": 325,
+        "armor": 29,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 500,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 65,
+        "attackdamageperlevel": 3.25,
+        "attackspeedperlevel": 3.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Leblanc": {
+      "version": "13.12.1",
+      "id": "Leblanc",
+      "key": "7",
+      "name": "르블랑",
+      "title": "환술사",
+      "blurb": "르블랑은 검은 장미단의 다른 구성원들조차도 본모습을 알지 못하는 신비로운 존재다. 사실 르블랑이라는 이름은 녹서스 건국 초기부터 사람들과 사건을 마음대로 홀리고 조작하던, 안색이 창백한 어느 여인이 갖고 있던 수많은 이름 중 하나에 불과하다. 르블랑은 마법으로 자신의 형체를 복제할 수 있으므로 누구에게든, 어디에든 모습을 드러낼 수 있으며 심지어 여러 장소에 동시에 존재할 수도 있다. 좀체로 남의 눈에 띄지 않고 진짜 정체를 아는 사람도 없기에...",
+      "info": {
+        "attack": 1,
+        "defense": 4,
+        "magic": 10,
+        "difficulty": 9
+      },
+      "image": {
+        "full": "Leblanc.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 598,
+        "hpperlevel": 111,
+        "mp": 400,
+        "mpperlevel": 55,
+        "movespeed": 340,
+        "armor": 22,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 1.4,
+        "attackspeed": 0.625
+      }
+    },
+    "Leona": {
+      "version": "13.12.1",
+      "id": "Leona",
+      "key": "89",
+      "name": "레오나",
+      "title": "여명의 빛",
+      "blurb": "솔라리 성전사 레오나는 천공의 검과 여명의 방패로 타곤 산을 수호한다. 레오나의 몸은 태양의 불길로 가득하며, 피부는 별의 광채로 빛나고, 눈동자는 천체들의 기운으로 불타오른다. 황금 갑주와 어마어마한 고대의 지식으로 무장한 레오나는 어떤 이들에게는 깨우침을, 어떤 이들에게는 죽음을 선사한다.",
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Leona.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 646,
+        "hpperlevel": 101,
+        "mp": 302,
+        "mpperlevel": 40,
+        "movespeed": 335,
+        "armor": 47,
+        "armorperlevel": 4.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.85,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.9,
+        "attackspeed": 0.625
+      }
+    },
+    "Lillia": {
+      "version": "13.12.1",
+      "id": "Lillia",
+      "key": "876",
+      "name": "릴리아",
+      "title": "수줍은 꽃",
+      "blurb": "부끄럼을 많이 타는 사슴, 릴리아는 조심스럽게 아이오니아의 숲을 배회한다. 필멸자들의 모습에 매료되면서도, 동시에 공포를 느끼는 그녀는 꿈꾸는 나무에 인간들의 꿈이 흘러들지 않는 이유를 궁금해한다. 이제 릴리아는 마법이 깃든 나뭇가지를 손에 쥐고 아이오니아를 여행한다. 이뤄지지 못한 인간들의 꿈을 찾고, 그들의 빛을 가리고 있는 공포를 없애야만 릴리아 역시 활짝 피어날 수 있기 때문이다.",
+      "info": {
+        "attack": 0,
+        "defense": 2,
+        "magic": 10,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Lillia.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 605,
+        "hpperlevel": 105,
+        "mp": 410,
+        "mpperlevel": 50,
+        "movespeed": 330,
+        "armor": 22,
+        "armorperlevel": 5.2,
+        "spellblock": 32,
+        "spellblockperlevel": 1.55,
+        "attackrange": 325,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.95,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3.1,
+        "attackspeedperlevel": 2.7,
+        "attackspeed": 0.625
+      }
+    },
+    "Lissandra": {
+      "version": "13.12.1",
+      "id": "Lissandra",
+      "key": "127",
+      "name": "리산드라",
+      "title": "얼음 마녀",
+      "blurb": "혹한의 북쪽 땅 주민들은 아주 먼 옛날부터 '그녀'를 두려워했다. 그녀는 순수한 냉기를 왜곡시켜 어둠의 힘으로 부리는 마법을 구사했으며, 날카로운 얼음으로 자신에 대적하는 적들을 모조리 꿰뚫어 버리거나 으스러뜨렸다. 얼마나 무시무시하고 막강한 힘이었는지! 사람들은 그녀의 본명을 언급하는 것마저 꺼려 '얼음 마녀'라는 별명으로 그녀를 칭하곤 했다. 그러나 진정 두려운 것은 그녀의 힘이 아니라 위험한 계획이었다. 이 사악한 마녀의 이름은 리산드라...",
+      "info": {
+        "attack": 2,
+        "defense": 5,
+        "magic": 8,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Lissandra.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 432,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 620,
+        "hpperlevel": 110,
+        "mp": 475,
+        "mpperlevel": 30,
+        "movespeed": 325,
+        "armor": 22,
+        "armorperlevel": 4.9,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.7,
+        "attackspeedperlevel": 1.36,
+        "attackspeed": 0.656
+      }
+    },
+    "Lulu": {
+      "version": "13.12.1",
+      "id": "Lulu",
+      "key": "117",
+      "name": "룰루",
+      "title": "요정 마법사",
+      "blurb": "요들 마법사 룰루는 친구인 요정 픽스와 함께 룬테라를 돌아다니며, 꿈결같은 환상과 상상 속에서나 존재할 법한 생명체를 만들어내는 것으로 유명하다. 룰루는 내키는 대로 현실을 빚어내고, 세상의 법칙을 비틀어 버린다. 룰루가 보기에 이 세상의 물리 법칙에 따르는 제약은 시시하고 따분하다. 룰루의 마법은 좋게 본다 해도 비정상적이고 나쁘게 보면 위험하다고까지 할 수도 있겠지만, 룰루의 신념은 확고하다. 사람들에게 마법 한 번씩 맛보여 주는 게 뭐 그리...",
+      "info": {
+        "attack": 4,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Lulu.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 595,
+        "hpperlevel": 88,
+        "mp": 350,
+        "mpperlevel": 55,
+        "movespeed": 330,
+        "armor": 26,
+        "armorperlevel": 4.9,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "mpregen": 11,
+        "mpregenperlevel": 0.6,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 47,
+        "attackdamageperlevel": 2.6,
+        "attackspeedperlevel": 2.25,
+        "attackspeed": 0.625
+      }
+    },
+    "Lux": {
+      "version": "13.12.1",
+      "id": "Lux",
+      "key": "99",
+      "name": "럭스",
+      "title": "광명의 소녀",
+      "blurb": "럭산나 크라운가드는 데마시아 인으로, 마법 능력을 가진 자를 공포와 의심을 담은 편협한 시선으로 보는 환경에서 태어났다. 고귀한 가문의 딸이지만 빛을 자유자재로 다루는 마법력을 타고났기에 이 능력이 발각되면 추방당할 것이라는 두려움을 안고 어린 시절을 보냈다. 자신의 능력을 감추는 것만이 가문의 명예를 지키는 방법이라고 여겼지만, 낙천적이고 유연한 성격 덕분에 차츰 자신만의 재능을 인정하고 받아들였고, 이제는 조국을 위해 마법을 은밀하게 사용하고 있다.",
+      "info": {
+        "attack": 2,
+        "defense": 4,
+        "magic": 9,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Lux.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 560,
+        "hpperlevel": 99,
+        "mp": 480,
+        "mpperlevel": 23.5,
+        "movespeed": 330,
+        "armor": 19,
+        "armorperlevel": 5.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 54,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.669
+      }
+    },
+    "MissFortune": {
+      "version": "13.12.1",
+      "id": "MissFortune",
+      "key": "21",
+      "name": "미스 포츈",
+      "title": "현상금 사냥꾼",
+      "blurb": "빌지워터의 선장 사라 포츈은 미모로도 유명하지만 무자비한 일처리 때문에 공포의 대상이기도 하다. 틀로 찍어낸 듯 똑같은 빌지워터의 범죄자들 사이에서 그녀는 단연 돋보이는 존재다. 어릴 적 자신의 가족이 해적왕 갱플랭크에게 살해당하는 것을 목격했고, 세월이 흐른 후 갱플랭크가 타고 있던 기함을 불태우는 것으로 잔혹한 복수극을 완성했다. 사라 포츈을 과소평가했다가는 그 매력에 가려진 예측불허의 실력에 기겁을 하거나... 배에 총알 구멍이 날 수도 있다.",
+      "info": {
+        "attack": 8,
+        "defense": 2,
+        "magic": 5,
+        "difficulty": 1
+      },
+      "image": {
+        "full": "MissFortune.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 640,
+        "hpperlevel": 103,
+        "mp": 300,
+        "mpperlevel": 40,
+        "movespeed": 325,
+        "armor": 28,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 52,
+        "attackdamageperlevel": 2.4,
+        "attackspeedperlevel": 3,
+        "attackspeed": 0.656
+      }
+    },
+    "Morgana": {
+      "version": "13.12.1",
+      "id": "Morgana",
+      "key": "25",
+      "name": "모르가나",
+      "title": "타락한 자",
+      "blurb": "천상의 힘과 필멸의 육신 사이에서 고뇌하던 모르가나는 자신의 날개를 묶고 다시 인간의 삶을 살면서 부정하고 타락한 자들을 벌한다. 그녀는 데마시아의 부당한 법과 전통을 거부하며, 왕국의 그림자 속에서 암흑 불꽃으로 만든 방패와 사슬로 진실을 억압하려는 자들에 맞서 싸운다. 추방당하고 버림받은 자라고 해도 언젠가 다시 돌아올 수 있다고 믿기 때문이다.",
+      "info": {
+        "attack": 1,
+        "defense": 6,
+        "magic": 8,
+        "difficulty": 1
+      },
+      "image": {
+        "full": "Morgana.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 104,
+        "mp": 340,
+        "mpperlevel": 60,
+        "movespeed": 335,
+        "armor": 25,
+        "armorperlevel": 5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 450,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.4,
+        "mpregen": 11,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 56,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 1.53,
+        "attackspeed": 0.625
+      }
+    },
+    "Nami": {
+      "version": "13.12.1",
+      "id": "Nami",
+      "key": "267",
+      "name": "나미",
+      "title": "파도 소환사",
+      "blurb": "나미는 바다에 사는 바스타야 종족으로, 어리지만 완고할 정도로 고집이 세다. 먼 옛날 타곤 인과 맺었던 약속이 깨지자, 마라이 종족으로는 처음으로 파도 치는 바다에서 나와 마른 육지로 모험을 떠났다. 달리 해결책이 없었기에, 자신의 종족을 안전하게 지켜주는 성스러운 의식을 완수한다는 임무를 자청한 것이었다. 새로운 시대는 혼란 그 자체지만, 나미는 용기와 결단력으로 불확실한 미래를 마주한다. 그녀의 무기는 바다의 힘을 소환하는 파도 소환사의 지팡이다.",
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 7,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Nami.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 96,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 560,
+        "hpperlevel": 88,
+        "mp": 365,
+        "mpperlevel": 43,
+        "movespeed": 335,
+        "armor": 29,
+        "armorperlevel": 5.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 51,
+        "attackdamageperlevel": 3.1,
+        "attackspeedperlevel": 2.61,
+        "attackspeed": 0.644
+      }
+    },
+    "Neeko": {
+      "version": "13.12.1",
+      "id": "Neeko",
+      "key": "518",
+      "name": "니코",
+      "title": "알쏭달쏭 카멜레온",
+      "blurb": "오랜 세월 잊힌 바스타야의 한 부족 출신인 니코는 다른 이의 모습을 빌려 어느 무리에든 뒤섞일 수 있으며, 심지어 상대의 감정을 흡수하여 적과 아군을 한눈에 구분할 수 있다. 그 누구도 니코가 어디 있는지, 정체가 무엇인지 확신할 수 없지만, 악의를 가지고 접근하는 자는 원초적 영혼 마법의 무시무시한 힘과 함께 그녀의 진정한 모습을 보게 될 것이다.",
+      "info": {
+        "attack": 1,
+        "defense": 1,
+        "magic": 9,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Neeko.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 610,
+        "hpperlevel": 104,
+        "mp": 450,
+        "mpperlevel": 30,
+        "movespeed": 340,
+        "armor": 21,
+        "armorperlevel": 5.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 48,
+        "attackdamageperlevel": 2.5,
+        "attackspeedperlevel": 3.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Nidalee": {
+      "version": "13.12.1",
+      "id": "Nidalee",
+      "key": "76",
+      "name": "니달리",
+      "title": "야성의 사냥꾼",
+      "blurb": "깊은 정글에서 자라난 니달리는 자신의 형태를 흉포한 쿠거로 자유자재로 변화시킬 수 있는 추적의 달인이다. 완전한 여인도, 완전한 야수도 아닌 니달리는 신중하게 배치한 덫과 재빠른 창 투척으로 모든 침입자들로부터 자신의 영역을 맹렬하게 지켜낸다. 니달리는 사냥감을 움직이지 못하게 공격한 후 쿠거 형태로 변해 덮친다. 니달리에게서 운 좋게 살아남은 몇 사람은 야생에 사는 여자가 있다는 이야기를 퍼뜨렸다. 본능이 극도로 예리하고, 발톱은 그보다도 더...",
+      "info": {
+        "attack": 5,
+        "defense": 4,
+        "magic": 7,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Nidalee.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 288,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 610,
+        "hpperlevel": 109,
+        "mp": 295,
+        "mpperlevel": 45,
+        "movespeed": 335,
+        "armor": 32,
+        "armorperlevel": 5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 3.22,
+        "attackspeed": 0.638
+      }
+    },
+    "Nilah": {
+      "version": "13.12.1",
+      "id": "Nilah",
+      "key": "895",
+      "name": "닐라",
+      "title": "해방된 기쁨",
+      "blurb": "멀리 떨어진 땅에서 온 고행의 전사, 닐라는 세계에서 가장 위협적이고 거대한 상대를 찾아 도전하고 파괴한다. 오랫동안 갇혀 있던 기쁨의 악마를 만나 힘을 얻은 그녀에게 멈추지 않는 기쁨 외에 다른 감정은 없다. 자신의 막강한 힘을 위한 사소한 대가인 셈이다. 악마의 물을 막강한 힘을 지닌 칼날로 바꾼 닐라는 오래전에 잊힌 고대의 위협에 맞서 싸운다.",
+      "info": {
+        "attack": 8,
+        "defense": 4,
+        "magic": 4,
+        "difficulty": 10
+      },
+      "image": {
+        "full": "Nilah.png",
+        "sprite": "champion2.png",
+        "group": "champion",
+        "x": 336,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 570,
+        "hpperlevel": 101,
+        "mp": 350,
+        "mpperlevel": 35,
+        "movespeed": 340,
+        "armor": 27,
+        "armorperlevel": 4.2,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 225,
+        "hpregen": 4,
+        "hpregenperlevel": 0.9,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 2,
+        "attackspeedperlevel": 3,
+        "attackspeed": 0.697
+      }
+    },
+    "Orianna": {
+      "version": "13.12.1",
+      "id": "Orianna",
+      "key": "61",
+      "name": "오리아나",
+      "title": "시계태엽 소녀",
+      "blurb": "오리아나는 한 때 살아있는 육신을 가진 호기심 많은 소녀였지만, 이제는 전체가 시계태엽 장치로 만들어진 놀라운 기술의 산물이다. 오리아나는 자운 남부지방에서 사고를 당한 후 매우 위태로운 상황에 처했고, 다쳐서 움직일 수 없는 신체의 부분 부분이 정교한 인공 신체로 교체되었다. 오리아나는 자신을 보호하는 친구 역할을 해 주는 강력한 황동 구체와 함께, 이제 필트오버를 비롯해 온 세상에 있는 불가사의를 자유롭게 탐험한다.",
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Orianna.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 600,
+        "hpperlevel": 105,
+        "mp": 418,
+        "mpperlevel": 25,
+        "movespeed": 325,
+        "armor": 20,
+        "armorperlevel": 4.2,
+        "spellblock": 26,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 40,
+        "attackdamageperlevel": 2.6,
+        "attackspeedperlevel": 3.5,
+        "attackspeed": 0.658
+      }
+    },
+    "Qiyana": {
+      "version": "13.12.1",
+      "id": "Qiyana",
+      "key": "246",
+      "name": "키아나",
+      "title": "원소의 여왕",
+      "blurb": "키아나는 정글 도시 이샤오칸에서 윤 탈의 왕좌에 오르기 위해 무자비한 계획을 세우고 있다. 부모님의 왕위 계승 서열 중 가장 아래인 키아나는 당당한 자신감과 전례 없는 원소 마법 능력을 갖춘 인재로, 앞을 가로막는 자는 누구든 용서하지 않는다. 키아나는 대지 자체를 자유자재로 조종할 수 있으며, 자신을 이샤오칸 역사상 가장 뛰어난 원소술사로 여긴다. 그렇기에 자신에게 일개 도시가 아닌 제국을 지배할 자격이 있다고 믿는다.",
+      "info": {
+        "attack": 0,
+        "defense": 2,
+        "magic": 4,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Qiyana.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 590,
+        "hpperlevel": 124,
+        "mp": 320,
+        "mpperlevel": 50,
+        "movespeed": 335,
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 6,
+        "hpregenperlevel": 0.9,
+        "mpregen": 8,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.1,
+        "attackspeedperlevel": 2.1,
+        "attackspeed": 0.688
+      }
+    },
+    "Quinn": {
+      "version": "13.12.1",
+      "id": "Quinn",
+      "key": "133",
+      "name": "퀸",
+      "title": "데마시아의 날개",
+      "blurb": "데마시아의 정예 기동대 기사인 퀸은 전설적인 독수리 발러와 함께 적의 영토 한복판에 잠입해 갖가지 위험한 임무를 수행한다. 퀸과 발러의 강력한 결속력은 전투에서 무시무시한 힘을 발휘한다. 적들은 그들의 상대가 데마시아 제일가는 영웅, 그것도 하나가 아니라 둘이라는 사실을 알지도 못한 채 순식간에 목숨을 잃고 만다. 상황에 따라 곡예 수준의 동작을 보여주는 퀸이 민첩한 몸놀림으로 석궁을 꺼내들면, 발러는 공중에서 유영하며 숨어 있는 적을 찾아낸다...",
+      "info": {
+        "attack": 9,
+        "defense": 4,
+        "magic": 2,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Quinn.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 336,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 603,
+        "hpperlevel": 99,
+        "mp": 269,
+        "mpperlevel": 35,
+        "movespeed": 335,
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.4,
+        "attackspeedperlevel": 3.1,
+        "attackspeed": 0.668
+      }
+    },
+    "Rell": {
+      "version": "13.12.1",
+      "id": "Rell",
+      "key": "526",
+      "name": "렐",
+      "title": "철의 여인",
+      "blurb": "검은 장미단의 악랄한 실험으로 탄생한 렐은 녹서스의 전복만을 위해 달리는 생체 무기이다. 금속을 조종하는 능력 때문에 그녀는 고통과 공포로 점철된 어린 시절을 보내며 끔찍한 전투 훈련을 받아야 했다. 견디다 못한 나머지 자신을 구속한 자들을 죽이고 도망쳤고, 결국 범죄자로 낙인찍혔다. 자유의 몸이 된 렐은 이제 자신과 같은 고통을 겪던 아이들을 구출하며 녹서스 병사들을 보이는 대로 처치한다. 그리고 과거의 스승들에게는 무자비한 죽음을 안겨 주고...",
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "image": {
+        "full": "Rell.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 610,
+        "hpperlevel": 104,
+        "mp": 350,
+        "mpperlevel": 45,
+        "movespeed": 330,
+        "armor": 39,
+        "armorperlevel": 4.2,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 175,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.85,
+        "mpregen": 6,
+        "mpregenperlevel": 0.35,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 1.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Renata": {
+      "version": "13.12.1",
+      "id": "Renata",
+      "key": "888",
+      "name": "레나타 글라스크",
+      "title": "화공 남작",
+      "blurb": "레나타 글라스크는 어린 시절 집의 잿더미를 딛고 일어섰다. 그때 레나타가 가진 것은 이름과 부모님의 연금술 연구 자료뿐이었다. 수십 년이 지나, 레나타는 자운에서 가장 부유한 화공 남작 겸 거물 사업가가 되었다. 그녀는 모든 사람의 이해관계를 자신과 묶어서 막대한 힘을 쌓았다. 레나타와 함께하는 자는 상상 이상의 보상을 받는다. 레나타를 거스르는 자는 그 선택을 후회하며 살아간다. 하지만 결국에는 모두가 그녀의 편에 설 것이다.",
+      "info": {
+        "attack": 2,
+        "defense": 6,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Renata.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 545,
+        "hpperlevel": 94,
+        "mp": 350,
+        "mpperlevel": 50,
+        "movespeed": 330,
+        "armor": 27,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.11,
+        "attackspeed": 0.625
+      }
+    },
+    "Riven": {
+      "version": "13.12.1",
+      "id": "Riven",
+      "key": "92",
+      "name": "리븐",
+      "title": "추방자",
+      "blurb": "한때 녹서스 군의 소드마스터였던 리븐은 그녀가 정복하려던 땅에서 추방자로 살아가고 있다. 그녀는 확고한 믿음과 잔혹함에 가까운 능력에 힘입어 상급 군인으로 진급하고 전설의 룬 검과 군대를 포상으로 받았다. 그러나 녹서스에 대한 리븐의 믿음은 아이오니아 전선에서 시험대에 올랐고 결국 산산히 깨지고 말았다. 제국과의 모든 연결고리를 끊어버린 그녀는 산산이 조각난 세상 속 몸을 맡길 곳을 찾아 방랑하고 있다. 녹서스 제국이 재건되었다는 무성한 소문에도...",
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Riven.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 240,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "없음",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 100,
+        "mp": 0,
+        "mpperlevel": 0,
+        "movespeed": 340,
+        "armor": 33,
+        "armorperlevel": 4.4,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.5,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 3.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Samira": {
+      "version": "13.12.1",
+      "id": "Samira",
+      "key": "360",
+      "name": "사미라",
+      "title": "사막의 장미",
+      "blurb": "사미라는 죽음의 순간에서도 눈 하나 깜짝하지 않는다. 그저 어디에 있든 도전을 찾아 헤맬 뿐이다. 어린 시절 슈리마의 고향이 파괴된 후로 녹서스에서 자신의 길을 찾았고, 그때부터 화려하면서도 무모한 방식으로 위험한 임무를 탁월하게 수행하는 자라는 명성을 쌓았다. 검은 화약을 담은 권총과 자신을 위해 정교히 만들어진 칼날과 함께, 사미라는 생사의 상황에서 빠른 몸놀림과 재능으로 그녀의 앞을 가로막는 자들을 모두 제거한다.",
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Samira.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 600,
+        "hpperlevel": 108,
+        "mp": 349,
+        "mpperlevel": 38,
+        "movespeed": 335,
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 500,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 3.3,
+        "attackspeed": 0.658
+      }
+    },
+    "Sejuani": {
+      "version": "13.12.1",
+      "id": "Sejuani",
+      "key": "113",
+      "name": "세주아니",
+      "title": "혹한의 분노",
+      "blurb": "세주아니는 프렐요드에서 가장 공포스러운 부족 중 하나로 꼽히는 겨울 발톱 부족의 잔혹하고 무자비한 냉기의 화신이자 전쟁의 어머니이다. 세주아니의 부족은 생존을 위해 자연과 끊임 없이 절박한 싸움을 했고, 혹독한 겨울에서 살아남기 위해 녹서스, 데마시아, 아바로사를 침공해야 했다. 세주아니는 가장 위험한 공격의 선봉에 서서 멧돼지 브리슬의 안장에 타고 얼음 정수의 철퇴를 휘둘러 적을 얼리고 깨뜨린다.",
+      "info": {
+        "attack": 5,
+        "defense": 7,
+        "magic": 6,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Sejuani.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 114,
+        "mp": 400,
+        "mpperlevel": 40,
+        "movespeed": 340,
+        "armor": 34,
+        "armorperlevel": 5.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 8.5,
+        "hpregenperlevel": 1,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 66,
+        "attackdamageperlevel": 4,
+        "attackspeedperlevel": 3.5,
+        "attackspeed": 0.688
+      }
+    },
+    "Senna": {
+      "version": "13.12.1",
+      "id": "Senna",
+      "key": "235",
+      "name": "세나",
+      "title": "구원자",
+      "blurb": "어린 시절부터 초자연적인 검은 안개에 쫓기는 저주를 받은 세나는 빛의 감시자들이라는 신성한 조직에 합류하여 검은 안개에 맹렬히 저항하지만, 잔혹한 악령 쓰레쉬의 손에 쓰러지고 랜턴에 영혼을 사로잡히게 된다. 그러나 희망을 잃지 않은 그녀는 랜턴 안에서 안개의 힘을 활용하는 법을 배워 완전히 새로운 모습으로 다시 태어난다. 이제 빛과 어둠을 모두 다스릴 수 있게 된 세나는 자신의 유물포로 검은 안개에 갇힌 영혼들을 구하고 검은 안개를 자멸케 하고자 한다.",
+      "info": {
+        "attack": 7,
+        "defense": 2,
+        "magic": 6,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Senna.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 0,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 530,
+        "hpperlevel": 89,
+        "mp": 350,
+        "mpperlevel": 45,
+        "movespeed": 330,
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 600,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 50,
+        "attackdamageperlevel": 0,
+        "attackspeedperlevel": 4,
+        "attackspeed": 0.625
+      }
+    },
+    "Seraphine": {
+      "version": "13.12.1",
+      "id": "Seraphine",
+      "key": "147",
+      "name": "세라핀",
+      "title": "노래하는 별",
+      "blurb": "자운 출신의 부모를 둔 세라핀은 필트오버에서 태어나 다른 사람의 영혼의 소리를 들을 수 있다. 세상이 그녀에게 노래하고 그녀 또한 답가를 불렀다. 어린 시절에는 이 소리가 그녀를 억눌렀지만 이제 그녀는 영감을 위해 소리를 이끌어내고 혼돈을 협화음으로 바꿀 수 있게 되었다. 세라핀은 두 도시를 위해 공연하며 시민들에게 그들은 혼자가 아니고 함께일 때 더 강하며, 그들의 잠재력은 무한하다는 것을 일깨워준다.",
+      "info": {
+        "attack": 0,
+        "defense": 0,
+        "magic": 0,
+        "difficulty": 0
+      },
+      "image": {
+        "full": "Seraphine.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 48,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 570,
+        "hpperlevel": 104,
+        "mp": 440,
+        "mpperlevel": 40,
+        "movespeed": 325,
+        "armor": 19,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "mpregen": 8,
+        "mpregenperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 1,
+        "attackspeed": 0.669
+      }
+    },
+    "Shyvana": {
+      "version": "13.12.1",
+      "id": "Shyvana",
+      "key": "102",
+      "name": "쉬바나",
+      "title": "하프 드래곤",
+      "blurb": "쉬바나는 심장 속에서 불타는 룬 조각 덕분에 마력을 발휘하는 존재로, 평소에는 인간의 모습을 하고 있으나 사실은 강력한 힘을 지닌 용이다. 용의 형상으로 변하면 불타오르는 숨결로 적을 그 자리에서 태워버린다. 자르반 4세의 목숨을 구해준 후 그의 친위대에 들어갔지만, 데마시아 인들은 여전히 쉬바나에게 미심쩍은 눈길을 보내고 있다. 쉬바나로서도 친위대원 노릇이나 데마시아 인들의 신임을 받는 일이 쉽지만은 않다.",
+      "info": {
+        "attack": 8,
+        "defense": 6,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Shyvana.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 240,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "partype": "분노",
+      "stats": {
+        "hp": 665,
+        "hpperlevel": 109,
+        "mp": 100,
+        "mpperlevel": 0,
+        "movespeed": 350,
+        "armor": 38,
+        "armorperlevel": 4.55,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.8,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.4,
+        "attackspeedperlevel": 2.5,
+        "attackspeed": 0.658
+      }
+    },
+    "Sivir": {
+      "version": "13.12.1",
+      "id": "Sivir",
+      "key": "15",
+      "name": "시비르",
+      "title": "전장의 여제",
+      "blurb": "시비르는 슈리마 사막에서 활동하는 보물 사냥꾼이자 용병 대장이다. 몸값은 입이 떡 벌어질 정도로 비싸지만 전투를 벌이는 족족 이겨 몸값에 걸맞은 솜씨로 명성이 자자하다. 대담무쌍한 성격에 원대한 야심까지 겸비한 시비르. 그녀는 위험하기 짝이 없는 슈리마의 묘역에서 진귀한 보물을 찾으며 남다른 자부심을 느낀다. 의뢰인에게서 두둑한 대가를 챙기는 것은 물론이다. 하지만 슈리마에 고대의 존재들이 귀환하면서 시비르도 운명의 갈림길에 서게 된다.",
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 1,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Sivir.png",
+        "sprite": "champion3.png",
+        "group": "champion",
+        "x": 384,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 600,
+        "hpperlevel": 104,
+        "mp": 340,
+        "mpperlevel": 45,
+        "movespeed": 335,
+        "armor": 26,
+        "armorperlevel": 4.45,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 500,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.55,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 2.5,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.625
+      }
+    },
+    "Sona": {
+      "version": "13.12.1",
+      "id": "Sona",
+      "key": "37",
+      "name": "소나",
+      "title": "현의 명인",
+      "blurb": "소나는 현악기 에트왈 연주에서 데마시아 제일가는 거장으로, 말을 하지 못하며 오로지 우아한 화음과 심금을 울리는 아리아로만 의사를 표현한다. 특유의 고상한 몸가짐 때문에 데마시아 상류층의 사랑을 받지만, 듣는 이의 마음을 사로잡는 소나의 선율이 실제로 마법이 아닌가 의심하는 사람들도 많다. 알다시피 마법은 데마시아에서 금기시되고 있기 때문이다. 소나는 낯선 이들에게 침묵을 지키지만, 가까운 지인들은 그녀의 의사를 어느 정도 이해한다. 소나가 연주하는...",
+      "info": {
+        "attack": 5,
+        "defense": 2,
+        "magic": 8,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Sona.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 550,
+        "hpperlevel": 91,
+        "mp": 340,
+        "mpperlevel": 45,
+        "movespeed": 325,
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.3,
+        "attackspeed": 0.644
+      }
+    },
+    "Soraka": {
+      "version": "13.12.1",
+      "id": "Soraka",
+      "key": "16",
+      "name": "소라카",
+      "title": "별의 아이",
+      "blurb": "타곤 산 너머 천상계의 방랑자 소라카는 필멸자들이 스스로의 폭력성 때문에 고통받는 것을 치유하기 위해 자신의 불멸을 포기했다. 소라카는 만나는 모든 이에게 동정심과 자비의 마음을 심어주려고 노력하며, 심지어 자신에게 해를 입히려 획책하는 자들마저 치유한다. 이 세계의 갈등과 혼란을 모두 지켜보았음에도, 소라카는 아직 룬테라 인들이 잠재력을 모두 끌어낸 것은 아니라고 믿고 있다.",
+      "info": {
+        "attack": 2,
+        "defense": 5,
+        "magic": 7,
+        "difficulty": 3
+      },
+      "image": {
+        "full": "Soraka.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 48,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 605,
+        "hpperlevel": 88,
+        "mp": 425,
+        "mpperlevel": 40,
+        "movespeed": 325,
+        "armor": 32,
+        "armorperlevel": 5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.5,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 50,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2.14,
+        "attackspeed": 0.625
+      }
+    },
+    "Syndra": {
+      "version": "13.12.1",
+      "id": "Syndra",
+      "key": "134",
+      "name": "신드라",
+      "title": "어둠의 여제",
+      "blurb": "아이오니아의 무시무시한 마법사 신드라는 믿을 수 없을 정도로 강대한 힘을 자유자재로 다룬다. 어렸을 때부터 엄청난 마법을 제멋대로 쓰고 다니는 바람에 마을 장로들을 아연실색하게 만들었다. 신드라는 절제를 배우도록 외딴곳으로 보내졌지만, 결국 소위 스승이라는 자가 그동안 자신의 힘을 억제했다는 사실을 알게 되었다. 신드라는 배신감과 상처를 어둠의 구체로 만들어 자신을 통제하려는 자는 모조리 파멸시키겠다고 마음먹었다.",
+      "info": {
+        "attack": 2,
+        "defense": 3,
+        "magic": 9,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Syndra.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 192,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 563,
+        "hpperlevel": 104,
+        "mp": 480,
+        "mpperlevel": 40,
+        "movespeed": 330,
+        "armor": 25,
+        "armorperlevel": 4.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 54,
+        "attackdamageperlevel": 2.9,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.625
+      }
+    },
+    "Taliyah": {
+      "version": "13.12.1",
+      "id": "Taliyah",
+      "key": "163",
+      "name": "탈리야",
+      "title": "바위술사",
+      "blurb": "슈리마의 떠돌이 마법사 탈리야는 10대의 호기심과 어른으로서의 책임 사이에서 괴로워한다. 탈리야는 자신 안에서 커져 가는 힘의 본질을 깨닫기 위해 발로란 전역을 누빈 끝에, 최근에는 자신의 부족을 보호하기 위해 돌아왔다. 탈리야의 여린 마음을 약점으로 착각한 사람들은 호되게 대가를 치렀다. 탈리야의 천진난만한 모습 뒤에는 산도 움직이는 불굴의 의지와 대지도 흔드는 강인한 정신이 있기 때문이다.",
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Taliyah.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 288,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 550,
+        "hpperlevel": 104,
+        "mp": 470,
+        "mpperlevel": 30,
+        "movespeed": 330,
+        "armor": 18,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 1.36,
+        "attackspeed": 0.625
+      }
+    },
+    "Taric": {
+      "version": "13.12.1",
+      "id": "Taric",
+      "key": "44",
+      "name": "타릭",
+      "title": "발로란의 방패",
+      "blurb": "타릭은 초월적인 힘으로 룬테라의 생명과 사랑, 아름다움을 수호하는 수호자의 성위이다. 고국 데마시아에서 직무태만죄를 범하고 수치스럽게 추방당한 타릭은 속죄를 위해 타곤 산을 올랐고, 이 산 정상에서 하늘의 별들에게 더 큰 소명을 부여받았다. 고대 타곤의 신비한 힘을 가득 받아 끔찍한 공허의 침식으로부터 밤낮없이 세계를 지키는 발로란의 방패가 된 것이다.",
+      "info": {
+        "attack": 4,
+        "defense": 8,
+        "magic": 5,
+        "difficulty": 3
+      },
+      "image": {
+        "full": "Taric.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Fighter"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 645,
+        "hpperlevel": 99,
+        "mp": 300,
+        "mpperlevel": 60,
+        "movespeed": 340,
+        "armor": 40,
+        "armorperlevel": 4.6,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05,
+        "attackrange": 150,
+        "hpregen": 6,
+        "hpregenperlevel": 0.5,
+        "mpregen": 8.5,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.625
+      }
+    },
+    "Tristana": {
+      "version": "13.12.1",
+      "id": "Tristana",
+      "key": "18",
+      "name": "트리스타나",
+      "title": "요들 사수",
+      "blurb": "다른 많은 요들이 발견, 발명, 또는 그저 장난에 기력을 쏟지만, 트리스타나는 언제나 위대한 전사가 되기 위해 모험을 떠나는 꿈을 꿨다. 트리스타나는 룬테라, 룬테라의 파벌, 그리고 전쟁 이야기를 즐겨 들었고, 요들도 얼마든지 전설이 될 수 있다고 생각했다. 트리스타나는 이제 세계에 첫 발을 내딛으며, 든든한 대포 '부머'를 들고 변함없는 용기와 낙관적인 성격으로 전장에 뛰어 든다.",
+      "info": {
+        "attack": 9,
+        "defense": 3,
+        "magic": 5,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Tristana.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 670,
+        "hpperlevel": 102,
+        "mp": 250,
+        "mpperlevel": 32,
+        "movespeed": 325,
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 4,
+        "hpregenperlevel": 0.65,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.45,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.7,
+        "attackspeedperlevel": 1.5,
+        "attackspeed": 0.656
+      }
+    },
+    "Varus": {
+      "version": "13.12.1",
+      "id": "Varus",
+      "key": "110",
+      "name": "바루스",
+      "title": "응징의 화살",
+      "blurb": "바루스는 고대 다르킨 중 한 명으로, 적이 거의 미쳐 버릴 정도로 고통을 준 뒤에야 화살을 날려 숨통을 끊는 것을 즐기는 치명적인 암살자이다. 다르킨 전쟁 말미에는 갇히는 신세가 되었으나 몇백 년 후 아이오니아 사냥꾼 두 명의 육신을 빼앗는 방식으로 탈출했다. 두 사냥꾼은 자신들도 모르게 바루스를 풀어준 형국이 되었고 이제는 그의 육신이 되어 바루스의 정기가 갇힌 활을 짊어질 수밖에 없는 운명이 되었다. 바루스는 이제 잔인한 복수를 위해 자신을 가둔...",
+      "info": {
+        "attack": 7,
+        "defense": 3,
+        "magic": 4,
+        "difficulty": 2
+      },
+      "image": {
+        "full": "Varus.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 384,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 600,
+        "hpperlevel": 105,
+        "mp": 360,
+        "mpperlevel": 40,
+        "movespeed": 330,
+        "armor": 27,
+        "armorperlevel": 4.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 575,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.4,
+        "attackspeedperlevel": 4,
+        "attackspeed": 0.658
+      }
+    },
+    "Vayne": {
+      "version": "13.12.1",
+      "id": "Vayne",
+      "key": "67",
+      "name": "베인",
+      "title": "어둠 사냥꾼",
+      "blurb": "가차 없는 괴물 사냥꾼 샤우나 베인은 가족을 몰살한 마녀를 찾아 죽이기로 맹세했다. 손목에 장착된 석궁과 복수심에 불타는 마음으로 무장한 베인이 진정 행복할 때는 오직 그림자 속에서 질풍처럼 은화살을 날려 흑마법을 연구하는 자나 흑마법이 만들어낸 창조물을 벨 때뿐이다.",
+      "info": {
+        "attack": 10,
+        "defense": 1,
+        "magic": 1,
+        "difficulty": 8
+      },
+      "image": {
+        "full": "Vayne.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 432,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 550,
+        "hpperlevel": 103,
+        "mp": 232,
+        "mpperlevel": 35,
+        "movespeed": 330,
+        "armor": 23,
+        "armorperlevel": 4.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 60,
+        "attackdamageperlevel": 2.35,
+        "attackspeedperlevel": 3.3,
+        "attackspeed": 0.658
+      }
+    },
+    "Vi": {
+      "version": "13.12.1",
+      "id": "Vi",
+      "key": "254",
+      "name": "바이",
+      "title": "필트오버의 집행자",
+      "blurb": "자운의 암흑가에서 범죄를 일삼던 다혈질 성격의 바이는 충동적이고 성급한 데다 권위에 대한 존중이라고는 눈곱만큼도 없다. 어릴 적부터 혼자 자라다시피 한 그녀는 생존 본능이 치열하고 유머감각은 사악할 만큼 냉소적이다. 하지만 이제 바이는 평화 유지를 위해 필트오버의 경찰 소속이 되어 육중한 벽을 단숨에 부술 만큼 무시무시한 마법공학 건틀릿을 휘두르며 범죄자를 색출하고 있다.",
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 4
+      },
+      "image": {
+        "full": "Vi.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 144,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 655,
+        "hpperlevel": 99,
+        "mp": 295,
+        "mpperlevel": 65,
+        "movespeed": 340,
+        "armor": 30,
+        "armorperlevel": 4.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05,
+        "attackrange": 125,
+        "hpregen": 10,
+        "hpregenperlevel": 1,
+        "mpregen": 8,
+        "mpregenperlevel": 0.65,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.644
+      }
+    },
+    "Xayah": {
+      "version": "13.12.1",
+      "id": "Xayah",
+      "key": "498",
+      "name": "자야",
+      "title": "저항하는 자",
+      "blurb": "바스타야 혁명을 일으키고 싶어하는 자야는 치명적인 정확성을 자랑하는 전사이다. 민첩한 몸놀림과 간교할 정도로 예리한 두뇌를 갖추었고, 칼날보다 날카로운 깃털로 자신을 막아서는 것은 모조리 베어버린다. 한때는 점점 수가 줄어들고 있는 바스타야 종족을 구해내기 위해 혼자만의 전쟁을 수행했으나, 이제는 동지이자 연인인 라칸과 늘 함께 싸운다. 둘은 바스타야 종족을 보호하고 먼 옛날 바스타야 종족이 누리던 영광을 되찾기 위해 노력하고 있다.",
+      "info": {
+        "attack": 10,
+        "defense": 6,
+        "magic": 1,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Xayah.png",
+        "sprite": "champion4.png",
+        "group": "champion",
+        "x": 432,
+        "y": 96,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 660,
+        "hpperlevel": 102,
+        "mp": 340,
+        "mpperlevel": 40,
+        "movespeed": 330,
+        "armor": 25,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 525,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.75,
+        "mpregen": 8.25,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.5,
+        "attackspeedperlevel": 3.9,
+        "attackspeed": 0.658
+      }
+    },
+    "Yuumi": {
+      "version": "13.12.1",
+      "id": "Yuumi",
+      "key": "350",
+      "name": "유미",
+      "title": "마법 고양이",
+      "blurb": "유미는 밴들 시티 출신의 마법 고양이로 한때 요들 마법사 노라와 함께 살았다. 어느 날 노라가 알 수 없는 이유로 종적을 감추자 유미는 자아를 지닌 노라의 책 '관문의 서'의 수호자가 되었으며, 책 페이지 안에 존재하는 차원문을 타고 주인을 찾는 여정에 나섰다. 애정을 갈구하는 유미는 여정을 함께 떠날 친절한 동료들을 구하며, 빛나는 방패와 단호한 결의로 그들을 보호한다. 노라의 책은 유미가 눈앞에 놓인 임무에 집중하도록 하기 위해 애쓰지만, 유미는...",
+      "info": {
+        "attack": 5,
+        "defense": 1,
+        "magic": 8,
+        "difficulty": 2
+      },
+      "image": {
+        "full": "Yuumi.png",
+        "sprite": "champion5.png",
+        "group": "champion",
+        "x": 240,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 500,
+        "hpperlevel": 69,
+        "mp": 440,
+        "mpperlevel": 45,
+        "movespeed": 330,
+        "armor": 25,
+        "armorperlevel": 4.2,
+        "spellblock": 25,
+        "spellblockperlevel": 1.1,
+        "attackrange": 425,
+        "hpregen": 5,
+        "hpregenperlevel": 0.55,
+        "mpregen": 10,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3.1,
+        "attackspeedperlevel": 1,
+        "attackspeed": 0.625
+      }
+    },
+    "Zeri": {
+      "version": "13.12.1",
+      "id": "Zeri",
+      "key": "221",
+      "name": "제리",
+      "title": "자운의 불꽃",
+      "blurb": "자운 노동자 계층 출신의 고집 세고 활발한 제리는 전기 마법으로 자신의 힘과 손수 제작한 총을 충전한다. 그녀의 불안정한 힘은 감정을 반영하고 그 불꽃은 번개처럼 빠른 삶을 닮았다. 동정심 많은 제리는 가족과 고향에 대한 애정으로 싸움에 임한다. 가끔 도우려는 의지가 강해 역효과를 일으키기도 하지만, 이웃을 위해 싸울 때 그들 또한 함께한다는 사실을 믿고 있다.",
+      "info": {
+        "attack": 8,
+        "defense": 5,
+        "magic": 3,
+        "difficulty": 6
+      },
+      "image": {
+        "full": "Zeri.png",
+        "sprite": "champion5.png",
+        "group": "champion",
+        "x": 384,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 110,
+        "mp": 250,
+        "mpperlevel": 45,
+        "movespeed": 335,
+        "armor": 24,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 500,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.7,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 53,
+        "attackdamageperlevel": 1.3,
+        "attackspeedperlevel": 2,
+        "attackspeed": 0.658
+      }
+    },
+    "Zoe": {
+      "version": "13.12.1",
+      "id": "Zoe",
+      "key": "142",
+      "name": "조이",
+      "title": "여명의 성위",
+      "blurb": "상상력과 변화의 화신인 장난꾸러기 조이는 타곤의 우주 전령으로, 세계를 뒤흔드는 중요한 사건들을 알린다. 조이는 존재만으로도 현실 세계를 지배하는 불가사의한 수학 원리를 왜곡하고, 가끔은 아무런 악의나 노력 없이도 대재앙을 일으킨다. 이것이 그녀가 자신의 의무에 경쾌하고도 태연하게 임하는 이유일지도 모른다. 조이는 장난을 치고 인간들을 골탕 먹이는 등 즐겁게 보낼 시간이 많다. 그녀를 만나면 매우 즐겁고 삶을 긍정적으로 바라보게 될 수도 있지만...",
+      "info": {
+        "attack": 1,
+        "defense": 7,
+        "magic": 8,
+        "difficulty": 5
+      },
+      "image": {
+        "full": "Zoe.png",
+        "sprite": "champion5.png",
+        "group": "champion",
+        "x": 48,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 630,
+        "hpperlevel": 106,
+        "mp": 425,
+        "mpperlevel": 25,
+        "movespeed": 340,
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 550,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "mpregen": 8,
+        "mpregenperlevel": 0.65,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.3,
+        "attackspeedperlevel": 2.5,
+        "attackspeed": 0.625
+      }
+    },
+    "Zyra": {
+      "version": "13.12.1",
+      "id": "Zyra",
+      "key": "143",
+      "name": "자이라",
+      "title": "가시 덩굴의 복수",
+      "blurb": "자이라는 고대의 어떤 마법 대재앙에서 태어났다. 자연의 분노가 그대로 형상화된 생명체이자 인간과 식물의 매혹적인 혼종이다. 자이라가 한 걸음 내디딜 때마다 발밑에는 새로운 생명이 피어난다. 발로란의 수많은 필멸자를 자신의 씨앗에서 태어난 후손의 먹잇감 정도로 여기므로, 치명적인 위력의 가시를 날려 필멸자를 거침없이 사냥한다. 또한 자이라는 발로란 여기저기에 식육 식물 군락을 만들어 놓는데, 이 군락은 주변의 다른 생명체를 모조리 휘감아 죽이며 세력을...",
+      "info": {
+        "attack": 4,
+        "defense": 3,
+        "magic": 8,
+        "difficulty": 7
+      },
+      "image": {
+        "full": "Zyra.png",
+        "sprite": "champion5.png",
+        "group": "champion",
+        "x": 96,
+        "y": 48,
+        "w": 48,
+        "h": 48
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "partype": "마나",
+      "stats": {
+        "hp": 574,
+        "hpperlevel": 93,
+        "mp": 418,
+        "mpperlevel": 25,
+        "movespeed": 340,
+        "armor": 29,
+        "armorperlevel": 4.2,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3,
+        "attackrange": 575,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "mpregen": 13,
+        "mpregenperlevel": 0.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3.2,
+        "attackspeedperlevel": 2.11,
+        "attackspeed": 0.625
+      }
+    }
+  }
+}

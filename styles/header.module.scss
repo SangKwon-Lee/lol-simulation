@@ -12,6 +12,7 @@
   display: flex;
   width: 100%;
   max-width: 1200px;
+  flex-wrap: wrap;
   align-items: center;
   padding:16px;
 }
@@ -22,7 +23,19 @@
 }
 
 .title{
+  margin-right: 32px;
   color:#F9E5BF;
 
-  @include s32-w700;
+  @include s28-w700;
+}
+
+.nav-wrapper{
+  display: flex;
+  gap:16px;
+
+  @include s18-w400;
+}
+
+.nav-item{
+  cursor: pointer;
 }
