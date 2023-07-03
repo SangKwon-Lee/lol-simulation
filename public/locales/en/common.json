@@ -27,5 +27,8 @@
   "confirm":"confirm",
   "notSave":"The information you entered will not be saved",
   "again":"again",
-  "coupleResult": "The best champion to date with {{_name}} is {{_champ}}!"
+  "coupleResult": "The best champion to date with {{_name}} is {{_champ}}!",
+  "navBox":"hextech",
+  "navCouple":"Find a romantic partner",
+  "coupleTitle":"LOL Find a romantic partner"
 }

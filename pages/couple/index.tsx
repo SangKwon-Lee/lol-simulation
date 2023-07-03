@@ -2,7 +2,7 @@ import axios from 'axios';
 import Images from '@utils/images';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { CoupleMetaTag } from '@utils/metaTag';
 import styles from '@styles/couple.module.scss';
 import MainHead from '@components/layout/mainHead';
@@ -109,7 +109,7 @@ export default function Couple() {
       <MainHead metaObj={CoupleMetaTag}></MainHead>
       <main className={styles.main}>
         <h2 className={styles[`title`]} onClick={handleResultClick}>
-          롤 연애 상대 찾기
+          {t(`coupleTitle`)}
         </h2>
         {/* 인풋 부분 */}
         {step === 1 && (

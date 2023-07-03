@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '@styles/header.module.scss';
-
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 export default function Header() {
   const router = useRouter();
+  const { t } = useTranslation('common');
   return (
     <header className={styles.header}>
       <div className={styles.wrapper}>
@@ -18,7 +20,7 @@ export default function Header() {
               fontWeight: router.pathname === '/' ? 700 : 400
             }}
           >
-            상자깡
+            {t(`navBox`)}
           </Link>
           <Link
             href={'/couple'}
@@ -27,7 +29,7 @@ export default function Header() {
               fontWeight: router.pathname === '/couple' ? 700 : 400
             }}
           >
-            연애 상대 찾기
+            {t(`navCouple`)}
           </Link>
         </nav>
       </div>
