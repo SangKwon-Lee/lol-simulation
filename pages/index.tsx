@@ -585,9 +585,11 @@ export default function Home() {
             </div>
           </div>
         )}
-        <button className={styles.share} onClick={onClick}>
-          카카오톡 공유하기
-        </button>
+        {locale === 'ko' && (
+          <button className={styles.share} onClick={onClick}>
+            카카오톡 공유하기
+          </button>
+        )}
       </main>
     </>
   );
