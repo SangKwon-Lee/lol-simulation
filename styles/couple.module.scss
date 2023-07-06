@@ -113,6 +113,8 @@
 // * 카카오톡 공유하기
 
 .share{
+  width:100%;
+  max-width: 180px;
   padding:8px 16px;
   border:1px solid #{$text-color};
   margin-top: 16px;

@@ -215,6 +215,8 @@ gap:16px;
 
 // 404
 .share{
+  width:100%;
+  max-width: 200px;
   padding:8px 16px;
   border:1px solid #{$text-color};
   margin-top: 16px;
