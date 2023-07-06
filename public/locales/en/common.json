@@ -30,5 +30,14 @@
   "coupleResult": "The best champion to date with {{_name}} is {{_champ}}!",
   "navBox":"hextech",
   "navCouple":"Find a romantic partner",
-  "coupleTitle":"LOL Find a romantic partner"
+  "coupleTitle":"LOL Find a romantic partner",
+  "type":"type",
+  "mature":"mature",
+  "cute":"cute",
+  "tall":"tall",
+  "short":"short",
+  "tough":"tough",
+  "intellectual":"intellectual",
+  "good":"good",
+  "bad":"bad"
 }

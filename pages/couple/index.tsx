@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
 import { useRouter } from 'next/router';
@@ -10,9 +11,10 @@ import maleChampions from '@src/json/championMale.json';
 import { champSquare, imageLoader } from '@utils/imgLoader';
 import Femalechampions from '@src/json/championFemale.json';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-const maleChampList = Object.keys(maleChampions.data);
-const femaleChampList = Object.keys(Femalechampions.data);
+// const maleChampList = Object.keys(maleChampions.data);
+// const femaleChampList = Object.keys(Femalechampions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
+
 interface Champ {
   url: string;
   name: string;
@@ -35,7 +37,10 @@ export default function Couple() {
   const [input, setInput] = useState({
     name: '',
     sex: '남',
-    age: ''
+    age: '',
+    height: 'tall',
+    type: 'cute',
+    personality: 'good'
   });
   // * 인풋
   const handleInput = (e: any) => {
@@ -44,14 +49,23 @@ export default function Couple() {
       [e.target.name]: e.target.value
     });
   };
+
   // * 결과보기
   const handleResultClick = async () => {
     setStep(2);
     let randomChamp;
     if (input.sex === '남') {
-      randomChamp = femaleChampList[Math.floor(Math.random() * femaleChampList.length)];
+      const result = _.pickBy(Femalechampions.data, function (key, value) {
+        return key.ideal.type === input.type && key.ideal.height === input.height;
+      });
+      const resultLength = Object.keys(result);
+      randomChamp = resultLength[Math.floor(Math.random() * resultLength.length)];
     } else {
-      randomChamp = maleChampList[Math.floor(Math.random() * maleChampList.length)];
+      const result = _.pickBy(maleChampions.data, function (key, value) {
+        return key.ideal.type === input.type && key.ideal.personality === input.personality;
+      });
+      const resultLength = Object.keys(result);
+      randomChamp = resultLength[Math.floor(Math.random() * resultLength.length)];
     }
     try {
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
@@ -79,7 +93,10 @@ export default function Couple() {
     setInput({
       name: '',
       sex: '남',
-      age: ''
+      age: '',
+      height: 'tall',
+      type: 'cute',
+      personality: 'good'
     });
     setStep(1);
   };
@@ -129,7 +146,14 @@ export default function Couple() {
                 className={
                   input.sex === '남' ? styles[`input-button-active`] : styles[`input-button`]
                 }
-                onClick={handleInput}
+                onClick={() => {
+                  setInput({
+                    ...input,
+                    sex: '남',
+                    type: 'cute',
+                    height: 'tall'
+                  });
+                }}
                 name="sex"
                 value={'남'}
               >
@@ -139,13 +163,21 @@ export default function Couple() {
                 className={
                   input.sex === '여' ? styles[`input-button-active`] : styles[`input-button`]
                 }
-                onClick={handleInput}
+                onClick={() => {
+                  setInput({
+                    ...input,
+                    sex: '여',
+                    type: 'intellectual',
+                    personality: 'good'
+                  });
+                }}
                 name="sex"
                 value={'여'}
               >
                 {t(`female`)}
               </button>
             </div>
+
             <div className={styles[`input-wrapper`]}>
               <label htmlFor="age" className={styles[`input-title`]} placeholder={t(`age`)}>
                 {t(`age`)}
@@ -157,6 +189,113 @@ export default function Couple() {
                 name="age"
                 type="number"
               />
+            </div>
+
+            <div className={styles[`input-wrapper`]}>
+              <div className={styles[`input-title`]}>{t(`type`)}</div>
+              {input.sex === '남' ? (
+                <>
+                  <button
+                    className={
+                      input.height === 'tall'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="height"
+                    value={'tall'}
+                  >
+                    {t(`tall`)}
+                  </button>
+                  <button
+                    className={
+                      input.height === 'short'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="height"
+                    value={'short'}
+                  >
+                    {t(`short`)}
+                  </button>
+                  <br />
+                  <button
+                    className={
+                      input.type === 'cute' ? styles[`input-button-active`] : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="type"
+                    value={'cute'}
+                  >
+                    {t(`cute`)}
+                  </button>
+                  <button
+                    className={
+                      input.type === 'mature'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="type"
+                    value={'mature'}
+                  >
+                    {t(`mature`)}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button
+                    className={
+                      input.type === 'intellectual'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="type"
+                    value={'intellectual'}
+                  >
+                    {t(`intellectual`)}
+                  </button>
+                  <button
+                    className={
+                      input.type === 'tough'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="type"
+                    value={'tough'}
+                  >
+                    {t(`tough`)}
+                  </button>
+                  <br />
+                  <button
+                    className={
+                      input.personality === 'good'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="personality"
+                    value={'good'}
+                  >
+                    {t(`good`)}
+                  </button>
+                  <button
+                    className={
+                      input.personality === 'bad'
+                        ? styles[`input-button-active`]
+                        : styles[`input-button`]
+                    }
+                    onClick={handleInput}
+                    name="personality"
+                    value={'bad'}
+                  >
+                    {t(`bad`)}
+                  </button>
+                </>
+              )}
             </div>
             <button onClick={handleResultClick} className={styles[`input-confirm`]}>
               {t(`confirm`)}
@@ -177,7 +316,6 @@ export default function Couple() {
             <Images src={now.url} width={140} height={140} loader={imageLoader} />
             <div className={styles[`champ-name`]}>{now.name}</div>
             <div className={styles.lore}>{now.lore}</div>
-
             <button className={styles[`reset-button`]} onClick={handleReset}>
               {t(`again`)}
             </button>

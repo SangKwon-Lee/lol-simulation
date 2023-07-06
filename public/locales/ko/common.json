@@ -30,6 +30,15 @@
   "coupleResult": "{{_name}}님과 연애하기 가장 좋은 챔피언은 {{_champ}}입니다!",
   "navBox":"상자깡",
   "navCouple":"연애 상대 찾기",
-  "coupleTitle":"롤 연애 상대 찾기"
+  "coupleTitle":"롤 연애 상대 찾기",
+  "type":"타입",
+  "cute":"귀여운",
+  "mature":"성숙한",
+  "tall":"키 큰",
+  "short":"키 작은",
+  "tough":"터프한",
+  "intellectual":"지적인",
+  "good":"착한",
+  "bad":"나쁜"
 }
 

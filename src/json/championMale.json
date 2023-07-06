@@ -4,6 +4,10 @@
   "version": "13.12.1",
   "data": {
     "Aatrox": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Aatrox",
       "key": "266",
@@ -54,6 +58,10 @@
       }
     },
     "Akshan": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Akshan",
       "key": "166",
@@ -103,57 +111,11 @@
         "attackspeed": 0.638
       }
     },
-    "Alistar": {
-      "version": "13.12.1",
-      "id": "Alistar",
-      "key": "12",
-      "name": "알리스타",
-      "title": "미노타우로스",
-      "blurb": "비할 데 없이 강력한 전사라는 평판이 자자한 알리스타는 녹서스 제국에게 부족 전체가 몰살당한 이래 그 복수를 꿈꾸고 있다. 노예로 잡힌 후 참혹한 전투를 거듭해야 하는 검투사 신세가 되었으나, 그 누구도 꺾을 수 없는 의지가 있어 마음 깊은 곳까지 야수로 변하지는 않았다. 알리스타는 노예라는 구속에서 벗어나 자유의 몸이 된 후에도 탄압당하고 기댈 곳 없는 자들을 위해 싸우고 있다. 알리스타의 분노는 그의 뿔이나 발굽, 주먹 못지 않게 적들이...",
-      "info": {
-        "attack": 6,
-        "defense": 9,
-        "magic": 5,
-        "difficulty": 7
-      },
-      "image": {
-        "full": "Alistar.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "x": 192,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Support"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 685,
-        "hpperlevel": 120,
-        "mp": 350,
-        "mpperlevel": 40,
-        "movespeed": 330,
-        "armor": 47,
-        "armorperlevel": 4.7,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 8.5,
-        "hpregenperlevel": 0.85,
-        "mpregen": 8.5,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 62,
-        "attackdamageperlevel": 3.75,
-        "attackspeedperlevel": 2.125,
-        "attackspeed": 0.625
-      }
-    },
     "Amumu": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Amumu",
       "key": "32",
@@ -204,6 +166,10 @@
       }
     },
     "Aphelios": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Aphelios",
       "key": "523",
@@ -252,56 +218,11 @@
         "attackspeed": 0.64
       }
     },
-    "AurelionSol": {
-      "version": "13.12.1",
-      "id": "AurelionSol",
-      "key": "136",
-      "name": "아우렐리온 솔",
-      "title": "별의 창조자",
-      "blurb": "아우렐리온 솔은 천상의 경이로운 별들을 손수 빚어 한때 텅 비어있던 광활한 우주를 수놓았다. 그러나 이제 그는 속임수로 자신을 복종시킨 우주 제국의 명령에 따라 자신의 막강한 힘을 발휘해야 하는 처지가 되었다. 별을 만들던 때로 돌아가려는 열망에 불타는 아우렐리온 솔은 자신의 자유를 되찾기 위해서라면 자신의 창조물인 별들을 하늘에서 없앨 각오마저 되어 있다.",
-      "info": {
-        "attack": 2,
-        "defense": 3,
-        "magic": 8,
-        "difficulty": 7
-      },
-      "image": {
-        "full": "AurelionSol.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "x": 0,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 620,
-        "hpperlevel": 90,
-        "mp": 530,
-        "mpperlevel": 40,
-        "movespeed": 335,
-        "armor": 22,
-        "armorperlevel": 4,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 550,
-        "hpregen": 5.5,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8,
-        "mpregenperlevel": 0.75,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 55,
-        "attackdamageperlevel": 3.2,
-        "attackspeedperlevel": 1.5,
-        "attackspeed": 0.625
-      }
-    },
     "Azir": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Azir",
       "key": "268",
@@ -352,6 +273,10 @@
       }
     },
     "Bard": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Bard",
       "key": "432",
@@ -401,57 +326,11 @@
         "attackspeed": 0.625
       }
     },
-    "Blitzcrank": {
-      "version": "13.12.1",
-      "id": "Blitzcrank",
-      "key": "53",
-      "name": "블리츠크랭크",
-      "title": "거대 증기 골렘",
-      "blurb": "블리츠크랭크는 지하도시 자운의 기술이 만들어낸 거대한 기계로 사실상 파괴불가능에 가깝다. 원래는 자운을 뒤덮은 유독 폐기물을 처리하기 위해 만들어진 골렘이었으나, 연약하기 짝이 없는 자운 시민들을 지키기 위해서는 폐기물을 치우는 것만으로는 모자란다고 판단하여 스스로 형체를 변형시키기에 이르렀다. 블리츠크랭크는 골렘다운 힘과 내구성을 사심 없이 활용하여 사람들을 보호하고, 말썽꾼이 눈에 띄면 강철 주먹을 내지르거나 에너지를 분출하여 진압한다.",
-      "info": {
-        "attack": 4,
-        "defense": 8,
-        "magic": 5,
-        "difficulty": 4
-      },
-      "image": {
-        "full": "Blitzcrank.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "x": 192,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Fighter"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 633,
-        "hpperlevel": 109,
-        "mp": 267,
-        "mpperlevel": 40,
-        "movespeed": 325,
-        "armor": 40,
-        "armorperlevel": 4.7,
-        "spellblock": 28,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 7.5,
-        "hpregenperlevel": 0.75,
-        "mpregen": 8.5,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 62,
-        "attackdamageperlevel": 3.5,
-        "attackspeedperlevel": 1.13,
-        "attackspeed": 0.65
-      }
-    },
     "Brand": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Brand",
       "key": "63",
@@ -501,6 +380,10 @@
       }
     },
     "Braum": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Braum",
       "key": "201",
@@ -550,57 +433,11 @@
         "attackspeed": 0.644
       }
     },
-    "Chogath": {
-      "version": "13.12.1",
-      "id": "Chogath",
-      "key": "31",
-      "name": "초가스",
-      "title": "공허의 공포",
-      "blurb": "공허에서 나온 생명체 초가스는 룬테라의 따가운 햇빛 아래 처음 모습을 드러낸 순간부터, 그 무엇으로도 만족시킬 수 없는 가장 순수한 굶주림에 이끌려 움직였다. 그 존재 자체가 모든 생명체를 집어삼키려는 공허의 욕망을 온전하게 드러내는 것이다. 초가스는 복잡한 생체 활동을 통해 주변 물질에서 새로운 몸을 만들어냈고, 근육과 밀도를 키웠으며, 유기체 다이아몬드처럼 딱딱한 겉껍질로 몸을 덮었다. 하지만 몸집이 커져도 허기를 채울 수 없자, 초가스는 여분의...",
-      "info": {
-        "attack": 3,
-        "defense": 7,
-        "magic": 7,
-        "difficulty": 5
-      },
-      "image": {
-        "full": "Chogath.png",
-        "sprite": "champion0.png",
-        "group": "champion",
-        "x": 0,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 644,
-        "hpperlevel": 94,
-        "mp": 270,
-        "mpperlevel": 60,
-        "movespeed": 345,
-        "armor": 38,
-        "armorperlevel": 5,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 9,
-        "hpregenperlevel": 0.85,
-        "mpregen": 7.2,
-        "mpregenperlevel": 0.45,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 69,
-        "attackdamageperlevel": 4.2,
-        "attackspeedperlevel": 1.44,
-        "attackspeed": 0.625
-      }
-    },
     "Corki": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Corki",
       "key": "42",
@@ -650,6 +487,10 @@
       }
     },
     "Darius": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Darius",
       "key": "122",
@@ -700,6 +541,10 @@
       }
     },
     "Draven": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Draven",
       "key": "119",
@@ -749,6 +594,10 @@
       }
     },
     "DrMundo": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "DrMundo",
       "key": "36",
@@ -799,6 +648,10 @@
       }
     },
     "Ekko": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Ekko",
       "key": "245",
@@ -849,6 +702,10 @@
       }
     },
     "Ezreal": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Ezreal",
       "key": "81",
@@ -898,107 +755,11 @@
         "attackspeed": 0.625
       }
     },
-    "Fiddlesticks": {
-      "version": "13.12.1",
-      "id": "Fiddlesticks",
-      "key": "9",
-      "name": "피들스틱",
-      "title": "오래된 공포",
-      "blurb": "룬테라에 무시무시한 고대의 무언가가 깨어났다. 시간을 초월한 공포의 존재 피들스틱은 불안에 동요하는 인간 사회의 끝자락에 나타나 겁먹은 희생자들을 양분으로 삼는다. 앙상하고 투박한 모습의 이 생물은 삐죽삐죽한 낫을 휘두르며 공포를 거둬들이고, 살아남은 불행한 자들의 정신을 산산이 조각낸다. 까마귀 울음소리와 인간을 닮은 형상의 속삭임을 조심하라... 피들스틱이 돌아온 것이다.",
-      "info": {
-        "attack": 2,
-        "defense": 3,
-        "magic": 9,
-        "difficulty": 9
-      },
-      "image": {
-        "full": "Fiddlesticks.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 0,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Mage",
-        "Support"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 650,
-        "hpperlevel": 106,
-        "mp": 500,
-        "mpperlevel": 28,
-        "movespeed": 335,
-        "armor": 34,
-        "armorperlevel": 4.7,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 480,
-        "hpregen": 5.5,
-        "hpregenperlevel": 0.6,
-        "mpregen": 8,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 55,
-        "attackdamageperlevel": 2.65,
-        "attackspeedperlevel": 2.11,
-        "attackspeed": 0.625
-      }
-    },
-    "Fizz": {
-      "version": "13.12.1",
-      "id": "Fizz",
-      "key": "105",
-      "name": "피즈",
-      "title": "대양의 말썽꾸러기",
-      "blurb": "바다와 육지에서 살 수 있는 요들족 피즈는 빌지워터를 둘러싼 산호초에서 살고 있다. 종종 미신을 믿는 선장들이 바다에 바치는 돈을 주워 돌려주기도 하지만, 아무리 신경질적인 뱃사람들이라도 피즈를 화나게 할 만큼 어리석지는 않다. 이 미끈거리는 생명체를 얕잡아본 사람들이 어떻게 되었는지에 대해 수많은 이야기가 전해지고 있기 때문이리라. 이따금 변덕스러운 바다 정령으로 오해받기도 하는 피즈는 바닷속 깊은 곳에 사는 괴물을 부릴 수 있으며, 적과 아군을...",
-      "info": {
-        "attack": 6,
-        "defense": 4,
-        "magic": 7,
-        "difficulty": 6
-      },
-      "image": {
-        "full": "Fizz.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 96,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Assassin",
-        "Fighter"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 640,
-        "hpperlevel": 106,
-        "mp": 317,
-        "mpperlevel": 52,
-        "movespeed": 335,
-        "armor": 22,
-        "armorperlevel": 4.6,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 175,
-        "hpregen": 8,
-        "hpregenperlevel": 0.7,
-        "mpregen": 6,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 58,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 3.1,
-        "attackspeed": 0.658
-      }
-    },
     "Galio": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Galio",
       "key": "3",
@@ -1049,6 +810,10 @@
       }
     },
     "Gangplank": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Gangplank",
       "key": "41",
@@ -1098,6 +863,10 @@
       }
     },
     "Garen": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Garen",
       "key": "86",
@@ -1147,57 +916,11 @@
         "attackspeed": 0.625
       }
     },
-    "Gnar": {
-      "version": "13.12.1",
-      "id": "Gnar",
-      "key": "150",
-      "name": "나르",
-      "title": "잃어버린 고리",
-      "blurb": "고대 요들인 나르는 익살스러운 장난을 치다가도 어린아이 같은 변덕을 부려 벌컥 화를 내며, 그럴 때면 순식간에 거대한 몸집의 야수로 변하여 주변을 마구 때려부순다. 수천 년 동안이나 얼음 정수에 갇혀 있다가 풀려난 터라, 지금의 세계는 나르에게 진기하고 경이로운 세상이다. 호기심 많은 나르는 위험이 닥치면 오히려 즐거워하며, 뼈이빨 부메랑이든 옆에 서 있는 건물이든 닥치는 대로 집어들어 적에게 던진다.",
-      "info": {
-        "attack": 6,
-        "defense": 5,
-        "magic": 5,
-        "difficulty": 8
-      },
-      "image": {
-        "full": "Gnar.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 288,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Fighter",
-        "Tank"
-      ],
-      "partype": "분노",
-      "stats": {
-        "hp": 540,
-        "hpperlevel": 79,
-        "mp": 100,
-        "mpperlevel": 0,
-        "movespeed": 335,
-        "armor": 32,
-        "armorperlevel": 3.7,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 175,
-        "hpregen": 4.5,
-        "hpregenperlevel": 1.25,
-        "mpregen": 0,
-        "mpregenperlevel": 0,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 57,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 6,
-        "attackspeed": 0.625
-      }
-    },
     "Gragas": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Gragas",
       "key": "79",
@@ -1248,6 +971,10 @@
       }
     },
     "Graves": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Graves",
       "key": "104",
@@ -1296,57 +1023,11 @@
         "attackspeed": 0.475
       }
     },
-    "Hecarim": {
-      "version": "13.12.1",
-      "id": "Hecarim",
-      "key": "120",
-      "name": "헤카림",
-      "title": "전쟁의 전조",
-      "blurb": "헤카림은 말과 인간이 한 몸인 반인반수 유령으로, 산 자들의 영혼을 끝없이 추적하는 저주를 받았다. 원래는 자존심 강한 기사로 자신의 기사단을 이끌었으나, 축복의 빛 군도에 그림자가 드리울 때 대몰락의 파괴 에너지에 휩쓸려 최후를 맞았다. 그 이후 헤카림과 기사단은 타고 있던 말과 한 몸이 되어, 검은 안개가 룬테라에 깔릴 때면 무자비한 돌격을 일삼는다. 이제 그에게 남은 쾌락이란 적을 학살하고 철갑을 두른 말발굽 아래 그 시체를 깔아뭉개는 것뿐이다.",
-      "info": {
-        "attack": 8,
-        "defense": 6,
-        "magic": 4,
-        "difficulty": 6
-      },
-      "image": {
-        "full": "Hecarim.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 0,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Fighter",
-        "Tank"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 625,
-        "hpperlevel": 99,
-        "mp": 277,
-        "mpperlevel": 60,
-        "movespeed": 345,
-        "armor": 32,
-        "armorperlevel": 5.45,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 175,
-        "hpregen": 7,
-        "hpregenperlevel": 0.75,
-        "mpregen": 6.5,
-        "mpregenperlevel": 0.6,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 66,
-        "attackdamageperlevel": 3.2,
-        "attackspeedperlevel": 2.5,
-        "attackspeed": 0.67
-      }
-    },
     "Heimerdinger": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Heimerdinger",
       "key": "74",
@@ -1396,57 +1077,11 @@
         "attackspeed": 0.625
       }
     },
-    "Ivern": {
-      "version": "13.12.1",
-      "id": "Ivern",
-      "key": "427",
-      "name": "아이번",
-      "title": "자연의 아버지",
-      "blurb": "자연의 아버지로 잘 알려진 아이번 브램블풋은 룬테라 전역의 숲을 돌아다니며 생명을 가꾼다. 반은 인간, 반은 나무의 형상을 한 그는 자연의 비밀을 속속들이 알고 있을 뿐 아니라 땅에서 자라고, 하늘을 날고, 초원을 달리는 모든 것과 깊은 친분을 맺고 있다. 아이번은 자연 속에서 만나는 모든 이에게 자신만의 지혜를 나누어 주고, 숲을 풍성하게 가꾸며, 때로는 입이 가벼운 나비들에게 비밀을 맡기기도 한다.",
-      "info": {
-        "attack": 3,
-        "defense": 5,
-        "magic": 7,
-        "difficulty": 7
-      },
-      "image": {
-        "full": "Ivern.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 192,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Support",
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 655,
-        "hpperlevel": 99,
-        "mp": 450,
-        "mpperlevel": 60,
-        "movespeed": 330,
-        "armor": 27,
-        "armorperlevel": 4.7,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 475,
-        "hpregen": 7,
-        "hpregenperlevel": 0.85,
-        "mpregen": 6,
-        "mpregenperlevel": 0.75,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 50,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 3.4,
-        "attackspeed": 0.644
-      }
-    },
     "JarvanIV": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "JarvanIV",
       "key": "59",
@@ -1497,6 +1132,10 @@
       }
     },
     "Jax": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Jax",
       "key": "24",
@@ -1547,6 +1186,10 @@
       }
     },
     "Jayce": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Jayce",
       "key": "126",
@@ -1597,6 +1240,10 @@
       }
     },
     "Jhin": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Jhin",
       "key": "202",
@@ -1646,56 +1293,11 @@
         "attackspeed": 0.625
       }
     },
-    "Karthus": {
-      "version": "13.12.1",
-      "id": "Karthus",
-      "key": "30",
-      "name": "카서스",
-      "title": "죽음을 노래하는 자",
-      "blurb": "망각을 부르는 자 카서스는 섬뜩한 노랫소리를 전주곡 삼아 악몽처럼 등장하는 언데드이다. 산 자는 영원히 죽지 않는 언데드를 두려워하나, 그는 언데드를 삶과 죽음의 완벽한 결합으로 오직 아름답고 순수하다 여긴다. 카서스는 언데드로서 존재하는 기쁨을 온 세계에 전하기 위해 그림자 군도로부터 출몰한다.",
-      "info": {
-        "attack": 2,
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 7
-      },
-      "image": {
-        "full": "Karthus.png",
-        "sprite": "champion1.png",
-        "group": "champion",
-        "x": 192,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 620,
-        "hpperlevel": 110,
-        "mp": 467,
-        "mpperlevel": 31,
-        "movespeed": 335,
-        "armor": 21,
-        "armorperlevel": 4.7,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 450,
-        "hpregen": 6.5,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 46,
-        "attackdamageperlevel": 3.25,
-        "attackspeedperlevel": 2.11,
-        "attackspeed": 0.625
-      }
-    },
     "Kassadin": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Kassadin",
       "key": "38",
@@ -1746,6 +1348,10 @@
       }
     },
     "Kayn": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Kayn",
       "key": "141",
@@ -1796,6 +1402,10 @@
       }
     },
     "Kennen": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Kennen",
       "key": "85",
@@ -1845,57 +1455,11 @@
         "attackspeed": 0.625
       }
     },
-    "Khazix": {
-      "version": "13.12.1",
-      "id": "Khazix",
-      "key": "121",
-      "name": "카직스",
-      "title": "공허의 약탈자",
-      "blurb": "'공허는 성장하고, 공허는 적응한다.' 공허태생 생명체는 많지만, 이 진리를 카직스보다 더 명백히 입증하는 존재는 없다. 카직스가 공포스러운 것은 진화를 거듭하기 때문이다. 생존을 위해 사냥을 하고, 사냥감을 집어삼킬 때마다 강해지고, 더 강한 상대를 찾아 또다시 사냥에 나선다. 게다가 진화를 할수록 먹이를 낚아채는 사냥 기술은 더 새로워지고 효율도 높아진다. 공허에서 갓 넘어왔을 때에는 아무 생각 없는 야수에 불과했으나, 이제는 그 형체만큼이나...",
-      "info": {
-        "attack": 9,
-        "defense": 4,
-        "magic": 3,
-        "difficulty": 6
-      },
-      "image": {
-        "full": "Khazix.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "x": 0,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Assassin"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 643,
-        "hpperlevel": 99,
-        "mp": 327,
-        "mpperlevel": 40,
-        "movespeed": 350,
-        "armor": 36,
-        "armorperlevel": 4.2,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 7.5,
-        "hpregenperlevel": 0.75,
-        "mpregen": 7.59,
-        "mpregenperlevel": 0.5,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 60,
-        "attackdamageperlevel": 3.1,
-        "attackspeedperlevel": 2.7,
-        "attackspeed": 0.668
-      }
-    },
-
     "Kled": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Kled",
       "key": "240",
@@ -1945,57 +1509,11 @@
         "attackspeed": 0.625
       }
     },
-    "KogMaw": {
-      "version": "13.12.1",
-      "id": "KogMaw",
-      "key": "96",
-      "name": "코그모",
-      "title": "심연의 아귀",
-      "blurb": "이케시아의 황무지 어딘가, 인간의 눈길이 닿지 않는 깊은 곳에 공허의 틈이 나타났고, 썩은 내를 풍기는 이곳에서 코그모가 느닷없이 튀어나왔다. 온몸에서는 악취가 스며나오고, 호기심 때문에 항상 떡 벌리고 있는 입에서는 부식성 분비물이 뚝뚝 떨어진다. 주변에 있는 건 닥치는 대로 마구 물어뜯고 침을 질질 흘린 후에야 그것이 무엇인지 알아차린다. 공허태생이지만 천성이 악하지는 않고 천진난만한 언행에 묘한 매력도 있지만, 방심은 금물이다. 식탐과 호기심이...",
-      "info": {
-        "attack": 8,
-        "defense": 2,
-        "magic": 5,
-        "difficulty": 6
-      },
-      "image": {
-        "full": "KogMaw.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "x": 144,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Marksman",
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 635,
-        "hpperlevel": 99,
-        "mp": 325,
-        "mpperlevel": 40,
-        "movespeed": 330,
-        "armor": 24,
-        "armorperlevel": 4.45,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 500,
-        "hpregen": 3.75,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8.75,
-        "mpregenperlevel": 0.7,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 61,
-        "attackdamageperlevel": 3.1,
-        "attackspeedperlevel": 2.65,
-        "attackspeed": 0.665
-      }
-    },
     "KSante": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "KSante",
       "key": "897",
@@ -2045,8 +1563,11 @@
         "attackspeed": 0.625
       }
     },
-
     "LeeSin": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "LeeSin",
       "key": "64",
@@ -2097,6 +1618,10 @@
       }
     },
     "Lucian": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Lucian",
       "key": "236",
@@ -2145,57 +1670,11 @@
         "attackspeed": 0.638
       }
     },
-    "Malphite": {
-      "version": "13.12.1",
-      "id": "Malphite",
-      "key": "54",
-      "name": "말파이트",
-      "title": "거석의 파편",
-      "blurb": "암석으로 이루어진 거대한 자연물 말파이트는 혼란스러운 세상에 평화로운 질서를 가져오기 위해 노력하고 있다. 말파이트는 원래 다른 세계에서 '거석'이라 불리는 돌기둥의 일부이자 거석을 지키는 파수꾼으로 태어났으며, 막강한 자연의 힘으로 거석을 보호하려 했으나 실패하고 말았다. 거석이 파괴된 후, 유일하게 살아남은 말파이트는 이제 룬테라의 물렁물렁한 생명체와 그들의 변덕스러운 성미를 참아내며 마지막 생존자에게 어울리는 새로운 임무를 찾고 있다.",
-      "info": {
-        "attack": 5,
-        "defense": 9,
-        "magic": 7,
-        "difficulty": 2
-      },
-      "image": {
-        "full": "Malphite.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "x": 144,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Fighter"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 644,
-        "hpperlevel": 104,
-        "mp": 280,
-        "mpperlevel": 60,
-        "movespeed": 335,
-        "armor": 37,
-        "armorperlevel": 4.95,
-        "spellblock": 28,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 7,
-        "hpregenperlevel": 0.55,
-        "mpregen": 7.3,
-        "mpregenperlevel": 0.55,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 62,
-        "attackdamageperlevel": 4,
-        "attackspeedperlevel": 3.4,
-        "attackspeed": 0.736
-      }
-    },
     "Malzahar": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Malzahar",
       "key": "90",
@@ -2245,57 +1724,11 @@
         "attackspeed": 0.625
       }
     },
-    "Maokai": {
-      "version": "13.12.1",
-      "id": "Maokai",
-      "key": "57",
-      "name": "마오카이",
-      "title": "뒤틀린 나무 정령",
-      "blurb": "거대한 나무 정령 마오카이는 분노에 휩싸여 그림자 군도의 초자연적인 언데드와 싸운다. 마법에 의한 대격변으로 고향이 파괴되었을 때 그는 자신의 나무 심장에 스며 있는 생명의 정수로 언데드의 상태는 모면했지만 형체가 뒤틀린 복수의 화신이 되었다. 한 때는 평화를 사랑하는 자연의 정령이었으나 이제 그는 그림자 군도를 뒤덮은 언데드를 몰아내고 아름답던 고향의 옛 모습을 되찾기 위해 맹렬하게 싸운다.",
-      "info": {
-        "attack": 3,
-        "defense": 8,
-        "magic": 6,
-        "difficulty": 3
-      },
-      "image": {
-        "full": "Maokai.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "x": 240,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 635,
-        "hpperlevel": 109,
-        "mp": 375,
-        "mpperlevel": 43,
-        "movespeed": 335,
-        "armor": 39,
-        "armorperlevel": 5.2,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 5,
-        "hpregenperlevel": 0.75,
-        "mpregen": 7.2,
-        "mpregenperlevel": 0.6,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 64,
-        "attackdamageperlevel": 3.3,
-        "attackspeedperlevel": 2.125,
-        "attackspeed": 0.8
-      }
-    },
     "MasterYi": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "MasterYi",
       "key": "11",
@@ -2346,6 +1779,10 @@
       }
     },
     "Milio": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Milio",
       "key": "902",
@@ -2395,6 +1832,10 @@
       }
     },
     "MonkeyKing": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "MonkeyKing",
       "key": "62",
@@ -2445,6 +1886,10 @@
       }
     },
     "Mordekaiser": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Mordekaiser",
       "key": "82",
@@ -2494,6 +1939,10 @@
       }
     },
     "Nasus": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Nasus",
       "key": "75",
@@ -2544,6 +1993,10 @@
       }
     },
     "Nautilus": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Nautilus",
       "key": "111",
@@ -2593,57 +2046,11 @@
         "attackspeed": 0.706
       }
     },
-    "Nocturne": {
-      "version": "13.12.1",
-      "id": "Nocturne",
-      "key": "56",
-      "name": "녹턴",
-      "title": "영원한 악몽",
-      "blurb": "언제부터인가 자의식이 있는 존재라면 반드시 꾸는 악몽이 있었다. 그리고 그 악몽들이 모여 사악한 기운을 끌어들였고, 그 속에서 태곳적 힘을 지닌 순수한 악 그 자체인 녹턴이 생겨났다. 녹턴은 혼돈을 암흑의 액체로 표현한 듯한 형상으로, 얼굴은 없으나 차디찬 눈을 지녔으며 흉흉해 보이는 칼날로 무장했다. 영혼계에서 탈출하여 생명이 깨어 있는 세계로 내려온 녹턴은 진정한 암흑에서나 피어날 법한 공포를 먹이로 삼는다.",
-      "info": {
-        "attack": 9,
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 4
-      },
-      "image": {
-        "full": "Nocturne.png",
-        "sprite": "champion2.png",
-        "group": "champion",
-        "x": 384,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Assassin",
-        "Fighter"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 655,
-        "hpperlevel": 109,
-        "mp": 275,
-        "mpperlevel": 35,
-        "movespeed": 345,
-        "armor": 38,
-        "armorperlevel": 4.7,
-        "spellblock": 32,
-        "spellblockperlevel": 1.55,
-        "attackrange": 125,
-        "hpregen": 7,
-        "hpregenperlevel": 0.75,
-        "mpregen": 7,
-        "mpregenperlevel": 0.45,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 62,
-        "attackdamageperlevel": 2.6,
-        "attackspeedperlevel": 2.7,
-        "attackspeed": 0.721
-      }
-    },
     "Nunu": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Nunu",
       "key": "20",
@@ -2694,6 +2101,10 @@
       }
     },
     "Olaf": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Olaf",
       "key": "2",
@@ -2744,6 +2155,10 @@
       }
     },
     "Ornn": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Ornn",
       "key": "516",
@@ -2794,6 +2209,10 @@
       }
     },
     "Pantheon": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Pantheon",
       "key": "80",
@@ -2844,6 +2263,10 @@
       }
     },
     "Pyke": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Pyke",
       "key": "555",
@@ -2894,6 +2317,10 @@
       }
     },
     "Rakan": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Rakan",
       "key": "497",
@@ -2943,6 +2370,10 @@
       }
     },
     "Rammus": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Rammus",
       "key": "33",
@@ -2992,56 +2423,11 @@
         "attackspeed": 0.656
       }
     },
-    "RekSai": {
-      "version": "13.12.1",
-      "id": "RekSai",
-      "key": "421",
-      "name": "렉사이",
-      "title": "공허의 복병",
-      "blurb": "최상위 포식자 렉사이는 무자비한 공허 태생 생명체로, 땅굴을 파고 들어가 있다가 방심한 먹잇감을 덮쳐 게걸스럽게 집어삼킨다. 렉사이의 그칠 줄 모르는 식탐 때문에 위대한 슈리마 제국 전체가 초토화되었을 정도다. 사막을 오가는 상인이나 여행자들은 아무리 철저하게 무장을 했더라도 렉사이의 영토를 피하려고 일부러 멀고 먼 길을 돌아가곤 한다. 렉사이가 지평선에 보이면, 지하에서 기다리고 있는 것은 죽음 뿐이라는 것을 모르는 사람은 없다.",
-      "info": {
-        "attack": 8,
-        "defense": 5,
-        "magic": 2,
-        "difficulty": 3
-      },
-      "image": {
-        "full": "RekSai.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "x": 0,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Fighter"
-      ],
-      "partype": "분노",
-      "stats": {
-        "hp": 640,
-        "hpperlevel": 99,
-        "mp": 100,
-        "mpperlevel": 0,
-        "movespeed": 335,
-        "armor": 36,
-        "armorperlevel": 4.95,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 175,
-        "hpregen": 7.5,
-        "hpregenperlevel": 0.65,
-        "mpregen": 0,
-        "mpregenperlevel": 0,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 61,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 2,
-        "attackspeed": 0.667
-      }
-    },
     "Renekton": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Renekton",
       "key": "58",
@@ -3091,57 +2477,11 @@
         "attackspeed": 0.665
       }
     },
-    "Rengar": {
-      "version": "13.12.1",
-      "id": "Rengar",
-      "key": "107",
-      "name": "렝가",
-      "title": "추적하는 사자",
-      "blurb": "포악한 기질의 렝가는 바스타야 종족으로, 난폭하고 사나운 생명체를 추적하고 처치하는 순간의 짜릿한 전율을 삶의 낙으로 여기는 전리품 수집가다. 그는 강하고 무시무시한 괴물을 사냥하기 위해 온 세상을 샅샅이 뒤진다. 그중에서도 그가 가장 찾고자 하는 사냥감은 그의 한쪽 눈을 앗아간 공허의 약탈자 카직스다. 렝가가 사냥을 하는 이유는 굶주린 배를 채우기 위함도, 영광을 누리기 위함도 아니다. 그는 사냥 그 자체의 즐거움을 만끽하기 위해 오늘도 먹잇감을...",
-      "info": {
-        "attack": 7,
-        "defense": 4,
-        "magic": 2,
-        "difficulty": 8
-      },
-      "image": {
-        "full": "Rengar.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "x": 192,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Assassin",
-        "Fighter"
-      ],
-      "partype": "흉포",
-      "stats": {
-        "hp": 620,
-        "hpperlevel": 104,
-        "mp": 4,
-        "mpperlevel": 0,
-        "movespeed": 345,
-        "armor": 34,
-        "armorperlevel": 4.2,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 7,
-        "hpregenperlevel": 0.5,
-        "mpregen": 0,
-        "mpregenperlevel": 0,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 68,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 3,
-        "attackspeed": 0.667
-      }
-    },
     "Rumble": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Rumble",
       "key": "68",
@@ -3192,6 +2532,10 @@
       }
     },
     "Ryze": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Ryze",
       "key": "13",
@@ -3242,6 +2586,10 @@
       }
     },
     "Sett": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Sett",
       "key": "875",
@@ -3292,6 +2640,10 @@
       }
     },
     "Shaco": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Shaco",
       "key": "35",
@@ -3341,6 +2693,10 @@
       }
     },
     "Shen": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Shen",
       "key": "98",
@@ -3390,6 +2746,10 @@
       }
     },
     "Singed": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Singed",
       "key": "27",
@@ -3440,6 +2800,10 @@
       }
     },
     "Sion": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Sion",
       "key": "14",
@@ -3489,57 +2853,11 @@
         "attackspeed": 0.679
       }
     },
-    "Skarner": {
-      "version": "13.12.1",
-      "id": "Skarner",
-      "key": "72",
-      "name": "스카너",
-      "title": "수정 선봉장",
-      "blurb": "슈리마의 깊은 계곡에 서식하는 강력한 수정 전갈, 스카너. 고대 브래컨 혈통을 지닌 스카너와 그 동족은 뛰어난 지혜를 갖춘 것으로 잘 알려져 있다. 브래컨의 영혼은 선조대의 모든 사상과 기억이 내재되어 있는 생명 수정과 결합되어 있는데, 이것은 브래컨이 물속뿐만 아니라 육지와도 긴밀한 관계에 놓여 있음을 의미한다. 아주 오래전 어느 날, 이들 브래컨 종족은 생명 수정의 마법이 풀려나가는 것을 막기 위해 동면에 들어갔다. 그런데 최근 들어 발생한 매우...",
-      "info": {
-        "attack": 7,
-        "defense": 6,
-        "magic": 5,
-        "difficulty": 5
-      },
-      "image": {
-        "full": "Skarner.png",
-        "sprite": "champion3.png",
-        "group": "champion",
-        "x": 432,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Fighter",
-        "Tank"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 650,
-        "hpperlevel": 99,
-        "mp": 320,
-        "mpperlevel": 60,
-        "movespeed": 335,
-        "armor": 38,
-        "armorperlevel": 5,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 9,
-        "hpregenperlevel": 0.85,
-        "mpregen": 7.2,
-        "mpregenperlevel": 0.45,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 65,
-        "attackdamageperlevel": 4.5,
-        "attackspeedperlevel": 2.1,
-        "attackspeed": 0.625
-      }
-    },
     "Swain": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Swain",
       "key": "50",
@@ -3590,6 +2908,10 @@
       }
     },
     "Sylas": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Sylas",
       "key": "517",
@@ -3639,57 +2961,11 @@
         "attackspeed": 0.645
       }
     },
-    "TahmKench": {
-      "version": "13.12.1",
-      "id": "TahmKench",
-      "key": "223",
-      "name": "탐 켄치",
-      "title": "강의 폭군",
-      "blurb": "역사 속에서 여러 이름으로 알려져 있는 악마 탐 켄치는 룬테라의 물길을 따라 이동하며 끝없는 식욕을 다른 이들의 고통으로 채운다. 탐 켄치를 매우 매력적이고 자신만만한 존재로 생각하는 이들도 있지만, 탐 켄치는 방심한 먹잇감을 찾아 현실 세계를 활보하는 방랑자일 뿐이다. 탐 켄치의 채찍 같은 혓바닥은 수십 걸음 떨어진 중무장한 전사도 기절시킬 수 있으며, 탐 켄치의 꾸르륵대는 뱃속으로 들어가는 것은 다시 돌아올 희망이 거의 없는 심연에 떨어지는...",
-      "info": {
-        "attack": 3,
-        "defense": 9,
-        "magic": 6,
-        "difficulty": 5
-      },
-      "image": {
-        "full": "TahmKench.png",
-        "sprite": "champion4.png",
-        "group": "champion",
-        "x": 240,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Support",
-        "Tank"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 640,
-        "hpperlevel": 103,
-        "mp": 325,
-        "mpperlevel": 50,
-        "movespeed": 335,
-        "armor": 42,
-        "armorperlevel": 4.7,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 175,
-        "hpregen": 6.5,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8,
-        "mpregenperlevel": 1,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 56,
-        "attackdamageperlevel": 3.2,
-        "attackspeedperlevel": 2.5,
-        "attackspeed": 0.658
-      }
-    },
     "Talon": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Talon",
       "key": "91",
@@ -3739,6 +3015,10 @@
       }
     },
     "Taric": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Taric",
       "key": "44",
@@ -3789,6 +3069,10 @@
       }
     },
     "Teemo": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Teemo",
       "key": "17",
@@ -3839,6 +3123,10 @@
       }
     },
     "Thresh": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Thresh",
       "key": "412",
@@ -3889,6 +3177,10 @@
       }
     },
     "Trundle": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Trundle",
       "key": "48",
@@ -3939,6 +3231,10 @@
       }
     },
     "Tryndamere": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Tryndamere",
       "key": "23",
@@ -3989,6 +3285,10 @@
       }
     },
     "TwistedFate": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "TwistedFate",
       "key": "4",
@@ -4037,57 +3337,11 @@
         "attackspeed": 0.651
       }
     },
-    "Twitch": {
-      "version": "13.12.1",
-      "id": "Twitch",
-      "key": "29",
-      "name": "트위치",
-      "title": "역병 쥐",
-      "blurb": "자운에서 전염병을 옮기는 쥐로 태어난 트위치는 열정적인 오물 전문가로, 앞발을 더럽히는 것을 두려워하지 않는다. 트위치는 필트오버의 부유층을 향해 화학물질로 강화한 석궁을 겨누며, 지상의 인간들의 더러움을 적나라하게 드러내기로 다짐했다. 지하동굴에 웅크리고 있을 때를 제외하면 늘 비밀스럽게 교활한 움직임을 일삼는 트위치는 버려진 보물을 찾아 쓰레기 더미를 뒤지고 있다. 곰팡이 슨 샌드위치라도 찾을 수 있을까 하며.",
-      "info": {
-        "attack": 9,
-        "defense": 2,
-        "magic": 3,
-        "difficulty": 6
-      },
-      "image": {
-        "full": "Twitch.png",
-        "sprite": "champion4.png",
-        "group": "champion",
-        "x": 240,
-        "y": 48,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Marksman",
-        "Assassin"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 682,
-        "hpperlevel": 100,
-        "mp": 300,
-        "mpperlevel": 40,
-        "movespeed": 330,
-        "armor": 27,
-        "armorperlevel": 4.2,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 550,
-        "hpregen": 3.75,
-        "hpregenperlevel": 0.6,
-        "mpregen": 7.25,
-        "mpregenperlevel": 0.7,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 59,
-        "attackdamageperlevel": 3.1,
-        "attackspeedperlevel": 3.38,
-        "attackspeed": 0.679
-      }
-    },
     "Udyr": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Udyr",
       "key": "77",
@@ -4138,6 +3392,10 @@
       }
     },
     "Urgot": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Urgot",
       "key": "6",
@@ -4188,6 +3446,10 @@
       }
     },
     "Varus": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Varus",
       "key": "110",
@@ -4238,6 +3500,10 @@
       }
     },
     "Veigar": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Veigar",
       "key": "45",
@@ -4286,56 +3552,11 @@
         "attackspeed": 0.625
       }
     },
-    "Velkoz": {
-      "version": "13.12.1",
-      "id": "Velkoz",
-      "key": "161",
-      "name": "벨코즈",
-      "title": "공허의 눈",
-      "blurb": "벨코즈가 룬테라에 나타난 첫 번째 공허태생인지는 확실하지 않다. 다만 벨코즈만큼 잔혹하면서 계산적인 지성체는 이제껏 존재하지 않았다. 다른 공허태생들은 주변의 모든 것을 닥치는 대로 집어삼키고 부패시키지만, 벨코즈는 현실 세계뿐 아니라 현실 세계에 사는 호전적이고 낯선 생명체들을 자세히 관찰하고 연구하여 공허가 이용할 수 있는 약점을 찾아낸다. 그렇다고 벨코즈가 그저 수동적인 관찰자라는 말은 아니다. 위협을 느끼면 치명적인 플라즈마 광선을 발사하거나...",
-      "info": {
-        "attack": 2,
-        "defense": 2,
-        "magic": 10,
-        "difficulty": 8
-      },
-      "image": {
-        "full": "Velkoz.png",
-        "sprite": "champion4.png",
-        "group": "champion",
-        "x": 48,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Mage"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 590,
-        "hpperlevel": 102,
-        "mp": 469,
-        "mpperlevel": 21,
-        "movespeed": 340,
-        "armor": 22,
-        "armorperlevel": 4.7,
-        "spellblock": 30,
-        "spellblockperlevel": 1.3,
-        "attackrange": 525,
-        "hpregen": 5.5,
-        "hpregenperlevel": 0.55,
-        "mpregen": 8,
-        "mpregenperlevel": 0.8,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 55,
-        "attackdamageperlevel": 3.1416,
-        "attackspeedperlevel": 1.36,
-        "attackspeed": 0.625
-      }
-    },
     "Vex": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Vex",
       "key": "711",
@@ -4385,6 +3606,10 @@
       }
     },
     "Viego": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Viego",
       "key": "234",
@@ -4435,6 +3660,10 @@
       }
     },
     "Viktor": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Viktor",
       "key": "112",
@@ -4484,6 +3713,10 @@
       }
     },
     "Vladimir": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Vladimir",
       "key": "8",
@@ -4533,6 +3766,10 @@
       }
     },
     "Volibear": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Volibear",
       "key": "106",
@@ -4582,57 +3819,11 @@
         "attackspeed": 0.625
       }
     },
-    "Warwick": {
-      "version": "13.12.1",
-      "id": "Warwick",
-      "key": "19",
-      "name": "워윅",
-      "title": "자운의 고삐 풀린 분노",
-      "blurb": "자운의 잿빛 골목을 무대로 사냥감을 찾는 괴수 워윅. 극한의 고통을 동반하는 각종 실험으로 완전히 변형된 그의 육체는 약품통, 펌프, 여러 기계가 결합된 복잡한 시스템과 연결되어 있으며, 정맥에는 연금술을 통해 조합한 분노가 주입된다. 어두운 그림자 속에서 느닷없이 튀어나오곤 하는 그는 사람들을 위협하는 도시의 범죄자들을 단숨에 사냥한다. 피 냄새를 맡고 나면 이성을 잃고 마는 워윅. 조금이라도 피를 흘린 자는 그 누구도 워윅의 손아귀에서 벗어날 수...",
-      "info": {
-        "attack": 9,
-        "defense": 5,
-        "magic": 3,
-        "difficulty": 3
-      },
-      "image": {
-        "full": "Warwick.png",
-        "sprite": "champion4.png",
-        "group": "champion",
-        "x": 384,
-        "y": 96,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Fighter",
-        "Tank"
-      ],
-      "partype": "마나",
-      "stats": {
-        "hp": 620,
-        "hpperlevel": 99,
-        "mp": 280,
-        "mpperlevel": 35,
-        "movespeed": 335,
-        "armor": 33,
-        "armorperlevel": 4.4,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 125,
-        "hpregen": 4,
-        "hpregenperlevel": 0.75,
-        "mpregen": 7.45,
-        "mpregenperlevel": 0.6,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 65,
-        "attackdamageperlevel": 3,
-        "attackspeedperlevel": 2.3,
-        "attackspeed": 0.638
-      }
-    },
     "Xerath": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Xerath",
       "key": "101",
@@ -4682,6 +3873,10 @@
       }
     },
     "XinZhao": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "XinZhao",
       "key": "5",
@@ -4732,6 +3927,10 @@
       }
     },
     "Yasuo": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Yasuo",
       "key": "157",
@@ -4782,6 +3981,10 @@
       }
     },
     "Yone": {
+      "ideal":{
+        "type":"tough",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Yone",
       "key": "777",
@@ -4832,6 +4035,10 @@
       }
     },
     "Yorick": {
+      "ideal":{
+        "type":"tough",
+        "personality":"bad"
+      },
       "version": "13.12.1",
       "id": "Yorick",
       "key": "83",
@@ -4881,57 +4088,11 @@
         "attackspeed": 0.625
       }
     },
-    "Zac": {
-      "version": "13.12.1",
-      "id": "Zac",
-      "key": "154",
-      "name": "자크",
-      "title": "비밀 병기",
-      "blurb": "자크는 화학공학 지층을 따라 흐른 독성물질이 자운의 지하동굴 깊은 곳에 위치한 웅덩이에 모여 만들어진 생명체이다. 이처럼 변변치 못한 태생에도 불구하고 자크는 원시적인 진흙의 상태에서 지성을 갖춘 존재로 성장했다. 그는 자운의 배관 속에 살면서 도움이 필요한 이들을 돕거나 자운의 망가진 기반시설을 재건하기 위해 이따금 모습을 드러낸다.",
-      "info": {
-        "attack": 3,
-        "defense": 7,
-        "magic": 7,
-        "difficulty": 8
-      },
-      "image": {
-        "full": "Zac.png",
-        "sprite": "champion5.png",
-        "group": "champion",
-        "x": 288,
-        "y": 0,
-        "w": 48,
-        "h": 48
-      },
-      "tags": [
-        "Tank",
-        "Fighter"
-      ],
-      "partype": "없음",
-      "stats": {
-        "hp": 685,
-        "hpperlevel": 109,
-        "mp": 0,
-        "mpperlevel": 0,
-        "movespeed": 340,
-        "armor": 33,
-        "armorperlevel": 4.7,
-        "spellblock": 32,
-        "spellblockperlevel": 2.05,
-        "attackrange": 175,
-        "hpregen": 8,
-        "hpregenperlevel": 0.5,
-        "mpregen": 0,
-        "mpregenperlevel": 0,
-        "crit": 0,
-        "critperlevel": 0,
-        "attackdamage": 60,
-        "attackdamageperlevel": 3.4,
-        "attackspeedperlevel": 1.6,
-        "attackspeed": 0.736
-      }
-    },
     "Zed": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Zed",
       "key": "238",
@@ -4981,6 +4142,10 @@
       }
     },
     "Ziggs": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Ziggs",
       "key": "115",
@@ -5030,6 +4195,10 @@
       }
     },
     "Zilean": {
+      "ideal":{
+        "type":"intellectual",
+        "personality":"good"
+      },
       "version": "13.12.1",
       "id": "Zilean",
       "key": "26",

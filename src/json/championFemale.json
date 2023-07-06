@@ -4,6 +4,10 @@
   "version": "13.12.1",
   "data": {
     "Ahri": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Ahri",
       "key": "103",
@@ -54,6 +58,10 @@
       }
     },
     "Akali": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Akali",
       "key": "84",
@@ -103,6 +111,10 @@
       }
     },
     "Anivia": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Anivia",
       "key": "34",
@@ -153,6 +165,10 @@
       }
     },
     "Annie": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Annie",
       "key": "1",
@@ -202,6 +218,10 @@
       }
     },
     "Ashe": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Ashe",
       "key": "22",
@@ -252,6 +272,10 @@
       }
     },
     "Belveth": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Belveth",
       "key": "200",
@@ -301,6 +325,10 @@
       }
     },
     "Caitlyn": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Caitlyn",
       "key": "51",
@@ -350,6 +378,10 @@
       }
     },
     "Camille": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Camille",
       "key": "164",
@@ -400,6 +432,10 @@
       }
     },
     "Cassiopeia": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Cassiopeia",
       "key": "69",
@@ -449,6 +485,10 @@
       }
     },
     "Diana": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Diana",
       "key": "131",
@@ -499,6 +539,10 @@
       }
     },
     "Elise": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Elise",
       "key": "60",
@@ -549,6 +593,10 @@
       }
     },
     "Evelynn": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Evelynn",
       "key": "28",
@@ -599,6 +647,10 @@
       }
     },
     "Fiora": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Fiora",
       "key": "114",
@@ -649,6 +701,10 @@
       }
     },
     "Gwen": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Gwen",
       "key": "887",
@@ -699,6 +755,10 @@
       }
     },
     "Illaoi": {
+      "ideal":{
+        "height":"t",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Illaoi",
       "key": "420",
@@ -749,6 +809,10 @@
       }
     },
     "Irelia": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Irelia",
       "key": "39",
@@ -799,6 +863,10 @@
       }
     },
     "Janna": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Janna",
       "key": "40",
@@ -849,6 +917,10 @@
       }
     },
     "Jinx": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Jinx",
       "key": "222",
@@ -898,6 +970,10 @@
       }
     },
     "Kaisa": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Kaisa",
       "key": "145",
@@ -947,6 +1023,10 @@
       }
     },
     "Kalista": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Kalista",
       "key": "429",
@@ -996,6 +1076,10 @@
       }
     },
     "Karma": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Karma",
       "key": "43",
@@ -1046,6 +1130,10 @@
       }
     },
     "Katarina": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Katarina",
       "key": "55",
@@ -1096,6 +1184,10 @@
       }
     },
     "Kayle": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Kayle",
       "key": "10",
@@ -1146,6 +1238,10 @@
       }
     },
     "Kindred": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Kindred",
       "key": "203",
@@ -1195,6 +1291,10 @@
       }
     },
     "Leblanc": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Leblanc",
       "key": "7",
@@ -1245,6 +1345,10 @@
       }
     },
     "Leona": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Leona",
       "key": "89",
@@ -1295,6 +1399,10 @@
       }
     },
     "Lillia": {
+      "ideal":{
+        "height":"tall",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Lillia",
       "key": "876",
@@ -1345,6 +1453,10 @@
       }
     },
     "Lissandra": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Lissandra",
       "key": "127",
@@ -1394,6 +1506,10 @@
       }
     },
     "Lulu": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Lulu",
       "key": "117",
@@ -1444,6 +1560,10 @@
       }
     },
     "Lux": {
+      "ideal":{
+        "height":"tall",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Lux",
       "key": "99",
@@ -1494,6 +1614,10 @@
       }
     },
     "MissFortune": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "MissFortune",
       "key": "21",
@@ -1543,6 +1667,10 @@
       }
     },
     "Morgana": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Morgana",
       "key": "25",
@@ -1593,6 +1721,10 @@
       }
     },
     "Nami": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Nami",
       "key": "267",
@@ -1643,6 +1775,10 @@
       }
     },
     "Neeko": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Neeko",
       "key": "518",
@@ -1693,6 +1829,10 @@
       }
     },
     "Nidalee": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Nidalee",
       "key": "76",
@@ -1743,6 +1883,10 @@
       }
     },
     "Nilah": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Nilah",
       "key": "895",
@@ -1793,6 +1937,10 @@
       }
     },
     "Orianna": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Orianna",
       "key": "61",
@@ -1843,6 +1991,10 @@
       }
     },
     "Qiyana": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Qiyana",
       "key": "246",
@@ -1893,6 +2045,10 @@
       }
     },
     "Quinn": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Quinn",
       "key": "133",
@@ -1943,6 +2099,10 @@
       }
     },
     "Rell": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Rell",
       "key": "526",
@@ -1993,6 +2153,10 @@
       }
     },
     "Renata": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Renata",
       "key": "888",
@@ -2043,6 +2207,10 @@
       }
     },
     "Riven": {
+      "ideal":{
+        "height":"tall",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Riven",
       "key": "92",
@@ -2093,6 +2261,10 @@
       }
     },
     "Samira": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Samira",
       "key": "360",
@@ -2142,6 +2314,10 @@
       }
     },
     "Sejuani": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Sejuani",
       "key": "113",
@@ -2192,6 +2368,10 @@
       }
     },
     "Senna": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Senna",
       "key": "235",
@@ -2242,6 +2422,10 @@
       }
     },
     "Seraphine": {
+      "ideal":{
+        "height":"tall",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Seraphine",
       "key": "147",
@@ -2292,6 +2476,10 @@
       }
     },
     "Shyvana": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Shyvana",
       "key": "102",
@@ -2342,6 +2530,10 @@
       }
     },
     "Sivir": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Sivir",
       "key": "15",
@@ -2391,6 +2583,10 @@
       }
     },
     "Sona": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Sona",
       "key": "37",
@@ -2441,6 +2637,10 @@
       }
     },
     "Soraka": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Soraka",
       "key": "16",
@@ -2491,6 +2691,10 @@
       }
     },
     "Syndra": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Syndra",
       "key": "134",
@@ -2540,6 +2744,10 @@
       }
     },
     "Taliyah": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Taliyah",
       "key": "163",
@@ -2590,6 +2798,10 @@
       }
     },
     "Taric": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Taric",
       "key": "44",
@@ -2640,6 +2852,10 @@
       }
     },
     "Tristana": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Tristana",
       "key": "18",
@@ -2690,6 +2906,10 @@
       }
     },
     "Varus": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Varus",
       "key": "110",
@@ -2740,6 +2960,10 @@
       }
     },
     "Vayne": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Vayne",
       "key": "67",
@@ -2790,6 +3014,10 @@
       }
     },
     "Vi": {
+      "ideal":{
+        "height":"tall",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Vi",
       "key": "254",
@@ -2840,6 +3068,10 @@
       }
     },
     "Xayah": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Xayah",
       "key": "498",
@@ -2889,6 +3121,10 @@
       }
     },
     "Yuumi": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Yuumi",
       "key": "350",
@@ -2939,6 +3175,10 @@
       }
     },
     "Zeri": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Zeri",
       "key": "221",
@@ -2988,6 +3228,10 @@
       }
     },
     "Zoe": {
+      "ideal":{
+        "height":"short",
+        "type":"cute"
+      },
       "version": "13.12.1",
       "id": "Zoe",
       "key": "142",
@@ -3038,6 +3282,10 @@
       }
     },
     "Zyra": {
+      "ideal":{
+        "height":"short",
+        "type":"mature"
+      },
       "version": "13.12.1",
       "id": "Zyra",
       "key": "143",
