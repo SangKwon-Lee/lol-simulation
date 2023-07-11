@@ -17,6 +17,8 @@ import { ReactElement, ReactNode, useEffect, useState } from 'react';
 import * as gtag from '@src/lib/gtag';
 import MainHead from '@components/layout/mainHead';
 import MainLayout from '@components/layout/mainLayout';
+import { HomeMetaTag } from '@utils/metaTag';
+import Head from 'next/head';
 
 // * 폰트 설정
 const roboto = Roboto({
@@ -66,6 +68,8 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   return (
     <>
       {/* GA 설정 시작 */}
+      {/* <MainHead metaObj={HomeMetaTag}></MainHead> */}
+
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}

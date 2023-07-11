@@ -62,6 +62,7 @@ const metaParser = (metaObj: MetaObjType) => {
     metaList = MetaKeyList.map((key: Keys) => metaRenderer(key, metaObj[key]));
     const twitterMetaList = MetaKeyList.map((key: Keys) => twitterMetaRender(key, metaObj[key]));
     metaList = [...metaList, ...twitterMetaList];
+    console.log(metaList);
   }
   return metaList;
 };

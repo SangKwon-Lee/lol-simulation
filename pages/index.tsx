@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 interface SkinType {
   url: string;
   count: number;
@@ -468,7 +469,27 @@ export default function Home() {
 
   return (
     <>
-      <MainHead metaObj={HomeMetaTag}></MainHead>
+      {/* <MainHead metaObj={HomeMetaTag}></MainHead> */}
+      <Head>
+        <title>LOL-simulation</title>
+        <meta property="og:url" content="https://lol-simulation.site" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="LOL Simulation | 상자깡" />
+        <meta property="og:description" content="LOL Simulation 상자깡 프레스티지를 뽑아라" />
+        <meta property="og:image" content="/images/hextech_chest.png" />
+        <meta property="og:image:alt" content="마법공학 상자" />
+        <meta
+          property="keywords"
+          content="LOL Simulation, lol, simultation,롤 시뮬레이션, 롤 상자깡 시뮬레이션, 롤 상자깡,시뮬레이션, 게임 시뮬레이션, 시뮬레이터, 롤 시뮬레이터, 상자깡, 상자, 마법공학 상자, 마법공학, 명품상자, 주머니, 토큰, 롤 상자깡, 라구, 롤, 리그오브레전드, 열쇠, 롤 스킨, 주황정수, 라구깡, 신스킨, 롤 신스킨, 먹그림자라구, 먹그림자라구깡, 롤 패스, kda, 프레스티지, 프레스티지 신스킨, 롤 스킨 목록,prestige, prestige box, prestige chest, hextech, hextech chest, lol skin, lol skin list, new lol skin, lol ward skin, lol profile icon, lol, 리그오브레전드, leagueoflegends, 롤 패치, 롤 신챔, Naafiri, 나피리, 페이커, faker"
+        />
+        <meta name="author" content="Kogong" />
+        <meta name="twitter:card" content="LOL Simulation 상자깡 프레스티지를 뽑아라" />
+        <meta property="twitter:domain" content="lol-simulation.site" />
+        <meta property="twitter:url" content="https://lol-simulation.site" />
+        <meta name="twitter:title" content="LOL Simulation | 상자깡" />
+        <meta name="twitter:description" content="LOL Simulation 상자깡 프레스티지를 뽑아라" />
+        <meta name="twitter:image" content="/images/hextech_chest.png" />
+      </Head>
       <main className={styles.main}>
         <section className={styles[`category-wrapper`]}>
           <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
