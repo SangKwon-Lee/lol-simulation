@@ -19,7 +19,7 @@ export default function MainHead({ title, children, metaObj }: Props) {
       <>
         <link rel="icon" href={metaObj?.['og:image']} />
         <link rel="canonical" href={canonicalURL} />
-        <title>{metaObj?.['og:title']}</title>
+        <title>{title}</title>
         {children}
         {metaObj && metaParser(metaObj)}
       </>

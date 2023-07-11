@@ -123,7 +123,7 @@ export default function Couple() {
   };
   return (
     <>
-      <MainHead metaObj={CoupleMetaTag}></MainHead>
+      <MainHead metaObj={CoupleMetaTag} title="LOL Simulation | 롤 연애 상대 찾기"></MainHead>
       <main className={styles.main}>
         <h2 className={styles[`title`]} onClick={handleResultClick}>
           {t(`coupleTitle`)}
