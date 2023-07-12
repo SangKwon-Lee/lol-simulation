@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Metadata } from 'next';
 import Hextect from '@components/page/hextect';
 
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="all" />
+        <link rel="canonical" href="https://lol-simulation.site/couple" key="canonical" />
+      </Head>
       <Hextect />
     </>
   );

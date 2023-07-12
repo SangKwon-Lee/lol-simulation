@@ -1,5 +1,6 @@
-import Couple from '@components/page/couple';
+import Head from 'next/head';
 import { Metadata } from 'next';
+import Couple from '@components/page/couple';
 
 export const metadata: Metadata = {
   title: 'LOL Simulation | 롤 연애 상대 찾기',
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
 export default function CouplePage() {
   return (
     <>
+      <Head>
+        <meta name="robots" content="all" />
+        <link rel="canonical" href="https://lol-simulation.site/couple" key="canonical" />
+      </Head>
       <Couple />
     </>
   );
