@@ -1,17 +1,15 @@
+'use client';
 import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
-import { useRouter } from 'next/router';
 import { drawing } from '@utils/drawing';
-import { useTranslation } from 'next-i18next';
 import styles from '@styles/home.module.scss';
-import { HomeMetaTag } from '@utils/metaTag';
 import champions from '@src/json/champion.json';
-import MainHead from '@components/layout/mainHead';
 import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useLocale, useTranslations } from 'next-intl';
+import Script from 'next/script';
 interface SkinType {
   url: string;
   count: number;
@@ -20,9 +18,10 @@ interface SkinType {
 }
 const champList = Object.keys(champions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
-export default function Home() {
-  const { locale } = useRouter();
-  const { t } = useTranslation('common');
+
+export default function Hextect() {
+  const locale = useLocale();
+  const t = useTranslations('Index');
   const dataLocale = locale === 'ko' ? 'ko_KR' : 'en_US';
   // * 로딩
   const [loading, setLoading] = useState(false);
@@ -446,10 +445,16 @@ export default function Home() {
 
   // * 카카오톡 공유하기
   useEffect(() => {
-    if (!window.Kakao.isInitialized()) {
-      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+    if (!window.Kakao?.isInitialized()) {
+      window.Kakao?.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
     }
   }, []);
+  const kakaoInit = () => {
+    // 페이지가 로드시 실행
+    if (!window.Kakao.isInitialized())
+      // 선언되지 않았을 때만 실행하도록 if문 추가
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+  };
   const onClick = () => {
     const { Kakao } = window;
     Kakao.Share.sendDefault({
@@ -468,7 +473,7 @@ export default function Home() {
 
   return (
     <>
-      <MainHead metaObj={HomeMetaTag} title="LOL Simulation | 상자깡"></MainHead>
+      <Script src="https://developers.kakao.com/sdk/js/kakao.js" onLoad={kakaoInit} />
       <main className={styles.main}>
         <section className={styles[`category-wrapper`]}>
           <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
@@ -594,11 +599,3 @@ export default function Home() {
     </>
   );
 }
-
-export const getStaticProps = async ({ locale }: { locale: string }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common']))
-    }
-  };
-};

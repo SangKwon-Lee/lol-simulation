@@ -1,31 +1,24 @@
-import { useRouter } from 'next/router';
+'use client';
+import { useRouter } from 'next/navigation';
 import styles from '@styles/404.module.scss';
-import { useTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslations } from 'next-intl';
 
 export default function NotFound() {
   const router = useRouter();
-  const { t } = useTranslation('common');
+  const t = useTranslations('Index');
+
   return (
     <main className={styles[`main`]}>
       <div className={styles[`text`]}>{t(`welcome`)}</div>
       <div className={styles[`text`]}>404 Not Found</div>
       <div className={styles[`button-wrapper`]}>
         <button className={styles[`button`]} onClick={() => router.push(`/`)}>
-          상자깡
+          {t(`url1`)}
         </button>
         <button className={styles[`button`]} onClick={() => router.push(`/couple`)}>
-          롤 연애 상대 찾기
+          {t(`url2`)}
         </button>
       </div>
     </main>
   );
 }
-
-export const getStaticProps = async ({ locale }: { locale: string }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common']))
-    }
-  };
-};

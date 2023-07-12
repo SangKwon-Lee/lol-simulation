@@ -1,18 +1,14 @@
+'use client';
 import _ from 'lodash';
 import axios from 'axios';
+import Script from 'next/script';
 import Images from '@utils/images';
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { useTranslation } from 'next-i18next';
-import { CoupleMetaTag } from '@utils/metaTag';
 import styles from '@styles/couple.module.scss';
-import MainHead from '@components/layout/mainHead';
 import maleChampions from '@src/json/championMale.json';
 import { champSquare, imageLoader } from '@utils/imgLoader';
 import Femalechampions from '@src/json/championFemale.json';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-// const maleChampList = Object.keys(maleChampions.data);
-// const femaleChampList = Object.keys(Femalechampions.data);
+import { useLocale, useTranslations } from 'next-intl';
 const version = process.env.NEXT_PUBLIC_VERSION;
 
 interface Champ {
@@ -20,10 +16,11 @@ interface Champ {
   name: string;
   lore: string;
 }
+
 export default function Couple() {
   //* 다국어
-  const { locale } = useRouter();
-  const { t } = useTranslation('common');
+  const locale = useLocale();
+  const t = useTranslations('Index');
   const dataLocale = locale === 'ko' ? 'ko_KR' : 'en_US';
   // * 현재 뽑은 결과
   const [now, setNow] = useState<Champ>({
@@ -102,8 +99,8 @@ export default function Couple() {
   };
   // * 카카오톡 공유하기
   useEffect(() => {
-    if (!window.Kakao.isInitialized()) {
-      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+    if (!window.Kakao?.isInitialized()) {
+      window.Kakao?.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
     }
   }, []);
   const onClick = () => {
@@ -121,9 +118,15 @@ export default function Couple() {
       }
     });
   };
+  const kakaoInit = () => {
+    // 페이지가 로드시 실행
+    if (!window.Kakao.isInitialized())
+      // 선언되지 않았을 때만 실행하도록 if문 추가
+      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
+  };
   return (
     <>
-      <MainHead metaObj={CoupleMetaTag} title="LOL Simulation | 롤 연애 상대 찾기"></MainHead>
+      <Script src="https://developers.kakao.com/sdk/js/kakao.js" onLoad={kakaoInit} />
       <main className={styles.main}>
         <h2 className={styles[`title`]} onClick={handleResultClick}>
           {t(`coupleTitle`)}
@@ -330,11 +333,3 @@ export default function Couple() {
     </>
   );
 }
-
-export const getStaticProps = async ({ locale }: { locale: string }) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['common']))
-    }
-  };
-};

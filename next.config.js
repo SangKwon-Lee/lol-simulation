@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const { i18n } = require('./next-i18next.config');
-
+const withNextIntl = require('next-intl/plugin')(
+  // This is the default (also the `src` folder is supported out of the box)
+  './i18n.ts'
+);
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
@@ -28,8 +30,7 @@ const nextConfig = {
     //   '@assets': path.resolve(__dirname, 'static/assets')
     // };
     return config;
-  },
-  i18n
+  }
 };
 
-module.exports = nextConfig;
+module.exports = withNextIntl(nextConfig);
