@@ -11,6 +11,7 @@ import Footer from '@components/layout/footer';
 import styles from '@styles/layout.module.scss';
 import { Analytics } from '@vercel/analytics/react';
 import { NextIntlClientProvider, useLocale } from 'next-intl';
+import Kakao from '@components/page/kakao';
 
 declare global {
   interface Window {
@@ -44,6 +45,7 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale}>
+      <Kakao />
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}

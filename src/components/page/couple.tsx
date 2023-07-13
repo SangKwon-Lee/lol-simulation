@@ -97,12 +97,6 @@ export default function Couple() {
     });
     setStep(1);
   };
-  // * 카카오톡 공유하기
-  useEffect(() => {
-    if (!window.Kakao?.isInitialized()) {
-      window.Kakao?.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
-    }
-  }, []);
   const onClick = () => {
     const { Kakao } = window;
     Kakao.Share.sendDefault({
@@ -118,15 +112,9 @@ export default function Couple() {
       }
     });
   };
-  const kakaoInit = () => {
-    // 페이지가 로드시 실행
-    if (!window.Kakao.isInitialized())
-      // 선언되지 않았을 때만 실행하도록 if문 추가
-      window.Kakao.init(process.env.NEXT_PUBLIC_KAKAO_API_KEY);
-  };
+
   return (
     <>
-      <Script src="https://developers.kakao.com/sdk/js/kakao.js" onLoad={kakaoInit} />
       <main className={styles.main}>
         <h2 className={styles[`title`]} onClick={handleResultClick}>
           {t(`coupleTitle`)}
