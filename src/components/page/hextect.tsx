@@ -9,7 +9,6 @@ import { useEffect, useRef, useState } from 'react';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 import { useLocale, useTranslations } from 'next-intl';
-import Script from 'next/script';
 interface SkinType {
   url: string;
   count: number;

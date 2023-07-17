@@ -1,9 +1,8 @@
 'use client';
 import _ from 'lodash';
 import axios from 'axios';
-import Script from 'next/script';
 import Images from '@utils/images';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from '@styles/couple.module.scss';
 import maleChampions from '@src/json/championMale.json';
 import { champSquare, imageLoader } from '@utils/imgLoader';
