@@ -112,7 +112,6 @@ export default function Couple() {
     });
   };
 
-  console.log(input, now);
   return (
     <>
       <S.Main>
