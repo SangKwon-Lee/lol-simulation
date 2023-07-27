@@ -1,3 +1,4 @@
+const version = process.env.NEXT_PUBLIC_VERSION;
 export const imageLoader = ({ src }: { src: string }) => {
   return `${src}`;
 };
@@ -7,5 +8,5 @@ export const champSkin = (randomChamp: any, randomSkin: any) => {
 };
 
 export const champSquare = (randomChamp: any) => {
-  return `${'https://ddragon.leagueoflegends.com'}/cdn/13.12.1/img/champion/${randomChamp}.png`;
+  return `${'https://ddragon.leagueoflegends.com'}/cdn/${version}/img/champion/${randomChamp}.png`;
 };
