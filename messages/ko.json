@@ -28,7 +28,7 @@
     "confirm":"확인",
     "notSave":"입력하신 정보는 저장되지 않습니다.",
     "again":"다시하기",
-    "coupleResult": "{{_name}}님과 연애하기 가장 좋은 챔피언은 {{_champ}}입니다!",
+    "coupleResult": "{name}님과 연애하기 가장 좋은 챔피언은 {champ} 입니다!",
     "navBox":"상자깡",
     "navCouple":"연애 상대 찾기",
     "coupleTitle":"롤 연애 상대 찾기",

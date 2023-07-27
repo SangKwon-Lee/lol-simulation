@@ -3,12 +3,12 @@ import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
 import { drawing } from '@utils/drawing';
-import styles from '@styles/home.module.scss';
+import * as S from '@styles/hextectStyles';
 import champions from '@src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
 import { PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
-import { useLocale, useTranslations } from 'next-intl';
 interface SkinType {
   url: string;
   count: number;
@@ -460,92 +460,81 @@ export default function Hextect() {
 
   return (
     <>
-      <main className={styles.main}>
-        <section className={styles[`category-wrapper`]}>
-          <h2 className={styles[`category-title`]}>{t(`category`)}</h2>
-          <div className={styles[`category-box-wrapper`]}>
+      <S.Main>
+        <S.CategoryWrapper>
+          <S.CategoryTitle>{t(`category`)}</S.CategoryTitle>
+          <S.CategoryBoxWrapper>
             {selectBoxList.map((box) => (
-              <div
-                className={styles[`category-box`]}
-                key={box.url}
-                onClick={() => handleSelectBox(box)}
-              >
+              <S.CategoryBox key={box.url} onClick={() => handleSelectBox(box)}>
                 <Images src={box.url} width={box.width} height={box.height} />
-                {box.count !== 1 && <div className={styles[`skin-count`]}>{box.count}</div>}
-              </div>
+                {box.count !== 1 && <S.SkinCount>{box.count}</S.SkinCount>}
+              </S.CategoryBox>
             ))}
-          </div>
-        </section>
+          </S.CategoryBoxWrapper>
+        </S.CategoryWrapper>
 
         {/* 선택된 상자 */}
         {select.name && (
-          <section className={styles[`select-wrapper`]}>
-            <h2 className={styles[`category-title`]}>{t(`box`)}</h2>
-            <div className={styles[`select-box-wrapper`]}>
-              <div className={styles[`category-title`]}>{select.name}</div>
-              <div className={styles[`select-box`]}>
+          <S.SelectWrapper>
+            <S.CategoryTitle>{t(`box`)}</S.CategoryTitle>
+            <S.SelectBoxWrapper>
+              <S.CategoryTitle>{select.name}</S.CategoryTitle>
+              <S.SelectBox>
                 <Images src={select.url} width={210} height={204} />
-              </div>
-              <div className={styles[`open-button-wrapper`]}>
-                <button className={styles[`open-button`]} onClick={handleDrawing}>
-                  {t(`open`)}
-                </button>
-                <button className={styles[`open-button`]} onClick={handleReset}>
-                  {t(`reset`)}
-                </button>
-                <button className={styles[`open-button`]} onClick={() => setIsModal(true)}>
-                  {t(`percentage`)}
-                </button>
-              </div>
-              <div className={styles[`open-count`]}>
+              </S.SelectBox>
+              <S.OpenButtonWrapper>
+                <S.OpenButton onClick={handleDrawing}>{t(`open`)}</S.OpenButton>
+                <S.OpenButton onClick={handleReset}>{t(`reset`)}</S.OpenButton>
+                <S.OpenButton onClick={() => setIsModal(true)}>{t(`percentage`)}</S.OpenButton>
+              </S.OpenButtonWrapper>
+              <S.OpenCount>
                 {t(`countBox`)} : {openBoxCount}
-              </div>
-            </div>
-          </section>
+              </S.OpenCount>
+            </S.SelectBoxWrapper>
+          </S.SelectWrapper>
         )}
-
         {/* 스킨 결과 */}
         {select.name && (
-          <section className={styles[`result-wrapper`]}>
-            <h2 className={styles[`category-title`]}>{t(`result`)}</h2>
-            <div className={styles[`result-list`]}>
+          <S.ResultWrapper>
+            <S.CategoryTitle>{t(`result`)}</S.CategoryTitle>
+            <S.ResultList>
               {loading && <div style={{ width: '180px', height: '300px' }}></div>}
               {Array.isArray(nowSkin) &&
                 nowSkin.length > 0 &&
                 !loading &&
                 nowSkin.map((now, index) => (
-                  <div className={styles[`skin-result`]} key={index}>
+                  <S.SkinResult key={index}>
                     {now.type === 'skin' ? (
                       <Images src={now.url} width={180} height={300} loader={imageLoader} />
                     ) : (
                       <Images src={now.url} width={140} height={140} loader={imageLoader} />
                     )}
-                    <div className={styles[`skin-result-title`]}>{now.name}</div>
-                  </div>
+                    <S.SkinResultTitle>{now.name}</S.SkinResultTitle>
+                  </S.SkinResult>
                 ))}
-            </div>
-          </section>
+            </S.ResultList>
+          </S.ResultWrapper>
         )}
 
         {/* 기타 목록 */}
-        <section className={styles[`skin-list`]}>
-          <h2 className={styles[`category-title`]}>{t(`etc`)}</h2>
-          <ul className={styles[`other-wrapper`]}>
+        <S.SkinList>
+          <S.CategoryTitle>{t(`etc`)}</S.CategoryTitle>
+          <S.OtherWrapper>
             {otehrList.map((data) => (
-              <li className={styles.skin} key={data.url}>
+              <S.Skin key={data.url}>
                 <Images src={data.url} width={88} height={88} loader={imageLoader} />
-                {data.count !== 1 && <div className={styles[`skin-count`]}>{data.count}</div>}
-              </li>
+                {data.count !== 1 && <S.SkinCount>{data.count}</S.SkinCount>}
+              </S.Skin>
             ))}
-          </ul>
-        </section>
+          </S.OtherWrapper>
+        </S.SkinList>
 
         {/* 스킨 목록 */}
-        <section className={styles[`skin-list`]}>
-          <h2 className={styles[`category-title`]}>{t(`skin`)}</h2>
-          <ul className={styles[`list-wrapper`]}>
+        <S.SkinList>
+          <S.CategoryTitle>{t(`skin`)}</S.CategoryTitle>
+          <S.ListWrapper>
             {skins.map((data) => (
-              <li className={styles.skin} key={data.url}>
+              <S.Skin key={data.url}>
                 <Images
                   src={data.url}
                   width={157}
@@ -553,35 +542,29 @@ export default function Hextect() {
                   loader={imageLoader}
                   style={{ display: 'inline', maxWidth: '157px', height: '100%', width: '100%' }}
                 />
-                {data.count !== 1 && <div className={styles[`skin-count`]}>{data.count}</div>}
-              </li>
+                {data.count !== 1 && <S.SkinCount>{data.count}</S.SkinCount>}
+              </S.Skin>
             ))}
-          </ul>
-        </section>
+          </S.ListWrapper>
+        </S.SkinList>
         {isModal && (
-          <div ref={modalRef} className={styles.modal}>
-            <div className={styles[`modal-title`]}>{t(`percentage`)}</div>
-            <div className={styles[`modal-wrapper`]}>
+          <S.Modal ref={modalRef}>
+            <S.ModalTitle>{t(`percentage`)}</S.ModalTitle>
+            <S.ModalWrapper>
               {Array.isArray(probability) &&
                 probability.length > 0 &&
                 probability.map((pro) => (
-                  <div className={styles[`modal-text`]} key={pro.name}>
+                  <S.ModalText key={pro.name}>
                     {t(pro.name)} : {pro.percent}
-                  </div>
+                  </S.ModalText>
                 ))}
-            </div>
-            <div className={styles[`modal-percent`]}>{t(`refer`)}</div>
-            <div onClick={() => setIsModal(false)} className={styles[`modal-close`]}>
-              X
-            </div>
-          </div>
+            </S.ModalWrapper>
+            <S.ModalPercent>{t(`refer`)}</S.ModalPercent>
+            <S.ModalClose onClick={() => setIsModal(false)}>X</S.ModalClose>
+          </S.Modal>
         )}
-        {locale === 'ko' && (
-          <button className={styles.share} onClick={onClick}>
-            카카오톡 공유하기
-          </button>
-        )}
-      </main>
+        {locale === 'ko' && <S.Share onClick={onClick}>카카오톡 공유하기</S.Share>}
+      </S.Main>
     </>
   );
 }

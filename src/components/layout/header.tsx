@@ -1,19 +1,19 @@
 'use client';
 import Link from 'next/link';
+import styled from 'styled-components';
 import { useTranslations } from 'next-intl';
 import { usePathname } from 'next/navigation';
-import styles from '@styles/header.module.scss';
 
 export default function Header() {
   const t = useTranslations('Index');
   const pathname = usePathname();
   return (
-    <header className={styles.header}>
-      <div className={styles.wrapper}>
+    <HeaderDiv>
+      <Wrapper>
         <Link href={'/'}>
-          <h1 className={styles.title}>LOL Simulation</h1>
+          <Title>LOL Simulation</Title>
         </Link>
-        <nav className={styles[`nav-wrapper`]}>
+        <NavWrapper>
           <Link
             href={'/'}
             title="LoL Simulation 상자깡"
@@ -32,8 +32,37 @@ export default function Header() {
           >
             {t(`navCouple`)}
           </Link>
-        </nav>
-      </div>
-    </header>
+        </NavWrapper>
+      </Wrapper>
+    </HeaderDiv>
   );
 }
+
+const HeaderDiv = styled.header`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #293435;
+`;
+
+const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 16px;
+`;
+
+const Title = styled.h1`
+  margin-right: 32px;
+  font-size: 48px;
+  ${({ theme }) => theme.textSize.S28W700};
+`;
+
+const NavWrapper = styled.nav`
+  display: flex;
+  gap: 16px;
+  ${({ theme }) => theme.textSize.S16W400};
+`;

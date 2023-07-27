@@ -5,6 +5,9 @@ const withNextIntl = require('next-intl/plugin')(
 );
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    appDir: true
+  },
   sassOptions: {
     // includePaths: [path.join(__dirname, 'styles')],
     // prependData: `@import "./_variables.scss";
@@ -17,6 +20,10 @@ const nextConfig = {
     path: 'https://ddragon.leagueoflegends.com',
     formats: ['image/webp'],
     minimumCacheTTL: 31536000
+  },
+  compiler: {
+    styledComponents: true,
+    ssr: true
   },
   webpack(config) {
     config.module.rules.push({

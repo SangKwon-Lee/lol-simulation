@@ -3,11 +3,11 @@ import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
 import { useState } from 'react';
-import styles from '@styles/couple.module.scss';
 import maleChampions from '@src/json/championMale.json';
 import { champSquare, imageLoader } from '@utils/imgLoader';
 import Femalechampions from '@src/json/championFemale.json';
 import { useLocale, useTranslations } from 'next-intl';
+import * as S from '@styles/coupleStyles';
 const version = process.env.NEXT_PUBLIC_VERSION;
 
 interface Champ {
@@ -112,30 +112,22 @@ export default function Couple() {
     });
   };
 
+  console.log(input, now);
   return (
     <>
-      <main className={styles.main}>
-        <h2 className={styles[`title`]} onClick={handleResultClick}>
-          {t(`coupleTitle`)}
-        </h2>
+      <S.Main>
+        <S.Title onClick={handleResultClick}>{t(`coupleTitle`)}</S.Title>
         {/* 인풋 부분 */}
         {step === 1 && (
-          <section className={styles[`input-section`]}>
-            <div className={styles[`input-wrapper`]}>
-              <div className={styles[`input-title`]}>{t(`name`)}</div>
-              <input
-                className={styles[`input`]}
-                placeholder={t(`name`)}
-                onChange={handleInput}
-                name="name"
-              />
-            </div>
-            <div className={styles[`input-wrapper`]}>
-              <div className={styles[`input-title`]}>{t(`sex`)}</div>
-              <button
-                className={
-                  input.sex === '남' ? styles[`input-button-active`] : styles[`input-button`]
-                }
+          <S.InputSection>
+            <S.InputWrapper>
+              <S.InputTitle>{t(`name`)}</S.InputTitle>
+              <S.Input placeholder={t(`name`)} onChange={handleInput} name="name" />
+            </S.InputWrapper>
+            <S.InputWrapper>
+              <S.InputTitle>{t(`sex`)}</S.InputTitle>
+              <S.InputBtn
+                $isActive={input.sex === '남'}
                 onClick={() => {
                   setInput({
                     ...input,
@@ -148,11 +140,9 @@ export default function Couple() {
                 value={'남'}
               >
                 {t(`male`)}
-              </button>
-              <button
-                className={
-                  input.sex === '여' ? styles[`input-button-active`] : styles[`input-button`]
-                }
+              </S.InputBtn>
+              <S.InputBtn
+                $isActive={input.sex === '여'}
                 onClick={() => {
                   setInput({
                     ...input,
@@ -165,158 +155,116 @@ export default function Couple() {
                 value={'여'}
               >
                 {t(`female`)}
-              </button>
-            </div>
+              </S.InputBtn>
+            </S.InputWrapper>
 
-            <div className={styles[`input-wrapper`]}>
-              <label htmlFor="age" className={styles[`input-title`]} placeholder={t(`age`)}>
+            <S.InputWrapper>
+              <S.InputLabel htmlFor="age" placeholder={t(`age`)}>
                 {t(`age`)}
-              </label>
-              <input
-                id="age"
-                className={styles[`input`]}
-                onChange={handleInput}
-                name="age"
-                type="number"
-              />
-            </div>
+              </S.InputLabel>
+              <S.Input id="age" onChange={handleInput} name="age" type="number" />
+            </S.InputWrapper>
 
-            <div className={styles[`input-wrapper`]}>
-              <div className={styles[`input-title`]}>{t(`type`)}</div>
+            <S.InputWrapper>
+              <S.InputTitle>{t(`type`)}</S.InputTitle>
               {input.sex === '남' ? (
                 <>
-                  <button
-                    className={
-                      input.height === 'tall'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  <S.InputBtn
+                    $isActive={input.height === 'tall'}
                     onClick={handleInput}
                     name="height"
                     value={'tall'}
                   >
                     {t(`tall`)}
-                  </button>
-                  <button
-                    className={
-                      input.height === 'short'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  </S.InputBtn>
+                  <S.InputBtn
+                    $isActive={input.height === 'short'}
                     onClick={handleInput}
                     name="height"
                     value={'short'}
                   >
                     {t(`short`)}
-                  </button>
+                  </S.InputBtn>
                   <br />
-                  <button
-                    className={
-                      input.type === 'cute' ? styles[`input-button-active`] : styles[`input-button`]
-                    }
+                  <S.InputBtn
+                    $isActive={input.type === 'cute'}
                     onClick={handleInput}
                     name="type"
                     value={'cute'}
                   >
                     {t(`cute`)}
-                  </button>
-                  <button
-                    className={
-                      input.type === 'mature'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  </S.InputBtn>
+                  <S.InputBtn
+                    $isActive={input.type === 'mature'}
                     onClick={handleInput}
                     name="type"
                     value={'mature'}
                   >
                     {t(`mature`)}
-                  </button>
+                  </S.InputBtn>
                 </>
               ) : (
                 <>
-                  <button
-                    className={
-                      input.type === 'intellectual'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  <S.InputBtn
+                    $isActive={input.type === 'intellectual'}
                     onClick={handleInput}
                     name="type"
                     value={'intellectual'}
                   >
                     {t(`intellectual`)}
-                  </button>
-                  <button
-                    className={
-                      input.type === 'tough'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  </S.InputBtn>
+                  <S.InputBtn
+                    $isActive={input.type === 'tough'}
                     onClick={handleInput}
                     name="type"
                     value={'tough'}
                   >
                     {t(`tough`)}
-                  </button>
+                  </S.InputBtn>
                   <br />
-                  <button
-                    className={
-                      input.personality === 'good'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  <S.InputBtn
+                    $isActive={input.type === 'good'}
                     onClick={handleInput}
                     name="personality"
                     value={'good'}
                   >
                     {t(`good`)}
-                  </button>
-                  <button
-                    className={
-                      input.personality === 'bad'
-                        ? styles[`input-button-active`]
-                        : styles[`input-button`]
-                    }
+                  </S.InputBtn>
+                  <S.InputBtn
+                    $isActive={input.type === 'bad'}
                     onClick={handleInput}
                     name="personality"
                     value={'bad'}
                   >
                     {t(`bad`)}
-                  </button>
+                  </S.InputBtn>
                 </>
               )}
-            </div>
-            <button onClick={handleResultClick} className={styles[`input-confirm`]}>
-              {t(`confirm`)}
-            </button>
-            <div className={styles[`input-title`]}> {t(`notSave`)}</div>
-          </section>
+            </S.InputWrapper>
+            <S.InputConfirm onClick={handleResultClick}>{t(`confirm`)}</S.InputConfirm>
+            <S.InputTitle> {t(`notSave`)}</S.InputTitle>
+          </S.InputSection>
         )}
         {/* 결과 부분 */}
         {step === 2 && now.url && (
-          <section className={styles[`result-section`]}>
-            <h3 className={styles[`sub-title`]}>{t(`result`)}</h3>
-            <div className={styles[`result-text`]}>
-              {t(`coupleResult`, {
-                _name: input.name,
-                _champ: now.name
-              })}
-            </div>
+          <S.ResultSection>
+            <S.SubTitle>{t(`result`)}</S.SubTitle>
+            <S.ResultText>
+              {input.name.length > 0 && now.name.length > 0
+                ? t(`coupleResult`, {
+                    name: input.name,
+                    champ: now.name
+                  })
+                : ''}
+            </S.ResultText>
             <Images src={now.url} width={140} height={140} loader={imageLoader} />
-            <div className={styles[`champ-name`]}>{now.name}</div>
-            <div className={styles.lore}>{now.lore}</div>
-            <button className={styles[`reset-button`]} onClick={handleReset}>
-              {t(`again`)}
-            </button>
-          </section>
+            <S.ChampName>{now.name}</S.ChampName>
+            <S.Lore>{now.lore}</S.Lore>
+            <S.ResetBtn onClick={handleReset}>{t(`again`)}</S.ResetBtn>
+          </S.ResultSection>
         )}
-        {locale === 'ko' && (
-          <button className={styles.share} onClick={onClick}>
-            카카오톡 공유하기
-          </button>
-        )}
-      </main>
+        {locale === 'ko' && <S.Share onClick={onClick}>카카오톡 공유하기</S.Share>}
+      </S.Main>
     </>
   );
 }

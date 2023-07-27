@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-
+// ts-prune-ignore-next
 export default createMiddleware({
   // A list of all locales that are supported
   locales: ['ko', 'en'],
@@ -8,6 +8,7 @@ export default createMiddleware({
   defaultLocale: 'ko'
 });
 
+// ts-prune-ignore-next
 export const config = {
   // Skip all paths that should not be internationalized. This example skips the
   // folders "api", "_next" and all files with an extension (e.g. favicon.ico)
