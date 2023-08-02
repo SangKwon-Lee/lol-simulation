@@ -56,6 +56,11 @@ export default async function RootLayout({
             src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
           />
           <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1080731564650029"
+            crossOrigin="anonymous"
+          />
+          <Script
             id="gtag-init"
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
