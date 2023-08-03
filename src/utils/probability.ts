@@ -47,3 +47,21 @@ export const PrestigeProb = [
     percent: '3.5%'
   }
 ];
+
+export const EventProb = [
+  {
+    name: 'skin',
+    percent: '96.5%'
+  },
+  {
+    name: 'mythicEssence',
+    percent: '3.5%'
+  }
+];
+
+export const BagProb = [
+  {
+    name: 'skin',
+    percent: '100%'
+  }
+];

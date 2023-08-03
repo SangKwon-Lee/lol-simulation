@@ -7,7 +7,7 @@ import * as S from '@styles/hextectStyles';
 import champions from '@src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { PrestigeProb, hextechProb } from '@utils/probability';
+import { BagProb, EventProb, PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 interface SkinType {
   url: string;
@@ -47,6 +47,13 @@ export default function Hextect() {
       count: 1,
       width: 70,
       height: 70
+    },
+    {
+      url: `/images/soul.png`,
+      name: t(`soulFighter`),
+      count: 1,
+      width: 70,
+      height: 70
     }
   ]);
   // * 확률 오픈
@@ -64,20 +71,15 @@ export default function Hextect() {
     setLoading(true);
     setOpenBoxCount(() => openBoxCount + 1);
     if (drawingResult === 'skin') {
-      return handleGetRandomSkin();
+      handleGetRandomSkin();
     } else if (drawingResult === 'champ') {
-      return handleGetRandomChamp();
+      handleGetRandomChamp();
     } else if (drawingResult === 'profileIcon') {
-      return handleGetRandomProfile();
+      handleGetRandomProfile();
     } else if (drawingResult === 'ward') {
-      return handleGetRandomWard();
-    } else if (drawingResult === 'emotion') {
-      return handleGetRandomEmotion();
-    } else if (drawingResult === 'mythEssence') {
-      return handleGetRandomMythEssence();
-    } else if (drawingResult === 'orangeEssence') {
-      return handleGetRandomOrangeEssence();
+      handleGetRandomWard();
     } else {
+      handleGetOthers(t(`${drawingResult}`));
     }
   };
   // * 열기 클릭할 때
@@ -94,6 +96,12 @@ export default function Hextect() {
     }
     if (box.name === t(`prestigeBox`)) {
       setProbability(PrestigeProb);
+    }
+    if (box.name === t(`soulFighter`)) {
+      setProbability(EventProb);
+    }
+    if (box.name === t(`bag`)) {
+      setProbability(BagProb);
     }
   };
 
@@ -166,6 +174,7 @@ export default function Hextect() {
       setLoading(false);
     }
   };
+
   // * 랜덤 챔프 뽑기
   const handleGetRandomChamp = async () => {
     try {
@@ -189,13 +198,7 @@ export default function Hextect() {
         setOtherList([...otehrList, nowSkin]);
       } else {
         // * 중복이면 count + 1
-        let others = [...otehrList];
-        others[duplication] = {
-          ...others[duplication],
-          count: others[duplication].count + 1
-        };
-        setNowSkin([others[duplication]]);
-        setOtherList(others);
+        handleOtherDuplication(duplication, 1);
       }
     } catch (e) {
       console.log(e);
@@ -204,12 +207,12 @@ export default function Hextect() {
     }
   };
   // * 와드 스킨 뽑기
-  const handleGetRandomWard = async () => {
+  const handleGetRandomWard = () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: t(`wardSkin`) });
-    const findEssence = _.findIndex(otehrList, { name: t(`orangeEssence`) });
+    const findEssence = Number(_.findIndex(otehrList, { name: t(`orangeEssence`) }));
     // * 중복이 아니면 추가
-    let nowSkin = [
+    let nowSkin: SkinType[] = [
       {
         count: 1,
         name: t(`wardSkin`),
@@ -224,16 +227,26 @@ export default function Hextect() {
       }
     ];
     setNowSkin(nowSkin);
-
-    if (findEssence === -1 && duplication === -1) {
-      setOtherList([...otehrList, ...nowSkin]);
-    }
-    if (findEssence === -1 && duplication !== -1) {
-      let others = [...otehrList];
+    let others = [...otehrList];
+    // * 와드 스킨을 처음 뽑는 경우 리스트에 추가
+    if (duplication === -1) {
+      others.push({
+        count: 1,
+        name: t(`profileIcon`),
+        url: `/images/profileIcon.webp`,
+        type: 'other'
+      });
+      setOtherList(others);
+    } else {
+      // * 와드 스킨이 이미 있는 경우, +1
       others[duplication] = {
         ...others[duplication],
         count: others[duplication].count + 1
       };
+      setOtherList(others);
+    }
+    // * 주황 정수를 처음 뽑는 경우 리스트에 추가
+    if (findEssence === -1) {
       others.push({
         count: 150,
         name: t(`orangeEssence`),
@@ -241,40 +254,18 @@ export default function Hextect() {
         type: 'other'
       });
       setOtherList(others);
-    }
-
-    if (findEssence !== -1 && duplication === -1) {
-      let others = [...otehrList];
+    } else {
+      // * 주황 정수가 이미 있는 경우 + 150
       others[findEssence] = {
         ...others[findEssence],
         count: others[findEssence].count + 150
       };
-      others.push({
-        count: 1,
-        name: t(`wardSkin`),
-        url: `/images/ward.png`,
-        type: 'other'
-      });
       setOtherList(others);
     }
-
-    if (findEssence !== -1 && duplication !== -1) {
-      let others = [...otehrList];
-      others[findEssence] = {
-        ...others[findEssence],
-        count: others[findEssence].count + 150
-      };
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 1
-      };
-      setOtherList(others);
-    }
-
     setLoading(false);
   };
   // * 소환사 아이콘 뽑기
-  const handleGetRandomProfile = async () => {
+  const handleGetRandomProfile = () => {
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name: t(`profileIcon`) });
     const findEssence = _.findIndex(otehrList, { name: t(`orangeEssence`) });
@@ -293,31 +284,9 @@ export default function Hextect() {
       }
     ];
     setNowSkin(nowSkin);
-
-    if (findEssence === -1 && duplication === -1) {
-      setOtherList([...otehrList, ...nowSkin]);
-    }
-    if (findEssence === -1 && duplication !== -1) {
-      let others = [...otehrList];
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 1
-      };
-      others.push({
-        count: 150,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      });
-      setOtherList(others);
-    }
-
-    if (findEssence !== -1 && duplication === -1) {
-      let others = [...otehrList];
-      others[findEssence] = {
-        ...others[findEssence],
-        count: others[findEssence].count + 150
-      };
+    let others = [...otehrList];
+    // * 프로필 아이콘을 처음 뽑는 경우 리스트에 추가
+    if (duplication === -1) {
       others.push({
         count: 1,
         name: t(`profileIcon`),
@@ -325,100 +294,97 @@ export default function Hextect() {
         type: 'other'
       });
       setOtherList(others);
+    } else {
+      // * 프로필 아이콘이 이미 있는 경우, +1
+      others[duplication] = {
+        ...others[duplication],
+        count: others[duplication].count + 1
+      };
+      setOtherList(others);
     }
-
-    if (findEssence !== -1 && duplication !== -1) {
-      let others = [...otehrList];
+    // * 주황 정수를 처음 뽑는 경우 리스트에 추가
+    if (findEssence === -1) {
+      others.push({
+        count: 150,
+        name: t(`orangeEssence`),
+        url: `/images/orange_essence.png`,
+        type: 'other'
+      });
+      setOtherList(others);
+    } else {
+      // * 주황 정수가 이미 있는 경우 + 150
       others[findEssence] = {
         ...others[findEssence],
         count: others[findEssence].count + 150
       };
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 1
-      };
       setOtherList(others);
     }
 
     setLoading(false);
   };
-  // * 감정표현 뽑기
-  const handleGetRandomEmotion = async () => {
+
+  // * 기타 목록 뽑기
+  const handleGetOthers = (name: string) => {
+    let nowSkin = {
+      count: 0,
+      name: '',
+      url: ``,
+      type: 'other'
+    };
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: t(`emotion`) });
-    if (duplication === -1) {
-      // * 중복이 아니면 추가
-      let nowSkin = {
+    const duplication = _.findIndex(otehrList, { name });
+    // * 꾸러미가 나올 경우
+    if (name === t(`bag`)) {
+      nowSkin = {
         count: 1,
-        name: t(`emotion`),
-        url: `/images/emotion.png`,
+        name: t(`bag`),
+        url: `/images/bag.png`,
         type: 'other'
       };
-      setNowSkin([nowSkin]);
-      setOtherList([...otehrList, nowSkin]);
-    } else {
-      // * 중복이면 count + 1
-      let others = [...otehrList];
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 1
-      };
-      setNowSkin([others[duplication]]);
-      setOtherList(others);
-    }
-    setLoading(false);
-  };
-  // * 신화정수 10개 뽑기
-  const handleGetRandomMythEssence = async () => {
-    // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: t(`mythicEssence`) });
-    if (duplication === -1) {
-      // * 중복이 아니면 추가
-      let nowSkin = {
-        count: 10,
-        name: t(`mythicEssence`),
-        url: `/images/mythic_essence.png`,
-        type: 'other'
-      };
-      setNowSkin([nowSkin]);
-      setOtherList([...otehrList, nowSkin]);
-    } else {
-      // * 중복이면 count + 1
-      let others = [...otehrList];
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 10
-      };
-      setNowSkin([others[duplication]]);
-      setOtherList(others);
-    }
-    setLoading(false);
-  };
-  // * 주황정수 525개 뽑기
-  const handleGetRandomOrangeEssence = async () => {
-    // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: t(`orangeEssence`) });
-    if (duplication === -1) {
-      // * 중복이 아니면 추가
-      let nowSkin = {
+      // * 주황정수
+    } else if (name === t(`orangeEssence`)) {
+      nowSkin = {
         count: 525,
         name: t(`orangeEssence`),
         url: `/images/orange_essence.png`,
         type: 'other'
       };
+      // * 신화정수
+    } else if (name === t(`mythicEssence`)) {
+      nowSkin = {
+        count: 10,
+        name: t(`mythicEssence`),
+        url: `/images/mythic_essence.png`,
+        type: 'other'
+      };
+      // * 감정표현
+    } else if (name === t(`emotion`)) {
+      nowSkin = {
+        count: 1,
+        name: t(`emotion`),
+        url: `/images/emotion.png`,
+        type: 'other'
+      };
+    }
+    if (duplication === -1) {
       setNowSkin([nowSkin]);
       setOtherList([...otehrList, nowSkin]);
     } else {
-      // * 중복이면 count + 1
-      let others = [...otehrList];
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 525
-      };
-      setNowSkin([others[duplication]]);
-      setOtherList(others);
+      // * 중복이면 count +
+      handleOtherDuplication(duplication, nowSkin.count);
     }
     setLoading(false);
+  };
+
+  // * 기타 목록 중복일 경우 +1
+  const handleOtherDuplication = (duplication: number, count: number) => {
+    let others = [...otehrList];
+    others[duplication] = {
+      ...others[duplication],
+      count: others[duplication].count + count
+    };
+    setNowSkin([others[duplication]]);
+    setOtherList(others);
   };
 
   //* 아무데나 클릭해도 카테고리 닫히기
@@ -457,7 +423,6 @@ export default function Hextect() {
       }
     });
   };
-
   return (
     <>
       <S.Main>

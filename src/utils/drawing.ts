@@ -1,34 +1,48 @@
 // *전체 뽑기 관리
 export const drawing = (type: string) => {
-  if (type === '먹그림자라구') {
-    return inkshadow();
-  } else if (type === '마법공학 상자' || 'hextech chest') {
+  if (type.includes('라구') || type === 'Soul Fighter') {
+    return evnet();
+  } else if (type === '마법공학 상자' || type === 'Hextech Chest') {
     return hextech();
-  } else if (type === '명품 상자' || 'prestige chest') {
+  } else if (type === '명품 상자' || type === 'Prestige Chest') {
     return prestige();
+  } else if (type === '꾸러미' || type === 'Bag') {
+    bag();
   } else {
     hextech();
   }
 };
 
-// * 먹그림자라구
-export const inkshadow = () => {
-  const ranNum = Math.floor(Math.random() * 99 + 1);
-  const gift = ['bag', 'skin'];
-  //확률 생성
-  const pbt = [5, 95];
-  //리턴 경품 값
-  let res = '';
-  for (let i = 0; i < gift.length; i++) {
-    if (pbt[i] >= ranNum) {
-      res = gift[i];
-      return res;
-    } else if (pbt[pbt.length - 1] < ranNum) {
-      res = gift[gift.length - 1];
-      return res;
-    }
+//* 꾸러미
+export const bag = () => {
+  const spec = {
+    skin: 1
+  };
+  var i,
+    sum = 0,
+    r = Math.random();
+  for (i in spec) {
+    // @ts-ignore
+    sum += spec[i];
+    if (r <= sum) return i;
   }
-  return res;
+};
+
+// * 라구
+export const evnet = () => {
+  const spec = {
+    skin: 0.93,
+    bag: 0.035,
+    mythicEssence: 0.035
+  };
+  var i,
+    sum = 0,
+    r = Math.random();
+  for (i in spec) {
+    // @ts-ignore
+    sum += spec[i];
+    if (r <= sum) return i;
+  }
 };
 
 // *롤 상자 확률
@@ -39,7 +53,7 @@ export const hextech = () => {
     ward: 0.1,
     emotion: 0.09,
     profileIcon: 0.03,
-    mythEssence: 0.03
+    mythicEssence: 0.03
   };
   var i,
     sum = 0,
@@ -56,7 +70,7 @@ export const prestige = () => {
     ward: 0.1,
     orangeEssence: 0.1,
     emotion: 0.065,
-    mythEssence: 0.035
+    mythicEssence: 0.035
   };
   var i,
     sum = 0,
