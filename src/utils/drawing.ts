@@ -14,7 +14,7 @@ export const drawing = (type: string) => {
 };
 
 //* 꾸러미
-export const bag = () => {
+const bag = () => {
   const spec = {
     skin: 1
   };
@@ -29,7 +29,7 @@ export const bag = () => {
 };
 
 // * 라구
-export const evnet = () => {
+const evnet = () => {
   const spec = {
     skin: 0.93,
     bag: 0.035,
@@ -46,11 +46,11 @@ export const evnet = () => {
 };
 
 // *롤 상자 확률
-export const hextech = () => {
+const hextech = () => {
   const spec = {
     skin: 0.5,
     champ: 0.25,
-    ward: 0.1,
+    wardSkin: 0.1,
     emotion: 0.09,
     profileIcon: 0.03,
     mythicEssence: 0.03
@@ -64,10 +64,10 @@ export const hextech = () => {
     if (r <= sum) return i;
   }
 };
-export const prestige = () => {
+const prestige = () => {
   const spec = {
     skin: 0.7,
-    ward: 0.1,
+    wardSkin: 0.1,
     orangeEssence: 0.1,
     emotion: 0.065,
     mythicEssence: 0.035

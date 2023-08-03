@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { BagProb, EventProb, PrestigeProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
+import { useNowSkin } from '@utils/nowSkin';
 interface SkinType {
   url: string;
   count: number;
@@ -74,12 +75,10 @@ export default function Hextect() {
       handleGetRandomSkin();
     } else if (drawingResult === 'champ') {
       handleGetRandomChamp();
-    } else if (drawingResult === 'profileIcon') {
-      handleGetRandomProfile();
-    } else if (drawingResult === 'ward') {
-      handleGetRandomWard();
+    } else if (drawingResult === 'profileIcon' || drawingResult === 'wardSkin') {
+      handleGetWardProfile(drawingResult);
     } else {
-      handleGetOthers(t(`${drawingResult}`));
+      handleGetOthers(drawingResult);
     }
   };
   // * 열기 클릭할 때
@@ -192,7 +191,7 @@ export default function Hextect() {
           count: 1,
           name: data.data[randomChamp].name,
           url: champSquare(randomChamp),
-          type: 'other'
+          type: 'champ'
         };
         setNowSkin([nowSkin]);
         setOtherList([...otehrList, nowSkin]);
@@ -206,166 +205,55 @@ export default function Hextect() {
       setLoading(false);
     }
   };
-  // * 와드 스킨 뽑기
-  const handleGetRandomWard = () => {
+
+  // * 소환사 아이콘 + 와드 스킨 뽑을 경우
+  const handleGetWardProfile = (result: string) => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: t(`wardSkin`) });
-    const findEssence = Number(_.findIndex(otehrList, { name: t(`orangeEssence`) }));
-    // * 중복이 아니면 추가
-    let nowSkin: SkinType[] = [
-      {
-        count: 1,
-        name: t(`wardSkin`),
-        url: `/images/ward.png`,
-        type: 'other'
-      },
-      {
-        count: 150,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      }
-    ];
-    setNowSkin(nowSkin);
+    const duplication = _.findIndex(otehrList, { name: result });
+    const findEssence = _.findIndex(otehrList, { name: `orangeEssence` });
+
+    // * 지금 뽑은 결과
+    const nowSkin = useNowSkin(result);
+    // * 주황 정수 결과
+    const Essence = useNowSkin('orangeEssence');
+    setNowSkin([nowSkin, Essence]);
+
     let others = [...otehrList];
-    // * 와드 스킨을 처음 뽑는 경우 리스트에 추가
+    // * 프로필 아이콘/와드스킨을 처음 뽑는 경우 리스트에 추가
     if (duplication === -1) {
-      others.push({
-        count: 1,
-        name: t(`wardSkin`),
-        url: `/images/ward.png`,
-        type: 'other'
-      });
+      others.push(nowSkin);
       setOtherList(others);
     } else {
-      // * 와드 스킨이 이미 있는 경우, +1
+      // * 프로필 아이콘/와드스킨이 이미 있는 경우, +1
       others[duplication] = {
         ...others[duplication],
         count: others[duplication].count + 1
-      };
-      setOtherList(others);
-    }
-    // * 주황 정수를 처음 뽑는 경우 리스트에 추가
-    if (findEssence === -1) {
-      others.push({
-        count: 150,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      });
-      setOtherList(others);
-    } else {
-      // * 주황 정수가 이미 있는 경우 + 150
-      others[findEssence] = {
-        ...others[findEssence],
-        count: others[findEssence].count + 150
-      };
-      setOtherList(others);
-    }
-    setLoading(false);
-  };
-  // * 소환사 아이콘 뽑기
-  const handleGetRandomProfile = () => {
-    // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: t(`profileIcon`) });
-    const findEssence = _.findIndex(otehrList, { name: t(`orangeEssence`) });
-    let nowSkin = [
-      {
-        count: 1,
-        name: t(`profileIcon`),
-        url: `/images/profileIcon.webp`,
-        type: 'other'
-      },
-      {
-        count: 150,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      }
-    ];
-    setNowSkin(nowSkin);
-    let others = [...otehrList];
-    // * 프로필 아이콘을 처음 뽑는 경우 리스트에 추가
-    if (duplication === -1) {
-      others.push({
-        count: 1,
-        name: t(`profileIcon`),
-        url: `/images/profileIcon.webp`,
-        type: 'other'
-      });
-      setOtherList(others);
-    } else {
-      // * 프로필 아이콘이 이미 있는 경우, +1
-      others[duplication] = {
-        ...others[duplication],
-        count: others[duplication].count + 1
-      };
-      setOtherList(others);
-    }
-    // * 주황 정수를 처음 뽑는 경우 리스트에 추가
-    if (findEssence === -1) {
-      others.push({
-        count: 150,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      });
-      setOtherList(others);
-    } else {
-      // * 주황 정수가 이미 있는 경우 + 150
-      others[findEssence] = {
-        ...others[findEssence],
-        count: others[findEssence].count + 150
       };
       setOtherList(others);
     }
 
+    // * 주황 정수를 처음 뽑는 경우 리스트에 추가
+    if (findEssence === -1) {
+      others.push(Essence);
+      setOtherList(others);
+    } else {
+      // * 주황 정수가 이미 있는 경우 + 150
+      others[findEssence] = {
+        ...others[findEssence],
+        count: others[findEssence].count + 150
+      };
+      setOtherList(others);
+    }
     setLoading(false);
   };
 
   // * 기타 목록 뽑기
   const handleGetOthers = (name: string) => {
-    let nowSkin = {
-      count: 0,
-      name: '',
-      url: ``,
-      type: 'other'
-    };
     // * 중복 검사
     const duplication = _.findIndex(otehrList, { name });
-    // * 꾸러미가 나올 경우
-    if (name === t(`bag`)) {
-      nowSkin = {
-        count: 1,
-        name: t(`bag`),
-        url: `/images/bag.png`,
-        type: 'other'
-      };
-      // * 주황정수
-    } else if (name === t(`orangeEssence`)) {
-      nowSkin = {
-        count: 525,
-        name: t(`orangeEssence`),
-        url: `/images/orange_essence.png`,
-        type: 'other'
-      };
-      // * 신화정수
-    } else if (name === t(`mythicEssence`)) {
-      nowSkin = {
-        count: 10,
-        name: t(`mythicEssence`),
-        url: `/images/mythic_essence.png`,
-        type: 'other'
-      };
-      // * 감정표현
-    } else if (name === t(`emotion`)) {
-      nowSkin = {
-        count: 1,
-        name: t(`emotion`),
-        url: `/images/emotion.png`,
-        type: 'other'
-      };
-    }
+    //* 기타 목록에 따라 nowSkin을 바꿔 준다
+    const nowSkin = useNowSkin(name);
+    // * 중복이 아니면 추가
     if (duplication === -1) {
       setNowSkin([nowSkin]);
       setOtherList([...otehrList, nowSkin]);
@@ -474,7 +362,9 @@ export default function Hextect() {
                     ) : (
                       <Images src={now.url} width={140} height={140} loader={imageLoader} />
                     )}
-                    <S.SkinResultTitle>{now.name}</S.SkinResultTitle>
+                    <S.SkinResultTitle>
+                      {now.type === 'other' ? t(now.name) : now.name}
+                    </S.SkinResultTitle>
                   </S.SkinResult>
                 ))}
             </S.ResultList>
