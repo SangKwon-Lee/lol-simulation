@@ -232,8 +232,8 @@ export default function Hextect() {
     if (duplication === -1) {
       others.push({
         count: 1,
-        name: t(`profileIcon`),
-        url: `/images/profileIcon.webp`,
+        name: t(`wardSkin`),
+        url: `/images/ward.png`,
         type: 'other'
       });
       setOtherList(others);
