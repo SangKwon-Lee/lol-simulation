@@ -84,6 +84,12 @@ export default async function RootLayout({
             })(window,document,'script','dataLayer','GTM-T4RPP26');`
             }}
           />
+
+          <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1080731564650029"
+            crossOrigin="anonymous"
+          />
           <body className={roboto.className}>
             <NextIntlClientProvider locale={locale} messages={messages}>
               <Header />
