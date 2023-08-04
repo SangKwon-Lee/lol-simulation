@@ -1,12 +1,12 @@
 // *전체 뽑기 관리
 export const drawing = (type: string) => {
-  if (type.includes('라구') || type === 'Soul Fighter') {
+  if (type === 'eventBox') {
     return evnet();
-  } else if (type === '마법공학 상자' || type === 'Hextech Chest') {
+  } else if (type === 'hextech') {
     return hextech();
-  } else if (type === '명품 상자' || type === 'Prestige Chest') {
+  } else if (type === 'prestigeBox') {
     return prestige();
-  } else if (type === '꾸러미' || type === 'Bag') {
+  } else if (type === 'bag') {
     bag();
   } else {
     hextech();

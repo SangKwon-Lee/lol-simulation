@@ -1,3 +1,19 @@
+// * 상자에 따른 확률 표기
+
+export const handleGetProb = (boxName: string) => {
+  if (boxName === `hextech`) {
+    return hextechProb;
+  } else if (boxName === `prestigeBox`) {
+    return PrestigeProb;
+  } else if (boxName === `eventBox`) {
+    return EventProb;
+  } else if (boxName === `bag`) {
+    return BagProb;
+  } else {
+    return hextechProb;
+  }
+};
+
 export const hextechProb = [
   {
     name: 'skin',

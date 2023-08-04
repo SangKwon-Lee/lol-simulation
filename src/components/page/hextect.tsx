@@ -7,7 +7,7 @@ import * as S from '@styles/hextectStyles';
 import champions from '@src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { BagProb, EventProb, PrestigeProb, hextechProb } from '@utils/probability';
+import { BagProb, EventProb, PrestigeProb, handleGetProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 import { useNowSkin } from '@utils/nowSkin';
 interface SkinType {
@@ -37,21 +37,21 @@ export default function Hextect() {
   const [selectBoxList, setSelectBoxList] = useState([
     {
       url: `/images/hextech_chest.png`,
-      name: t(`hextech`),
+      name: `hextech`,
       count: 1,
       width: 70,
       height: 68
     },
     {
       url: `/images/prestige_box.png`,
-      name: t(`prestigeBox`),
+      name: `prestigeBox`,
       count: 1,
       width: 70,
       height: 70
     },
     {
       url: `/images/soul.png`,
-      name: t(`soulFighter`),
+      name: `eventBox`,
       count: 1,
       width: 70,
       height: 70
@@ -67,10 +67,17 @@ export default function Hextect() {
   // * 지금까지 연 상자 갯수
   const [openBoxCount, setOpenBoxCount] = useState(0);
 
-  // * 뽑기에 따른 로직
-  const handleDrawingLogic = async (drawingResult: string) => {
+  // * 열기 클릭할 때
+  const handleDrawingLogic = async () => {
+    // * 이미지 받아오는 시간이 있어서 로딩 추가
     setLoading(true);
+    // * 얼마나 상자를 열었는지 카운트
     setOpenBoxCount(() => openBoxCount + 1);
+
+    // * 아래 drawing에서 확률 계산 후 결과를 담음
+    const drawingResult = String(drawing(select.name));
+
+    // * 나온 결과에 따라 실행하는 함수 결정
     if (drawingResult === 'skin') {
       handleGetRandomSkin();
     } else if (drawingResult === 'champ') {
@@ -81,27 +88,14 @@ export default function Hextect() {
       handleGetOthers(drawingResult);
     }
   };
-  // * 열기 클릭할 때
-  const handleDrawing = () => {
-    const drawingResult = String(drawing(select.name));
-    handleDrawingLogic(drawingResult);
-  };
 
   // * 상자 고르기
   const handleSelectBox = (box: any) => {
     setSelect(box);
-    if (box.name === t(`hextech`)) {
-      setProbability(hextechProb);
-    }
-    if (box.name === t(`prestigeBox`)) {
-      setProbability(PrestigeProb);
-    }
-    if (box.name === t(`soulFighter`)) {
-      setProbability(EventProb);
-    }
-    if (box.name === t(`bag`)) {
-      setProbability(BagProb);
-    }
+    // * 상자에 따른 확률 표기
+    const BoxProbability = handleGetProb(box.name);
+    console.log(box.name);
+    setProbability(BoxProbability);
   };
 
   // * 리셋 버튼
@@ -296,6 +290,7 @@ export default function Hextect() {
     };
   });
 
+  // * 카카오톡 공유하기 기능
   const onClick = () => {
     const { Kakao } = window;
     Kakao.Share.sendDefault({
@@ -331,12 +326,12 @@ export default function Hextect() {
           <S.SelectWrapper>
             <S.CategoryTitle>{t(`box`)}</S.CategoryTitle>
             <S.SelectBoxWrapper>
-              <S.CategoryTitle>{select.name}</S.CategoryTitle>
+              <S.CategoryTitle>{t(`${select.name}`)}</S.CategoryTitle>
               <S.SelectBox>
                 <Images src={select.url} width={210} height={204} />
               </S.SelectBox>
               <S.OpenButtonWrapper>
-                <S.OpenButton onClick={handleDrawing}>{t(`open`)}</S.OpenButton>
+                <S.OpenButton onClick={handleDrawingLogic}>{t(`open`)}</S.OpenButton>
                 <S.OpenButton onClick={handleReset}>{t(`reset`)}</S.OpenButton>
                 <S.OpenButton onClick={() => setIsModal(true)}>{t(`percentage`)}</S.OpenButton>
               </S.OpenButtonWrapper>
