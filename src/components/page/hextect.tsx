@@ -94,7 +94,6 @@ export default function Hextect() {
     setSelect(box);
     // * 상자에 따른 확률 표기
     const BoxProbability = handleGetProb(box.name);
-    console.log(box.name);
     setProbability(BoxProbability);
   };
 
