@@ -7,7 +7,7 @@ import * as S from '@styles/hextectStyles';
 import champions from '@src/json/champion.json';
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { BagProb, EventProb, PrestigeProb, handleGetProb, hextechProb } from '@utils/probability';
+import { handleGetProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
 import { useNowSkin } from '@utils/nowSkin';
 interface SkinType {

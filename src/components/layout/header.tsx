@@ -32,6 +32,15 @@ export default function Header() {
           >
             {t(`navCouple`)}
           </Link>
+          <Link
+            href={'/story'}
+            title="LoL Simulation 롤 스토리"
+            style={{
+              fontWeight: pathname === '/story' ? 700 : 400
+            }}
+          >
+            {t(`menuStory`)}
+          </Link>
         </NavWrapper>
       </Wrapper>
     </HeaderDiv>

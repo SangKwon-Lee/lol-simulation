@@ -44,6 +44,10 @@
     "url1":"hextect",
     "url2":"Find a romantic partner",
     "eventBox":"Soul Fighter",
-    "bag":"Bag"
+    "bag":"Bag",
+    "story":"story",
+    "menuStory":"Story&Skin",
+    "storyTitle":"Story & Skin",
+    "skinCount":"Skin Count"
   }
 }
