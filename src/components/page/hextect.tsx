@@ -32,7 +32,13 @@ export default function Hextect() {
   // * 현재 뽑은 결과
   const [nowSkin, setNowSkin] = useState<SkinType[]>([]);
   // * 선택한 상자
-  const [select, setSelect] = useState({ url: '', name: '' });
+  const [select, setSelect] = useState({
+    url: `/images/hextech_chest.png`,
+    name: `hextech`,
+    count: 1,
+    width: 70,
+    height: 68
+  });
   // * 상자 리스트
   const [selectBoxList, setSelectBoxList] = useState([
     {
