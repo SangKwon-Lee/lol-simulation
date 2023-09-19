@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 // ts-prune-ignore-next
 export default function NotFound() {
