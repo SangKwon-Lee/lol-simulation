@@ -12,37 +12,10 @@
   <p align="center">
    롤 상자깡 시뮬레이션
     <br />
-    <a href="https://lol-simulation.site"><strong>Site</strong></a>
+    <a href="https://lol-simulation.site"><strong>배포 링크</strong></a>
     <br />
     <br />
 
-
-
-<!-- TABLE OF CONTENTS -->
-<!-- <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details> -->
 
 
 
@@ -54,15 +27,18 @@
 
 </br>
 마법공학 상자를 마음껏 열어볼 수 있는 롤 시뮬레이션 사이트입니다. 
-<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
 
 
 </br>
 </br>
 </br>
 
-[![Next][Next.js]][Next-url]
+## Stack
+
+[![Next][Next.js]][Next-url]  
+[![TypeScript][TypeScript]][TypeScript-url]  
+[![Styled-Components][StyledComponents]][StyledComponents-url]
+
 
 </br>
 </br>
@@ -82,3 +58,7 @@
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
+[TypeScript]: https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=
+[TypeScript-url]: https://www.typescriptlang.org/
+[StyledComponents]: https://img.shields.io/badge/styledcomponents-DB7093?style=flat-square&logo=styled-components&logoColor=white
+[StyledComponents-url]: https://styled-components.com/
