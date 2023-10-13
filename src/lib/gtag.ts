@@ -1,6 +1,4 @@
-export const GA_TRACKING_ID = 'G-39YQSX411K'; // 측정ID 설정: .env 파일로 관리해도된다.
-
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+export const GA_TRACKING_ID = 'G-39YQSX411K';
 export const pageview = (url: any) => {
   //@ts-ignore
   window.gtag('config', GA_TRACKING_ID, {
@@ -8,7 +6,6 @@ export const pageview = (url: any) => {
   });
 };
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }: any) => {
   //@ts-ignore
   window.gtag('event', action, {
