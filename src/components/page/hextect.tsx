@@ -18,6 +18,30 @@ interface SkinType {
 }
 const champList = Object.keys(champions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
+// * 상자 리스트
+const selectBoxList = [
+  {
+    url: `/images/hextech_chest.png`,
+    name: `hextech`,
+    count: 1,
+    width: 70,
+    height: 68
+  },
+  {
+    url: `/images/prestige_box.png`,
+    name: `prestigeBox`,
+    count: 1,
+    width: 70,
+    height: 70
+  },
+  {
+    url: `/images/soul.png`,
+    name: `eventBox`,
+    count: 1,
+    width: 70,
+    height: 70
+  }
+];
 
 export default function Hextect() {
   const locale = useLocale();
@@ -39,30 +63,7 @@ export default function Hextect() {
     width: 70,
     height: 68
   });
-  // * 상자 리스트
-  const [selectBoxList, setSelectBoxList] = useState([
-    {
-      url: `/images/hextech_chest.png`,
-      name: `hextech`,
-      count: 1,
-      width: 70,
-      height: 68
-    },
-    {
-      url: `/images/prestige_box.png`,
-      name: `prestigeBox`,
-      count: 1,
-      width: 70,
-      height: 70
-    },
-    {
-      url: `/images/soul.png`,
-      name: `eventBox`,
-      count: 1,
-      width: 70,
-      height: 70
-    }
-  ]);
+
   // * 확률 오픈
   const [isModal, setIsModal] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
@@ -149,7 +150,7 @@ export default function Hextect() {
     } catch (e) {
       const duplication = _.findIndex(skins, { name: t(`risenFiddlesticks`) });
       if (duplication === -1) {
-        // * 중복이 아니면 추가
+        // * 스킨 버그 해결
         let newSkin = {
           url: 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_8.jpg',
           count: 1,
