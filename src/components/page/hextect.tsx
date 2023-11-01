@@ -1,22 +1,20 @@
 'use client';
-import _ from 'lodash';
 import axios from 'axios';
 import Images from '@utils/images';
 import { drawing } from '@utils/drawing';
 import * as S from '@styles/hextectStyles';
-import champions from '@src/json/champion.json';
+import { useNowSkin } from '@utils/nowSkin';
+import { findDupication, getRandomChamp } from '@utils/openBox';
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { handleGetProb, hextechProb } from '@utils/probability';
 import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
-import { useNowSkin } from '@utils/nowSkin';
 interface SkinType {
   url: string;
   count: number;
   name: string;
   type: string;
 }
-const champList = Object.keys(champions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
 // * 상자 리스트
 const selectBoxList = [
@@ -116,7 +114,7 @@ export default function Hextect() {
   const handleGetRandomSkin = async () => {
     try {
       // * 랜덤으로 챔프 하나 꺼내기
-      const randomChamp = champList[Math.floor(Math.random() * champList.length)];
+      const randomChamp = getRandomChamp();
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data: champ } = await axios.get(
         `https://ddragon.leagueoflegends.com/cdn/${version}/data/${dataLocale}/champion/${randomChamp}.json`
@@ -126,48 +124,28 @@ export default function Hextect() {
       // * 랜덤 스킨 뽑기
       const randomSkin = skinArr[Math.floor(Math.random() * (skinArr.length - 1)) + 1];
       // * 중복 스킨 검사
-      const duplication = _.findIndex(skins, { name: randomSkin.name });
+      const duplication = findDupication(skins, randomSkin.name);
+
       if (duplication === -1) {
         // * 중복이 아니면 추가
-        let newSkin = {
-          url: champSkin(randomChamp, randomSkin.num),
-          count: 1,
-          name: randomSkin.name,
-          type: 'skin'
-        };
-        setNowSkin([newSkin]);
-        setSkins([...skins, newSkin]);
+        handleGetNew(champSkin(randomChamp, randomSkin.num), 1, randomSkin.name, 'skin');
       } else {
         // * 중복이면 count + 1
-        let newSkin = [...skins];
-        newSkin[duplication] = {
-          ...newSkin[duplication],
-          count: newSkin[duplication].count + 1
-        };
-        setNowSkin([newSkin[duplication]]);
-        setSkins(newSkin);
+        handleGetDupl(duplication);
       }
     } catch (e) {
-      const duplication = _.findIndex(skins, { name: t(`risenFiddlesticks`) });
+      // * 스킨 버그 해결
+      const duplication = findDupication(skins, t(`risenFiddlesticks`));
       if (duplication === -1) {
-        // * 스킨 버그 해결
-        let newSkin = {
-          url: 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_8.jpg',
-          count: 1,
-          name: t(`risenFiddlesticks`),
-          type: 'skin'
-        };
-        setNowSkin([newSkin]);
-        setSkins([...skins, newSkin]);
+        handleGetNew(
+          'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_8.jpg',
+          1,
+          t(`risenFiddlesticks`),
+          'skin'
+        );
       } else {
         // * 중복이면 count + 1
-        let newSkin = [...skins];
-        newSkin[duplication] = {
-          ...newSkin[duplication],
-          count: newSkin[duplication].count + 1
-        };
-        setNowSkin([newSkin[duplication]]);
-        setSkins(newSkin);
+        handleGetDupl(duplication);
       }
     } finally {
       setLoading(false);
@@ -178,23 +156,16 @@ export default function Hextect() {
   const handleGetRandomChamp = async () => {
     try {
       // * 랜덤으로 챔프 하나 꺼내기
-      const randomChamp = champList[Math.floor(Math.random() * champList.length)];
+      const randomChamp = getRandomChamp();
       // * 랜덤으로 꺼낸 챔프의 스킨 정보 가져오기
       const { data } = await axios.get(
         `https://ddragon.leagueoflegends.com/cdn/${version}/data/${dataLocale}/champion/${randomChamp}.json`
       );
       // * 중복 챔프 검사
-      const duplication = _.findIndex(otehrList, { name: data.data[randomChamp].name });
+      const duplication = findDupication(otehrList, data.data[randomChamp].name);
       if (duplication === -1) {
         // * 중복이 아니면 추가
-        let nowSkin = {
-          count: 1,
-          name: data.data[randomChamp].name,
-          url: champSquare(randomChamp),
-          type: 'champ'
-        };
-        setNowSkin([nowSkin]);
-        setOtherList([...otehrList, nowSkin]);
+        handleGetNew(champSquare(randomChamp), 1, data.data[randomChamp].name, 'champ');
       } else {
         // * 중복이면 count + 1
         handleOtherDuplication(duplication, 1);
@@ -209,8 +180,8 @@ export default function Hextect() {
   // * 소환사 아이콘 + 와드 스킨 뽑을 경우
   const handleGetWardProfile = (result: string) => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name: result });
-    const findEssence = _.findIndex(otehrList, { name: `orangeEssence` });
+    const duplication = findDupication(otehrList, result);
+    const findEssence = findDupication(otehrList, 'orangeEssence');
 
     // * 지금 뽑은 결과
     const nowSkin = useNowSkin(result);
@@ -250,7 +221,7 @@ export default function Hextect() {
   // * 기타 목록 뽑기
   const handleGetOthers = (name: string) => {
     // * 중복 검사
-    const duplication = _.findIndex(otehrList, { name });
+    const duplication = findDupication(otehrList, name);
     //* 기타 목록에 따라 nowSkin을 바꿔 준다
     const nowSkin = useNowSkin(name);
     // * 중복이 아니면 추가
@@ -273,6 +244,33 @@ export default function Hextect() {
     };
     setNowSkin([others[duplication]]);
     setOtherList(others);
+  };
+
+  //* 새로운 스킨 획득
+  const handleGetNew = (url: string, count: number, name: string, type: string) => {
+    const newSkin = {
+      url,
+      count,
+      name,
+      type
+    };
+    setNowSkin([newSkin]);
+    if (type === 'skin') {
+      setSkins([...skins, newSkin]);
+    } else {
+      setOtherList([...otehrList, newSkin]);
+    }
+  };
+
+  //* 중복 스킨 획득
+  const handleGetDupl = (duplIndex: number) => {
+    let newSkin = [...skins];
+    newSkin[duplIndex] = {
+      ...newSkin[duplIndex],
+      count: newSkin[duplIndex].count + 1
+    };
+    setNowSkin([newSkin[duplIndex]]);
+    setSkins(newSkin);
   };
 
   //* 아무데나 클릭해도 카테고리 닫히기
