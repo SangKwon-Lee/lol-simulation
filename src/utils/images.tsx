@@ -9,10 +9,9 @@ interface Props {
   width?: number;
   height?: number;
   onClick?: any;
-  loader?: any;
 }
 
-export default function Images({ height, src, width, className, onClick, style, loader }: Props) {
+export default function Images({ height, src, width, className, onClick, style }: Props) {
   return (
     <Image
       src={`${src}`}

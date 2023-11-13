@@ -1,8 +1,8 @@
 'use client';
 import * as S from '@styles/storyStyles';
-import champions from '@src/json/champion.json';
+import { champList } from '@src/json/champion';
 import Images from '@utils/images';
-import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
+import { champSkin, champSquare } from '@utils/imgLoader';
 import { useState } from 'react';
 import axios from 'axios';
 import { useLocale, useTranslations } from 'next-intl';
@@ -17,7 +17,6 @@ interface Champ {
   }[];
 }
 
-const champList = Object.keys(champions.data);
 const version = process.env.NEXT_PUBLIC_VERSION;
 export default function Story() {
   const [select, setSelect] = useState('');
@@ -70,7 +69,6 @@ export default function Story() {
                   src={data}
                   width={157}
                   height={240}
-                  loader={imageLoader}
                   style={{ display: 'inline', maxWidth: '157px', height: '100%', width: '100%' }}
                 />
               </S.Skin>

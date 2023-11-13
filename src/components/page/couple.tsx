@@ -4,7 +4,7 @@ import axios from 'axios';
 import Images from '@utils/images';
 import { useState } from 'react';
 import maleChampions from '@src/json/championMale.json';
-import { champSquare, imageLoader } from '@utils/imgLoader';
+import { champSquare } from '@utils/imgLoader';
 import Femalechampions from '@src/json/championFemale.json';
 import { useLocale, useTranslations } from 'next-intl';
 import * as S from '@styles/coupleStyles';
@@ -256,7 +256,7 @@ export default function Couple() {
                   })
                 : ''}
             </S.ResultText>
-            <Images src={now.url} width={140} height={140} loader={imageLoader} />
+            <Images src={now.url} width={140} height={140} />
             <S.ChampName>{now.name}</S.ChampName>
             <S.Lore>{now.lore}</S.Lore>
             <S.ResetBtn onClick={handleReset}>{t(`again`)}</S.ResetBtn>

@@ -1,7 +1,5 @@
 import _ from 'lodash/findIndex';
-import champions from '@src/json/champion.json';
-const champList = Object.keys(champions.data);
-
+import { champList } from '@src/json/champion';
 export function getRandomChamp() {
   return champList[Math.floor(Math.random() * champList.length)];
 }
