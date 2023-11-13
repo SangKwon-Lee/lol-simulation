@@ -16,19 +16,14 @@ export default function Images({ height, src, width, className, onClick, style, 
   return (
     <Image
       src={`${src}`}
-      loader={loader}
       alt={src}
-      quality={20}
+      quality={1}
       width={width}
       fill={!width && !height ? true : false}
       height={height}
       onClick={onClick}
       style={{ ...style }}
       className={className}
-      priority
-      placeholder="blur"
-      blurDataURL="/"
-      unoptimized
     />
   );
 }

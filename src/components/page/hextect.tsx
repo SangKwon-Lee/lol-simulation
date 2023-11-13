@@ -8,7 +8,7 @@ import { findDupication, getRandomChamp } from '@utils/openBox';
 import { useEffect, useRef, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { handleGetProb, hextechProb } from '@utils/probability';
-import { champSkin, champSquare, imageLoader } from '@utils/imgLoader';
+import { champSkin, champSquare } from '@utils/imgLoader';
 interface SkinType {
   url: string;
   count: number;
@@ -73,7 +73,7 @@ export default function Hextect() {
   const [openBoxCount, setOpenBoxCount] = useState(0);
 
   // * 열기 클릭할 때
-  const handleDrawingLogic = async () => {
+  const handleDrawingLogic = () => {
     // * 이미지 받아오는 시간이 있어서 로딩 추가
     setLoading(true);
     // * 얼마나 상자를 열었는지 카운트
@@ -357,9 +357,9 @@ export default function Hextect() {
                 nowSkin.map((now, index) => (
                   <S.SkinResult key={index}>
                     {now.type === 'skin' ? (
-                      <Images src={now.url} width={180} height={300} loader={imageLoader} />
+                      <Images src={now.url} width={180} height={300} />
                     ) : (
-                      <Images src={now.url} width={140} height={140} loader={imageLoader} />
+                      <Images src={now.url} width={140} height={140} />
                     )}
                     <S.SkinResultTitle>
                       {now.type === 'other' ? t(now.name) : now.name}
@@ -376,7 +376,7 @@ export default function Hextect() {
           <S.OtherWrapper>
             {otehrList.map((data) => (
               <S.Skin key={data.url}>
-                <Images src={data.url} width={88} height={88} loader={imageLoader} />
+                <Images src={data.url} width={88} height={88} />
                 {data.count !== 1 && <S.SkinCount>{data.count}</S.SkinCount>}
               </S.Skin>
             ))}
@@ -393,7 +393,6 @@ export default function Hextect() {
                   src={data.url}
                   width={157}
                   height={240}
-                  loader={imageLoader}
                   style={{ display: 'inline', maxWidth: '157px', height: '100%', width: '100%' }}
                 />
                 {data.count !== 1 && <S.SkinCount>{data.count}</S.SkinCount>}

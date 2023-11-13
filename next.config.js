@@ -8,18 +8,18 @@ const nextConfig = {
   experimental: {
     appDir: true
   },
-  sassOptions: {
-    // includePaths: [path.join(__dirname, 'styles')],
-    // prependData: `@import "./_variables.scss";
-    //             @import "./_mixin.scss";
-    //             `
-  },
   assetPrefix: '',
   images: {
-    domains: ['https://ddragon.leagueoflegends.com'],
-    path: 'https://ddragon.leagueoflegends.com',
-    formats: ['image/webp'],
-    minimumCacheTTL: 31536000
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'ddragon.leagueoflegends.com',
+        port: '',
+        pathname: '/**'
+      }
+    ],
+    imageSizes: [16, 64],
+    deviceSizes: [640, 1080]
   },
   compiler: {
     styledComponents: true,
